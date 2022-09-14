@@ -31,6 +31,7 @@ var hasAmmo
 var gunHudActive = false
 var shotFired
 
+
 func _ready():
 	#_healthbar.play("Hud_R")
 	$die_popup.visible = false
@@ -48,6 +49,7 @@ func _ready():
 	shotFired = false
 
 func _process(delta):
+
 #---------------------------------------------------------------------------------- Health
 	if health >= 1:
 		if ammo > get_parent().get_node("PlayerBase").get("ammo"):

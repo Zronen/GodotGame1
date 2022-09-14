@@ -193,7 +193,7 @@ func _on_dmg_reaction_timer_timeout():
 		#get_parent().get_parent().get_node("PlayerBase").get_node("Camera2D").zoom = Vector2(1.3,1.3)
 		get_parent().get_parent().get_node("PlayerBase").get_node("Camera2D").current = true
 		$ECamera.current = false
-		$ECamera.zoom = Vector2(1.6,1.6)
+		$ECamera.zoom = Vector2(2,2)
 		
 		state = FALLING
 		

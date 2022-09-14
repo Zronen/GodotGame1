@@ -281,6 +281,7 @@ func gunbladeRelease(x,y,startMove,followup1, followup2):
 			_animated_sprite.play(followup2)
 		
 		gunbladeCharge = -1
+		comboCounter = 4
 		$TriggerCharge_timer.stop()
 
 
@@ -305,7 +306,7 @@ func altCombo(x,y, startMove, followup1):
 			knockPower = 5
 			#isGhosting = true
 		elif _animated_sprite.frame <= 29:
-			knockPower = 1
+			knockPower = 0
 
 
 	
@@ -385,30 +386,47 @@ func baseThrust(x,y, startMove, followup1, followup2):
 			isGhosting2 = true
 		if comboCount[1] == 5:
 			knockPower = 6
+			
+	baseComboHitbox()
 
 func baseComboHitbox():
-#Down, Up, Left, Right
-#[name,x,y,radius,height,rotation,damage,knockback]	
+#Down, Up, Right, Left
+#[name,x,y,radius,height,rotation,damage1,knockback1]	
 	var swordBaseBox = [
 ["Slash3",26,79,180,206,90,1,1],
-["Slash3_combo1",-20,86,180,206,90,1,1]
+["Slash3_combo1",-20,86,180,206,90,1,1],
+["Slash3Back",-20,-120,180,206,90,1,1],
+["Slash3Back_combo1",26,-127,180,206,90,1,1],
+["Slash3Side", 79,0,180,206,0,1,1],
+["Slash3Side_combo1", 86,0,180,206,0,1,1],
+["Slash3_combo2",0,130,163,104,0,0.75,1],
+["Slash3_combo2Back",0,-130,163,104,0,0.75,1],
+["Slash3_combo2Side",130,0,163,104,0,0.75,1],
+["Thrust3",0,145,205,76,0,1,3],
+["Thrust3Back",0,-145,205,76,0,1,3],
+["Thrust3Side",145,0,205,76,90,1,3],
+["Thrust3_combo3",0,145,175,76,0,1,3],
+["Thrust3_combo3Back",0,-145,175,76,0,1,3],
+["Thrust3_combo3Side",145,0,175,76,90,1,3]
 ]
 	
 	if weapon == "Sword":
-		if lastDirection == "down":
-			if comboCounter == 1 || comboCounter == 3:
-				hitBox.position.x = 26
-				hitBox.position.y = 79
-				hitBox.shape.radius = 180
-				hitBox.shape.height = 206
-				hitBox.rotation_degrees = 90
-			else:
-				hitBox.position.x = -20
-				hitBox.position.y = 86
-				hitBox.shape.radius = 180
-				hitBox.shape.height = 206
-				hitBox.rotation_degrees = 90
-		print(swordBaseBox[0][0])	
+		for i in swordBaseBox.size():
+			if _animated_sprite.animation == swordBaseBox[i][0]:
+				if _animated_sprite.flip_h == true:
+					swordBaseBox[i][1] = -swordBaseBox[i][1]
+					#if i < 8:
+					#	i += 2
+					#else:
+					#	i += 1
+				hitBox.position.x = swordBaseBox[i][1]
+				hitBox.position.y = swordBaseBox[i][2]
+				hitBox.shape.radius = swordBaseBox[i][3]
+				hitBox.shape.height = swordBaseBox[i][4]
+				hitBox.rotation_degrees = swordBaseBox[i][5]
+				break
+
+
 		
 	elif weapon == "Gunblade":
 		pass
@@ -1076,7 +1094,7 @@ func isFacing(target):
 	var a = Vector2(lastx,lasty).direction_to(target)
 	#print(a.dot(target))
 	if (a > Vector2(0,0)):
-		print(a)
+		#print(a)
 		return true
 
 	else:
@@ -1313,7 +1331,7 @@ func _on_swordSpecial_startup_timer_timeout():
 		$SwordSpecialParticles.set_emitting(false)
 		$swordSpecial_startup_timer.stop()
 		FXSprite.play("S_Special2FX2")
-		cameraZoom(1.6,0.01)
+		cameraZoom(2,0.01)
 
 		specialAttacks[0][0] = false
 		hitBox.scale.x = 3
@@ -1358,7 +1376,7 @@ func _activate_special():
 	blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + lastx * 1600, self.global_position.y + lasty * 1600), 0.065,Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	blinkTween.start()
 	
-	cameraZoom(1.6,0.01)
+	cameraZoom(2,0.01)
 	
 	screenModulate(Color(1,1,1,1),0.1)
 

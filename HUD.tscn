@@ -203,14 +203,14 @@ animations = [ {
 "name": "T3 3-0",
 "speed": 14.0
 }, {
-"frames": [ ExtResource( 172 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 158 ), ExtResource( 156 ), ExtResource( 124 ) ],
-"loop": false,
-"name": "T3 5-2",
-"speed": 14.0
-}, {
 "frames": [ ExtResource( 116 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 123 ), ExtResource( 124 ) ],
 "loop": false,
 "name": "T1 3-2",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 172 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 158 ), ExtResource( 156 ), ExtResource( 124 ) ],
+"loop": false,
+"name": "T3 5-2",
 "speed": 14.0
 }, {
 "frames": [ ExtResource( 108 ), ExtResource( 108 ) ],
@@ -223,9 +223,9 @@ animations = [ {
 "name": "T1 4-3",
 "speed": 14.0
 }, {
-"frames": [ ExtResource( 111 ), ExtResource( 107 ), ExtResource( 109 ), ExtResource( 109 ), ExtResource( 113 ), ExtResource( 117 ) ],
+"frames": [ ExtResource( 140 ), ExtResource( 155 ), ExtResource( 152 ), ExtResource( 152 ), ExtResource( 149 ), ExtResource( 121 ) ],
 "loop": false,
-"name": "T1 5-4",
+"name": "T2 3-1",
 "speed": 14.0
 }, {
 "frames": [ ExtResource( 106 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 118 ), ExtResource( 111 ) ],
@@ -238,30 +238,15 @@ animations = [ {
 "name": "Ammo Full",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 124 ), ExtResource( 128 ), ExtResource( 125 ), ExtResource( 125 ), ExtResource( 122 ), ExtResource( 121 ) ],
+"frames": [ ExtResource( 111 ), ExtResource( 107 ), ExtResource( 109 ), ExtResource( 109 ), ExtResource( 113 ), ExtResource( 117 ) ],
 "loop": false,
-"name": "T1 2-1",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 170 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 162 ), ExtResource( 167 ), ExtResource( 121 ) ],
-"loop": false,
-"name": "T3 4-1",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 171 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 160 ), ExtResource( 169 ), ExtResource( 116 ) ],
-"loop": false,
-"name": "T3 6-3",
+"name": "T1 5-4",
 "speed": 14.0
 }, {
 "frames": [ ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ) ],
 "loop": false,
 "name": "Ammo Required",
 "speed": 12.0
-}, {
-"frames": [ ExtResource( 121 ), ExtResource( 120 ), ExtResource( 134 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 108 ) ],
-"loop": false,
-"name": "T1 1-0",
-"speed": 14.0
 }, {
 "frames": [ ExtResource( 137 ), ExtResource( 139 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 129 ), ExtResource( 117 ) ],
 "loop": false,
@@ -273,9 +258,24 @@ animations = [ {
 "name": "T2 5-3",
 "speed": 14.0
 }, {
-"frames": [ ExtResource( 140 ), ExtResource( 155 ), ExtResource( 152 ), ExtResource( 152 ), ExtResource( 149 ), ExtResource( 121 ) ],
+"frames": [ ExtResource( 124 ), ExtResource( 128 ), ExtResource( 125 ), ExtResource( 125 ), ExtResource( 122 ), ExtResource( 121 ) ],
 "loop": false,
-"name": "T2 3-1",
+"name": "T1 2-1",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 170 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 162 ), ExtResource( 167 ), ExtResource( 121 ) ],
+"loop": false,
+"name": "T3 4-1",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 121 ), ExtResource( 120 ), ExtResource( 134 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 108 ) ],
+"loop": false,
+"name": "T1 1-0",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 171 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 160 ), ExtResource( 169 ), ExtResource( 116 ) ],
+"loop": false,
+"name": "T3 6-3",
 "speed": 14.0
 } ]
 
@@ -286,29 +286,9 @@ animations = [ {
 "name": "Hud2-1",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 33 ), ExtResource( 15 ) ],
-"loop": false,
-"name": "Hud3-2",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 36 ), ExtResource( 35 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 32 ) ],
-"loop": false,
-"name": "Hud5-4",
-"speed": 12.0
-}, {
 "frames": [ ExtResource( 36 ) ],
 "loop": true,
 "name": "Hud5",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 32 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "Hud4-3",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 34 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
-"loop": false,
-"name": "Hud1-0",
 "speed": 12.0
 }, {
 "frames": [ ExtResource( 25 ) ],
@@ -319,6 +299,26 @@ animations = [ {
 "frames": [ ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 36 ) ],
 "loop": false,
 "name": "Hud0-5",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 34 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "Hud1-0",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Hud4-3",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 33 ), ExtResource( 15 ) ],
+"loop": false,
+"name": "Hud3-2",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 35 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 32 ) ],
+"loop": false,
+"name": "Hud5-4",
 "speed": 12.0
 } ]
 
@@ -387,14 +387,14 @@ shader_param/shake_color_rate = 0.03
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "SpecialHud",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 31 ) ],
 "loop": true,
 "name": "SpecialHud2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "SpecialHud",
 "speed": 5.0
 } ]
 
@@ -405,15 +405,15 @@ animations = [ {
 "name": "SwordHud",
 "speed": 20.0
 }, {
-"frames": [ ExtResource( 56 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 54 ) ],
-"loop": false,
-"name": "GunbladeHud",
-"speed": 20.0
-}, {
 "frames": [ ExtResource( 43 ), ExtResource( 43 ) ],
 "loop": true,
 "name": "TestHud",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 54 ) ],
+"loop": false,
+"name": "GunbladeHud",
+"speed": 20.0
 }, {
 "frames": [ ExtResource( 54 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 51 ) ],
 "loop": false,
