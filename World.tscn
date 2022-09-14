@@ -34,12 +34,26 @@ extents = Vector2( 81.1762, 35.386 )
 extents = Vector2( 10, 252.362 )
 
 [node name="World" type="Node2D"]
-position = Vector2( 2, -4 )
+position = Vector2( 3, -4 )
 scale = Vector2( 0.8, 0.8 )
 script = ExtResource( 12 )
 
 [node name="PlayerBase" parent="." instance=ExtResource( 8 )]
 z_index = 2
+lastDirection = "down"
+isGhosting = false
+isGhosting2 = false
+isDashing = false
+dashCooldown = false
+isAttacking = false
+isCurrentlyDamaged = false
+attackCooldown = false
+isSpecial = false
+specialCharge = 0
+knockPower = 1
+weapon = ""
+weaponGun = ""
+ammo = 0.0
 
 [node name="RainArea" parent="PlayerBase" instance=ExtResource( 1 )]
 position = Vector2( -992.5, -92.25 )
@@ -72,24 +86,38 @@ monitorable = false
 
 [node name="Enemy1_Reaper" parent="EnemyHolder" instance=ExtResource( 3 )]
 position = Vector2( 143, 10.5001 )
+isCurrentlyDamaged = false
+isFalling = false
 
 [node name="Enemy2_Wizard" parent="EnemyHolder" instance=ExtResource( 9 )]
 position = Vector2( 633, -114.5 )
+isCurrentlyDamaged = false
+isFalling = false
 
 [node name="Enemy1_Reaper3" parent="EnemyHolder" instance=ExtResource( 3 )]
 position = Vector2( -997, 225.5 )
+isCurrentlyDamaged = false
+isFalling = false
 
 [node name="Enemy1_Reaper2" parent="EnemyHolder" instance=ExtResource( 3 )]
 position = Vector2( -355.75, 2050.5 )
+isCurrentlyDamaged = false
+isFalling = false
 
 [node name="Enemy1_Reaper4" parent="EnemyHolder" instance=ExtResource( 3 )]
 position = Vector2( 604.25, 780.5 )
+isCurrentlyDamaged = false
+isFalling = false
 
 [node name="Enemy1_Reaper5" parent="EnemyHolder" instance=ExtResource( 3 )]
 position = Vector2( -535.75, 651.75 )
+isCurrentlyDamaged = false
+isFalling = false
 
 [node name="Enemy1_Reaper6" parent="EnemyHolder" instance=ExtResource( 3 )]
 position = Vector2( 1213, -404.5 )
+isCurrentlyDamaged = false
+isFalling = false
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 1412.5, -710 )
