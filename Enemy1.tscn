@@ -1,0 +1,101 @@
+[gd_scene load_steps=43 format=2]
+
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_03.png" type="Texture" id=1]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_04.png" type="Texture" id=2]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_00.png" type="Texture" id=3]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_05.png" type="Texture" id=4]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_07.png" type="Texture" id=5]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_08.png" type="Texture" id=6]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_06.png" type="Texture" id=7]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_09.png" type="Texture" id=8]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_10.png" type="Texture" id=9]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_01.png" type="Texture" id=10]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_02.png" type="Texture" id=11]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_06.png" type="Texture" id=12]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_07.png" type="Texture" id=13]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_11.png" type="Texture" id=14]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_00.png" type="Texture" id=15]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_01.png" type="Texture" id=16]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_00.png" type="Texture" id=17]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_03.png" type="Texture" id=18]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_09.png" type="Texture" id=19]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_01.png" type="Texture" id=20]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_02.png" type="Texture" id=21]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_04.png" type="Texture" id=22]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_05.png" type="Texture" id=23]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_04.png" type="Texture" id=24]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_03.png" type="Texture" id=25]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_06.png" type="Texture" id=26]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_08.png" type="Texture" id=27]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_10.png" type="Texture" id=28]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_02.png" type="Texture" id=29]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_08.png" type="Texture" id=30]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_09.png" type="Texture" id=31]
+[ext_resource path="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_11.png" type="Texture" id=32]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_07.png" type="Texture" id=33]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_10.png" type="Texture" id=34]
+[ext_resource path="res://assets/Reaper Sprites/Reaper #1/ReapIdle_11.png" type="Texture" id=35]
+[ext_resource path="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_05.png" type="Texture" id=36]
+[ext_resource path="res://Enemy1.gd" type="Script" id=37]
+[ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Hitbox.tscn" type="PackedScene" id=39]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 29 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 36 ), ExtResource( 12 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 19 ), ExtResource( 34 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "Aggro",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 25 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 26 ), ExtResource( 13 ), ExtResource( 27 ), ExtResource( 31 ), ExtResource( 28 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "Attack1",
+"speed": 21.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 204.0
+height = 210.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 58.0
+height = 226.0
+
+[node name="EnemyBody" type="KinematicBody2D"]
+position = Vector2( 423, 690 )
+script = ExtResource( 37 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+z_index = 1
+frames = SubResource( 1 )
+animation = "Attack1"
+frame = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Hitbox" parent="." instance=ExtResource( 39 )]
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2( -102, -18 )
+shape = SubResource( 3 )
+
+[node name="Hurtbox" parent="." instance=ExtResource( 38 )]
+collision_layer = 4
+collision_mask = 8
+monitorable = false
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( -1, -10 )
+shape = SubResource( 2 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+
+[editable path="Hitbox"]
+[editable path="Hurtbox"]

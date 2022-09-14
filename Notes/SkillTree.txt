@@ -1,0 +1,27 @@
+Longsword
+- trigger+attack move: Thrust
+	- trigger+attack follow up: Cross Slash
+- Special 1: Beeg Slash
+- Special 2: Become invincible and do big dash, enemies caught in wake get slashed
+- Special 3:
+
+-Passive: Increased move speed ?
+-Passive: Faster combo meter charge?
+
+Sythe
+- trigger+attack move: Sythe Uppercut 
+	- trigger+attack follow up: Sythe Slam
+- Special 1: Drain Health from nearby enemies
+- Special 2: Sythe spins around the player (donut shape)
+- Special 3: 
+
+-Passive: On kill restore health
+
+Gunsword
+- trigger+attack move: short range blast
+	- trigger+attack follow up: Explosion Blast
+- Special 1: ring of gunfire
+- Special 2: Big blast in 1 direction
+- Special 3: 
+
+-Passive: Guns deal more damage

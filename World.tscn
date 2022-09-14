@@ -1,0 +1,443 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://RainArea.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Road Test-2.png.png" type="Texture" id=2]
+[ext_resource path="res://Enemy Scenes/Enemy1_Reaper.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Camera2D.gd" type="Script" id=4]
+[ext_resource path="res://SpeechBox.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Road Test-3.png.png" type="Texture" id=7]
+[ext_resource path="res://PlayerBase.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Enemy Scenes/Enemy2_Wizard.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Weaponsmith.tscn" type="PackedScene" id=10]
+[ext_resource path="res://ShopHUD.tscn" type="PackedScene" id=11]
+[ext_resource path="res://World.gd" type="Script" id=12]
+[ext_resource path="res://BulletManager.gd" type="Script" id=13]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/env3.png" type="Texture" id=14]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/env2.png" type="Texture" id=15]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/env.png" type="Texture" id=16]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/env4.png" type="Texture" id=17]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate.png" type="Texture" id=18]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Vines_11.png" type="Texture" id=19]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Low_Pillar_Left.png" type="Texture" id=20]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Medium_Pillar_Right.png" type="Texture" id=21]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Low_Pillar_Right.png" type="Texture" id=22]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Vines_14.png" type="Texture" id=23]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Tall_Left.png" type="Texture" id=24]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Tall_Right.png" type="Texture" id=25]
+[ext_resource path="res://assets/Environment/Stage 1/Walls and structures/Gate_Medium_Pillar_Left.png" type="Texture" id=26]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 81.1762, 35.386 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 252.362 )
+
+[node name="World" type="Node2D"]
+position = Vector2( 2, -4 )
+scale = Vector2( 0.8, 0.8 )
+script = ExtResource( 12 )
+
+[node name="PlayerBase" parent="." instance=ExtResource( 8 )]
+z_index = 2
+
+[node name="RainArea" parent="PlayerBase" instance=ExtResource( 1 )]
+position = Vector2( -992.5, -92.25 )
+scale = Vector2( 1.3, 1.3 )
+
+[node name="Camera2D" type="Camera2D" parent="PlayerBase"]
+scale = Vector2( 1.65625, 1.59518 )
+current = true
+zoom = Vector2( 1.6, 1.6 )
+script = ExtResource( 4 )
+
+[node name="DialoguePlayer" parent="PlayerBase" instance=ExtResource( 5 )]
+layer = 2
+
+[node name="HUD" parent="." instance=ExtResource( 6 )]
+
+[node name="ShopHUD" parent="." instance=ExtResource( 11 )]
+
+[node name="NPCHolder" type="Area2D" parent="."]
+position = Vector2( 2083.75, 2282.5 )
+
+[node name="Weaponsmith" parent="NPCHolder" instance=ExtResource( 10 )]
+position = Vector2( 52.5, 1248.75 )
+z_index = 3
+
+[node name="EnemyHolder" type="Area2D" parent="."]
+position = Vector2( 1447, 467 )
+monitoring = false
+monitorable = false
+
+[node name="Enemy1_Reaper" parent="EnemyHolder" instance=ExtResource( 3 )]
+position = Vector2( 143, 10.5001 )
+
+[node name="Enemy2_Wizard" parent="EnemyHolder" instance=ExtResource( 9 )]
+position = Vector2( 633, -114.5 )
+
+[node name="Enemy1_Reaper3" parent="EnemyHolder" instance=ExtResource( 3 )]
+position = Vector2( -997, 225.5 )
+
+[node name="Enemy1_Reaper2" parent="EnemyHolder" instance=ExtResource( 3 )]
+position = Vector2( -355.75, 2050.5 )
+
+[node name="Enemy1_Reaper4" parent="EnemyHolder" instance=ExtResource( 3 )]
+position = Vector2( 604.25, 780.5 )
+
+[node name="Enemy1_Reaper5" parent="EnemyHolder" instance=ExtResource( 3 )]
+position = Vector2( -535.75, 651.75 )
+
+[node name="Enemy1_Reaper6" parent="EnemyHolder" instance=ExtResource( 3 )]
+position = Vector2( 1213, -404.5 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 1412.5, -710 )
+z_index = 1
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 3.75024, 322.5 )
+scale = Vector2( 22.85, 6.8 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+light_mask = 7
+position = Vector2( -1527.5, 2330 )
+scale = Vector2( 22.85, 6.8 )
+shape = SubResource( 2 )
+
+[node name="GateVines11" type="Sprite" parent="Area2D"]
+position = Vector2( -5, 2723.75 )
+z_index = 5
+texture = ExtResource( 19 )
+
+[node name="Env8" type="Sprite" parent="Area2D"]
+position = Vector2( 1416.25, 395 )
+texture = ExtResource( 17 )
+
+[node name="Env2" type="Sprite" parent="Area2D"]
+texture = ExtResource( 15 )
+
+[node name="Env3" type="Sprite" parent="Area2D"]
+position = Vector2( -2455, 2368.75 )
+texture = ExtResource( 14 )
+offset = Vector2( 945, -1132.5 )
+
+[node name="Env" type="Sprite" parent="Area2D"]
+position = Vector2( -810, 2961.25 )
+z_index = 3
+texture = ExtResource( 16 )
+
+[node name="Env6" type="Sprite" parent="Area2D"]
+position = Vector2( -286.25, 1891.25 )
+texture = ExtResource( 16 )
+
+[node name="Env_1" type="Sprite" parent="Area2D"]
+position = Vector2( 940, 1390 )
+z_index = 3
+texture = ExtResource( 16 )
+
+[node name="Gate" type="Sprite" parent="Area2D"]
+position = Vector2( 786.25, 3202.5 )
+z_index = 5
+texture = ExtResource( 18 )
+
+[node name="Env7" type="Sprite" parent="Area2D"]
+position = Vector2( -1411.25, 381.25 )
+texture = ExtResource( 17 )
+
+[node name="Env5" type="Sprite" parent="Area2D"]
+position = Vector2( -2455, 2368.75 )
+texture = ExtResource( 14 )
+offset = Vector2( 968.75, 1120 )
+
+[node name="Env9" type="Sprite" parent="Area2D"]
+position = Vector2( 1492.5, 1371.25 )
+texture = ExtResource( 14 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D/Env9"]
+light_mask = 7
+position = Vector2( 51.25, 915 )
+scale = Vector2( 22.85, 6.8 )
+shape = SubResource( 2 )
+
+[node name="Env4" type="Sprite" parent="Area2D"]
+position = Vector2( -2455, 2368.75 )
+texture = ExtResource( 14 )
+offset = Vector2( 958.75, 83.7498 )
+
+[node name="Env10" type="Sprite" parent="Area2D"]
+position = Vector2( 1500, 2405 )
+texture = ExtResource( 14 )
+
+[node name="Env11" type="Sprite" parent="Area2D"]
+position = Vector2( 1441.25, 3447.5 )
+texture = ExtResource( 14 )
+
+[node name="GateTallRight" type="Sprite" parent="Area2D"]
+position = Vector2( -423.75, 3997.5 )
+texture = ExtResource( 25 )
+
+[node name="GateTallLeft" type="Sprite" parent="Area2D"]
+position = Vector2( -503.75, 3877.5 )
+texture = ExtResource( 24 )
+
+[node name="GateMediumPillarLeft" type="Sprite" parent="Area2D"]
+position = Vector2( 563.75, 3263.75 )
+texture = ExtResource( 26 )
+
+[node name="GateLowPillarLeft" type="Sprite" parent="Area2D"]
+position = Vector2( 1325, 2055 )
+texture = ExtResource( 20 )
+
+[node name="GateMediumPillarLeft2" type="Sprite" parent="Area2D"]
+position = Vector2( -730, 2476.25 )
+texture = ExtResource( 26 )
+
+[node name="GateMediumPillarRight" type="Sprite" parent="Area2D"]
+position = Vector2( 657.5, 2307.5 )
+texture = ExtResource( 21 )
+
+[node name="GateLowPillarRight" type="Sprite" parent="Area2D"]
+position = Vector2( -323.75, 4351.25 )
+texture = ExtResource( 22 )
+
+[node name="GateVines14" type="Sprite" parent="Area2D"]
+position = Vector2( 802.5, 4855 )
+texture = ExtResource( 23 )
+
+[node name="Gate2" type="Sprite" parent="Area2D"]
+position = Vector2( 1473.75, 3586.25 )
+texture = ExtResource( 18 )
+
+[node name="RoadTest" type="Sprite" parent="."]
+position = Vector2( 1167.5, 498.75 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 2 )
+offset = Vector2( 124.981, 84.003 )
+
+[node name="RoadTest2" type="Sprite" parent="."]
+position = Vector2( 1643.19, 981.714 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest3" type="Sprite" parent="."]
+position = Vector2( 2173.19, 981.943 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest4" type="Sprite" parent="."]
+position = Vector2( 1170.19, 496.714 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( 444.981, 84.1465 )
+
+[node name="RoadTest5" type="Sprite" parent="."]
+position = Vector2( 1113.19, 981.943 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest6" type="Sprite" parent="."]
+position = Vector2( 1170.19, 496.714 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( -195.019, 84.1465 )
+
+[node name="RoadTest7" type="Sprite" parent="."]
+position = Vector2( 1642.19, 471.943 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest8" type="Sprite" parent="."]
+position = Vector2( 2172.19, 472.172 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest9" type="Sprite" parent="."]
+position = Vector2( 1112.19, 472.172 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest10" type="Sprite" parent="."]
+position = Vector2( 1169.17, 2027.38 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 2 )
+offset = Vector2( 124.981, 84.003 )
+
+[node name="RoadTest11" type="Sprite" parent="."]
+position = Vector2( 1641.92, 2512.93 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest12" type="Sprite" parent="."]
+position = Vector2( 2170.74, 2513.29 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest13" type="Sprite" parent="."]
+position = Vector2( 1169.17, 2027.38 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( 444.981, 84.1465 )
+
+[node name="RoadTest14" type="Sprite" parent="."]
+position = Vector2( 1111.11, 2513.29 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest15" type="Sprite" parent="."]
+position = Vector2( 1169.17, 2027.38 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( -195.019, 84.1465 )
+
+[node name="RoadTest16" type="Sprite" parent="."]
+position = Vector2( 1642.19, 2002.71 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest17" type="Sprite" parent="."]
+position = Vector2( 2171.19, 2002.71 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest18" type="Sprite" parent="."]
+position = Vector2( 1113.19, 2002.71 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest19" type="Sprite" parent="."]
+position = Vector2( 2701.56, 981.714 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest20" type="Sprite" parent="."]
+position = Vector2( 1698.56, 496.485 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( 444.981, 84.1465 )
+
+[node name="RoadTest21" type="Sprite" parent="."]
+position = Vector2( 2700.56, 471.943 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest22" type="Sprite" parent="."]
+position = Vector2( 2699.11, 2513.07 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest23" type="Sprite" parent="."]
+position = Vector2( 1697.55, 2027.16 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( 444.981, 84.1465 )
+
+[node name="RoadTest24" type="Sprite" parent="."]
+position = Vector2( 2699.56, 2002.48 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 7 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest25" type="Sprite" parent="."]
+position = Vector2( 109.189, 496.714 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 2 )
+offset = Vector2( 124.981, 84.003 )
+
+[node name="RoadTest26" type="Sprite" parent="."]
+position = Vector2( 582.189, 981.714 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest27" type="Sprite" parent="."]
+position = Vector2( 581.189, 471.943 )
+scale = Vector2( 1.65625, 1.59518 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="RoadTest28" type="Sprite" parent="."]
+position = Vector2( 108.172, 2027.38 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 2 )
+offset = Vector2( 124.981, 84.003 )
+
+[node name="RoadTest29" type="Sprite" parent="."]
+position = Vector2( 580.922, 2512.93 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, 99.6752 )
+
+[node name="RoadTest30" type="Sprite" parent="."]
+position = Vector2( 581.189, 2002.71 )
+rotation = 6.28319
+scale = Vector2( 1.656, 1.595 )
+texture = ExtResource( 2 )
+offset = Vector2( -160.604, -220.038 )
+
+[node name="Rain2" type="CPUParticles2D" parent="."]
+visible = false
+position = Vector2( 1576.25, 873.75 )
+scale = Vector2( 3.82762, 4.71069 )
+z_index = 2
+amount = 400
+preprocess = 22.02
+lifetime_randomness = 0.59
+emission_shape = 2
+emission_rect_extents = Vector2( 400, 200 )
+direction = Vector2( 1, 100 )
+gravity = Vector2( 0, 0 )
+scale_amount = 1.3
+scale_amount_random = 0.52
+color = Color( 0.2, 0.678431, 0.843137, 0.878431 )
+
+[node name="Rain3" type="CPUParticles2D" parent="."]
+visible = false
+position = Vector2( 1466.25, 2603.75 )
+scale = Vector2( 3.82762, 4.71069 )
+z_index = 2
+amount = 400
+preprocess = 22.02
+lifetime_randomness = 0.59
+emission_shape = 2
+emission_rect_extents = Vector2( 400, 200 )
+direction = Vector2( 1, 100 )
+gravity = Vector2( 0, 0 )
+scale_amount = 1.3
+scale_amount_random = 0.52
+color = Color( 0.2, 0.678431, 0.843137, 0.878431 )
+
+[node name="BulletManager" type="Node2D" parent="."]
+script = ExtResource( 13 )

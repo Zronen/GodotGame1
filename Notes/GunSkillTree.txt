@@ -1,0 +1,28 @@
+Gun Upgrades
+
+Pistol:
+	- (alt fire) Fan the hammer: blow all your ammo in succession with a bunch of powerful shots
+	- Dual Pistols: gain a second pistol that fires with the first
+
+Shotgun:
+	- Honkai Impact: pellets have larger explosion radius on hit
+	- (alt fire) Big Kickback: a buckshot with recoil launching you backwards (uses more ammo)
+
+Laser:
+	- Beeg Shot: Wider laser shot
+	- (alt fire) Free of Charge: Ability to hold down and charge a bigger laser shot (uses more ammo)
+	- Triple Trouble: fires three lasers: 1 straight 2 on an angle
+
+Gun Specials (activate special while in gun stance)
+Pistol: "Peacemaker": Auto aim at all nearby enemies firing a single powerful
+                      shot at each in rapid succession
+
+Shotgun: "I am the Law": Drastically reduced reload time, increased damage, range and pellet count
+
+Laser: "Light Show": Summon a number of laser guns beside each other, 
+		     all fire in one direction with greater damage and range 
+
+
+All Guns:
+	- Ammo capacity upgrades
+	- Faster reload times
