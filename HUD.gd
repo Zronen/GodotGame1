@@ -2,6 +2,7 @@ extends CanvasLayer
 
 onready var _healthbar = $hpBar
 onready var _ammoBar = $AmmoBar
+onready var _ammoBar_overlay = $AmmoBar2
 onready var _specialBar = $specialBar
 onready var conBar = $concentrationBar
 
@@ -15,6 +16,7 @@ var hptrigger = true
 var weapon
 var weaponGun
 export (int) var ammo
+export (float) var trueAmmo
 var isShooting
 
 var concentration
@@ -28,6 +30,7 @@ var ammoList = [["T1 1-0","T1 2-1","T1 3-2", "T1 4-3", "T1 5-4", "T1 6-5", "Ammo
 ["T3 3-0", "T3 4-1", "T3 5-2", "T3 6-3","Ammo Full","Ammo Full","Ammo Full"]
 ]
 var hasAmmo
+
 var gunHudActive = false
 var shotFired
 
@@ -61,6 +64,7 @@ func _process(delta):
 		weapon = get_parent().get_node("PlayerBase").get("weapon")
 		weaponGun = get_parent().get_node("PlayerBase").get("weaponGun")
 		ammo = get_parent().get_node("PlayerBase").get("ammo")
+		trueAmmo = get_parent().get_node("PlayerBase").get("ammo")
 		concentration = get_parent().get_node("PlayerBase").get("concentration")
 	
 	elif hptrigger == true:
@@ -143,16 +147,22 @@ func _process(delta):
 			_ammoBar.play(ammoList[1][ammo])
 			gunHudActive = true
 		elif weaponGun == "shotgun" and shotFired == true: 
-			_ammoBar.play(ammoList[2][ammo])
+			_ammoBar.play(ammoList[1][ammo])
 			gunHudActive = true
-			
-		#else:
-		#if gunHudActive == false and hasAmmo == true:
-			#hasAmmo = get_parent().get_node("PlayerBase").get("hasAmmo")
+		
+		_ammoBar_overlay.set_frame(0)	
+		_ammoBar_overlay.play(ammoList[0][ammo])
+		if fposmod(trueAmmo,1) < 1 and fposmod(trueAmmo,1) != 0:
+			_ammoBar_overlay.modulate = Color((fposmod(trueAmmo,1))+0.1,(fposmod(trueAmmo,1))+0.1,(fposmod(trueAmmo,1))+0.1,0.75)
+			print(fposmod(trueAmmo,1))
+		else:
+			_ammoBar_overlay.modulate = Color(1,1,1,0)
+
 		
 		if gunHudActive == false:	
 			_ammoBar.play(ammoList[0][ammo])
 			_ammoBar.set_frame(5)
+			
 		#_ammoBar.set_frame(0)
 
 		if gunHudActive == false and ammo < 3:

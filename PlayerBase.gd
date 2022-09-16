@@ -61,7 +61,7 @@ var primaryNum
 export (String) var weapon
 
 var primaryGun = ["pistol","shotgun","burst"]
-var primaryGunAmmo = [1,3,2]
+var primaryGunAmmo = [1,2,2]
 var primaryNumGun
 export (String) var weaponGun
 var reloadTimes = [0.45,1.5,1]
@@ -88,7 +88,7 @@ enum {
 }
 
 var state = MOVE
- 
+
 #----------------------------------------------------------------- READY
 func _ready():
 	FXSprite.play("Blank")
@@ -114,6 +114,19 @@ func _process(_delta):
 	#	drone.global_position = Vector2(self.global_position.x + 150, self.global_position.y - 120)
 	#elif lastDirection == "right":
 	#	drone.global_position = Vector2(self.global_position.x - 150, self.global_position.y - 120)
+		if Input.is_action_pressed("ui_up"):
+			lastDirection = "up"
+		
+		elif Input.is_action_pressed("ui_left"):
+			lastDirection = "left"
+			
+		elif Input.is_action_pressed("ui_right"):
+			lastDirection = "right"
+					
+		elif Input.is_action_pressed("ui_down"):
+			lastDirection = "down"		
+	
+		canMovement(_delta)
 
 #-------------------------------------------------------------------- ATTACK ANIMATIONS AND CONDITIONS
 func attack_state():		
@@ -134,7 +147,7 @@ func attack_state():
 		if lastDirection == "up" and Input.is_action_just_pressed("spacebar"):
 			$concentrationParticles.set_rotation_degrees(180)
 			if Input.is_action_pressed("press_f") and weapon == "Sword":
-				baseThrust(0, -330,"Thrust3Back", "Thrust3_combo3Back", "Thrust3_combo3Back")
+				baseThrust(0, -390,"Thrust3Back", "Thrust3_combo3Back", "Thrust3_combo3Back")
 			
 			else:
 				#_animated_sprite.play("Slash3Back")
@@ -148,7 +161,7 @@ func attack_state():
 			$concentrationParticles.set_rotation_degrees(-90)
 			if Input.is_action_pressed("press_f") and weapon == "Sword":
 				_animated_sprite.set_flip_h(false)
-				baseThrust(330, 0, "Thrust3Side", "Thrust3_combo3Side", "Thrust3_combo3Side")
+				baseThrust(390, 0, "Thrust3Side", "Thrust3_combo3Side", "Thrust3_combo3Side")
 			
 			else:
 				#_animated_sprite.play("Slash3Side")
@@ -162,7 +175,7 @@ func attack_state():
 			$concentrationParticles.set_rotation_degrees(90)
 			if Input.is_action_pressed("press_f") and weapon == "Sword":
 				_animated_sprite.set_flip_h(true)
-				baseThrust(-330, 0, "Thrust3Side", "Thrust3_combo3Side", "Thrust3_combo3Side")
+				baseThrust(-390, 0, "Thrust3Side", "Thrust3_combo3Side", "Thrust3_combo3Side")
 			
 			else:
 				#_animated_sprite.play("Slash3Side")
@@ -175,7 +188,7 @@ func attack_state():
 		elif lastDirection == "down" and Input.is_action_just_pressed("spacebar"):
 			$concentrationParticles.set_rotation_degrees(0)
 			if Input.is_action_pressed("press_f") and weapon == "Sword":
-				baseThrust(0, 330, "Thrust3", "Thrust3_combo3", "Thrust3_combo3")
+				baseThrust(0, 390, "Thrust3", "Thrust3_combo3", "Thrust3_combo3")
 			
 
 			elif Input.is_action_just_pressed("spacebar"):
@@ -317,13 +330,16 @@ func baseCombo(x, y, startMove, followup1, followup2, followup3, followFrame1, f
 	isGhosting = false
 	isGhosting2 = false
 	
+	blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + lastx * 20, self.global_position.y + lasty * 20), 0.04,Tween.TRANS_LINEAR, Tween.EASE_OUT)
+
 	
 	if comboCounter == 0: #_animated_sprite.frame == 0:
 		_animated_sprite.play(startMove)
-		blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.1,Tween.TRANS_LINEAR, Tween.EASE_OUT)
-		blinkTween.start()
+		#blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.1,Tween.TRANS_LINEAR, Tween.EASE_OUT)
+		#blinkTween.start()
 		comboCounter = 1
 		knockPower = 1
+		blinkTween.start()
 	
 	if comboCounter < 2 and comboCounter > 0:
 		
@@ -333,17 +349,19 @@ func baseCombo(x, y, startMove, followup1, followup2, followup3, followFrame1, f
 			comboCounter += 1
 			hitBox.disabled = true
 			knockPower = 2
+			blinkTween.start()
 			
 	if comboCounter < 3 and comboCounter > 1:
 
 		if _animated_sprite.frame > followFrame2:
-			blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.1,Tween.TRANS_LINEAR, Tween.EASE_OUT)
-			blinkTween.start()
+			#blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.1,Tween.TRANS_LINEAR, Tween.EASE_OUT)
+			#blinkTween.start()
 			_animated_sprite.play("Idle2")
 			_animated_sprite.play(followup2)
 			comboCounter += 1
 			hitBox.disabled = true
 			knockPower = 2
+			blinkTween.start()
 			
 	if comboCounter < 4 and comboCounter > 2:
 		if _animated_sprite.frame > followFrame1:
@@ -353,7 +371,9 @@ func baseCombo(x, y, startMove, followup1, followup2, followup3, followFrame1, f
 			hitBox.disabled = true
 			knockPower = 3
 			$Hitbox.damage = 2
+			blinkTween.start()
 	
+
 	baseComboHitbox()
 
 func baseThrust(x,y, startMove, followup1, followup2):
@@ -361,7 +381,7 @@ func baseThrust(x,y, startMove, followup1, followup2):
 	$Hitbox.damage = 1
 	if comboCount[1] < 1: #_animated_sprite.frame == 0:
 		_animated_sprite.play(startMove)
-		blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.15,Tween.TRANS_LINEAR, Tween.EASE_OUT_IN, 0.12)
+		blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.15,Tween.TRANS_LINEAR, Tween.EASE_OUT, 0.12)
 		#blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(c_enemy_vector), 0.2,Tween.TRANS_LINEAR, Tween.EASE_IN)
 		blinkTween.start()
 		comboCount[1] = 1
@@ -415,10 +435,6 @@ func baseComboHitbox():
 			if _animated_sprite.animation == swordBaseBox[i][0]:
 				if _animated_sprite.flip_h == true:
 					swordBaseBox[i][1] = -swordBaseBox[i][1]
-					#if i < 8:
-					#	i += 2
-					#else:
-					#	i += 1
 				hitBox.position.x = swordBaseBox[i][1]
 				hitBox.position.y = swordBaseBox[i][2]
 				hitBox.shape.radius = swordBaseBox[i][3]
@@ -663,13 +679,13 @@ func shoot():
 		$gunCooldown_timer.start()
 		if weaponGun == "shotgun":
 			$pause_timer.set_wait_time(0.4)
-			ammo = ammo - 3
+			ammo = ammo - primaryGunAmmo[1]
 		elif weaponGun == "burst":
 			$pause_timer.set_wait_time(0.35)
-			ammo = ammo - 2
+			ammo = ammo - primaryGunAmmo[2]
 		else:
 			$pause_timer.set_wait_time(0.25)
-			ammo = ammo - 1
+			ammo = ammo - primaryGunAmmo[0]
 		state = COOLDOWN
 		
 		gun_summon()
@@ -687,7 +703,7 @@ func _on_gunCooldown_timer_timeout():
 	$gunCooldown_timer.stop()
 
 func shooting_state(delta):
-	canMovement(delta)
+	#canMovement(delta)
 	verySlow()
 	$Reticle.position = Vector2(lastx * 800, lasty * 800)
 	$Reticle.visible = true
@@ -723,7 +739,13 @@ func checkIfHit(node):
 				#Engine.time_scale = 0.6
 				#$enemyHitSlowdown_timer.start()
 				if state == ATTACK:
-					ammo += 0.2
+					ammo += 0.1
+					
+					if concentration >= 15:
+						$Hitbox.damage = $Hitbox.damage * 1.5
+				
+				#print("enemy hit ", concentration, " damage: ", $Hitbox.damage)
+				
 
 		if concentration > 20:
 			concentration = 20
@@ -735,6 +757,7 @@ func checkIfHit(node):
 			
 		if ammo >= 6:
 			ammo = 6
+	#damage modifer from concentration
 
 
 func _on_enemyHitSlowdown_timer_timeout():
@@ -876,7 +899,7 @@ func _physics_process(_delta):
 				dash_state()
 
 		SPECIAL:
-			canMovement(_delta)
+			#canMovement(_delta)
 			if !isSpecial:
 				special_state()
 				
@@ -896,7 +919,7 @@ func stopMoving():
 
 
 func defaultSpeed():
-	speed = 20000
+	speed = 60000
 	fric = 3000
 	acceleration = 6000
 	
@@ -937,7 +960,7 @@ func canMovement(delta):
 	
 
 func move_state(delta):
-	canMovement(delta)
+	#canMovement(delta)
 	$concentrationParticles.emitting = false
 		
 	if (Input.is_action_pressed("ui_down") || Input.is_action_pressed("ui_right") || Input.is_action_pressed("ui_up") || Input.is_action_pressed("ui_left")):# and !isDashing and !isAttacking and !isCurrentlyDamaged and !dashCooldown:
@@ -1069,12 +1092,12 @@ func getallnodes(node):
 			if N.get_node("AnimatedSprite").get_global_position().distance_to(_animated_sprite.get_global_position()) < lowest and !N.isFalling:
 				lowest = N.get_node("AnimatedSprite").get_global_position().distance_to(_animated_sprite.get_global_position())
 				
-				if(lowest < 1200):
+				if(lowest < 1400):
 					c_enemy_vector = N.get_node("AnimatedSprite").get_global_position()
 					nearest_enemy = N
 					
 					pass
-				elif lowest > 1200 || lowest <= 0:
+				elif lowest > 1400 || lowest <= 0:
 					c_enemy_vector = self.global_position
 					#nearest_enemy = null
 					pass

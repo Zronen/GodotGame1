@@ -193,64 +193,9 @@ animations = [ {
 "name": "T2 4-2",
 "speed": 14.0
 }, {
-"frames": [ ExtResource( 150 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 154 ), ExtResource( 151 ), ExtResource( 148 ) ],
-"loop": false,
-"name": "T2 2-0",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 168 ) ],
-"loop": false,
-"name": "T3 3-0",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 116 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 123 ), ExtResource( 124 ) ],
-"loop": false,
-"name": "T1 3-2",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 172 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 158 ), ExtResource( 156 ), ExtResource( 124 ) ],
-"loop": false,
-"name": "T3 5-2",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 108 ), ExtResource( 108 ) ],
-"loop": false,
-"name": "Ammo Empty",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 117 ), ExtResource( 115 ), ExtResource( 114 ), ExtResource( 114 ), ExtResource( 112 ), ExtResource( 116 ) ],
-"loop": false,
-"name": "T1 4-3",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 140 ), ExtResource( 155 ), ExtResource( 152 ), ExtResource( 152 ), ExtResource( 149 ), ExtResource( 121 ) ],
-"loop": false,
-"name": "T2 3-1",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 106 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 118 ), ExtResource( 111 ) ],
-"loop": false,
-"name": "T1 6-5",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 106 ), ExtResource( 106 ) ],
-"loop": false,
-"name": "Ammo Full",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 111 ), ExtResource( 107 ), ExtResource( 109 ), ExtResource( 109 ), ExtResource( 113 ), ExtResource( 117 ) ],
 "loop": false,
 "name": "T1 5-4",
-"speed": 14.0
-}, {
-"frames": [ ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ) ],
-"loop": false,
-"name": "Ammo Required",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 137 ), ExtResource( 139 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 129 ), ExtResource( 117 ) ],
-"loop": false,
-"name": "T2 6-4",
 "speed": 14.0
 }, {
 "frames": [ ExtResource( 138 ), ExtResource( 142 ), ExtResource( 130 ), ExtResource( 130 ), ExtResource( 146 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ) ],
@@ -258,14 +203,64 @@ animations = [ {
 "name": "T2 5-3",
 "speed": 14.0
 }, {
+"frames": [ ExtResource( 106 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 118 ), ExtResource( 111 ) ],
+"loop": false,
+"name": "T1 6-5",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 168 ) ],
+"loop": false,
+"name": "T3 3-0",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 117 ), ExtResource( 115 ), ExtResource( 114 ), ExtResource( 114 ), ExtResource( 112 ), ExtResource( 116 ) ],
+"loop": false,
+"name": "T1 4-3",
+"speed": 14.0
+}, {
 "frames": [ ExtResource( 124 ), ExtResource( 128 ), ExtResource( 125 ), ExtResource( 125 ), ExtResource( 122 ), ExtResource( 121 ) ],
 "loop": false,
 "name": "T1 2-1",
 "speed": 14.0
 }, {
+"frames": [ ExtResource( 137 ), ExtResource( 139 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 129 ), ExtResource( 117 ) ],
+"loop": false,
+"name": "T2 6-4",
+"speed": 14.0
+}, {
 "frames": [ ExtResource( 170 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 162 ), ExtResource( 167 ), ExtResource( 121 ) ],
 "loop": false,
 "name": "T3 4-1",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 106 ), ExtResource( 106 ) ],
+"loop": false,
+"name": "Ammo Full",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 108 ), ExtResource( 108 ) ],
+"loop": false,
+"name": "Ammo Empty",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 172 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 158 ), ExtResource( 156 ), ExtResource( 124 ) ],
+"loop": false,
+"name": "T3 5-2",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 150 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 154 ), ExtResource( 151 ), ExtResource( 148 ) ],
+"loop": false,
+"name": "T2 2-0",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 116 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 123 ), ExtResource( 124 ) ],
+"loop": false,
+"name": "T1 3-2",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 140 ), ExtResource( 155 ), ExtResource( 152 ), ExtResource( 152 ), ExtResource( 149 ), ExtResource( 121 ) ],
+"loop": false,
+"name": "T2 3-1",
 "speed": 14.0
 }, {
 "frames": [ ExtResource( 121 ), ExtResource( 120 ), ExtResource( 134 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 108 ) ],
@@ -277,6 +272,11 @@ animations = [ {
 "loop": false,
 "name": "T3 6-3",
 "speed": 14.0
+}, {
+"frames": [ ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ) ],
+"loop": false,
+"name": "Ammo Required",
+"speed": 12.0
 } ]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -286,15 +286,10 @@ animations = [ {
 "name": "Hud2-1",
 "speed": 12.0
 }, {
-"frames": [ ExtResource( 36 ) ],
-"loop": true,
-"name": "Hud5",
+"frames": [ ExtResource( 36 ), ExtResource( 35 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 32 ) ],
+"loop": false,
+"name": "Hud5-4",
 "speed": 12.0
-}, {
-"frames": [ ExtResource( 25 ) ],
-"loop": true,
-"name": "Hud_R",
-"speed": 5.0
 }, {
 "frames": [ ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 36 ) ],
 "loop": false,
@@ -311,14 +306,19 @@ animations = [ {
 "name": "Hud4-3",
 "speed": 12.0
 }, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "Hud_R",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ) ],
+"loop": true,
+"name": "Hud5",
+"speed": 12.0
+}, {
 "frames": [ ExtResource( 14 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 33 ), ExtResource( 15 ) ],
 "loop": false,
 "name": "Hud3-2",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 36 ), ExtResource( 35 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 32 ) ],
-"loop": false,
-"name": "Hud5-4",
 "speed": 12.0
 } ]
 
@@ -387,22 +387,22 @@ shader_param/shake_color_rate = 0.03
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 31 ) ],
-"loop": true,
-"name": "SpecialHud2",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "SpecialHud",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "SpecialHud2",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 51 ), ExtResource( 52 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 56 ) ],
+"frames": [ ExtResource( 54 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 51 ) ],
 "loop": false,
-"name": "SwordHud",
+"name": "ScytheHud",
 "speed": 20.0
 }, {
 "frames": [ ExtResource( 43 ), ExtResource( 43 ) ],
@@ -410,19 +410,24 @@ animations = [ {
 "name": "TestHud",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 51 ), ExtResource( 52 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 56 ) ],
+"loop": false,
+"name": "SwordHud",
+"speed": 20.0
+}, {
 "frames": [ ExtResource( 56 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 54 ) ],
 "loop": false,
 "name": "GunbladeHud",
-"speed": 20.0
-}, {
-"frames": [ ExtResource( 54 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 51 ) ],
-"loop": false,
-"name": "ScytheHud",
 "speed": 20.0
 } ]
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
+"frames": [ ExtResource( 70 ), ExtResource( 64 ), ExtResource( 69 ), ExtResource( 44 ), ExtResource( 62 ), ExtResource( 66 ), ExtResource( 68 ) ],
+"loop": false,
+"name": "ShotgunHud",
+"speed": 20.0
+}, {
 "frames": [ ExtResource( 68 ), ExtResource( 45 ), ExtResource( 67 ), ExtResource( 46 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 71 ) ],
 "loop": false,
 "name": "LaserHud",
@@ -431,11 +436,6 @@ animations = [ {
 "frames": [ ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 70 ) ],
 "loop": false,
 "name": "PistolHud",
-"speed": 20.0
-}, {
-"frames": [ ExtResource( 70 ), ExtResource( 64 ), ExtResource( 69 ), ExtResource( 44 ), ExtResource( 62 ), ExtResource( 66 ), ExtResource( 68 ) ],
-"loop": false,
-"name": "ShotgunHud",
 "speed": 20.0
 } ]
 
@@ -450,6 +450,14 @@ frames = SubResource( 7 )
 animation = "base"
 
 [node name="AmmoBar" type="AnimatedSprite" parent="."]
+position = Vector2( 756.8, 264 )
+z_index = 1
+frames = SubResource( 8 )
+animation = "Ammo Full"
+frame = 1
+
+[node name="AmmoBar2" type="AnimatedSprite" parent="."]
+modulate = Color( 0.541176, 0.537255, 0.541176, 1 )
 position = Vector2( 756.8, 264 )
 frames = SubResource( 8 )
 animation = "Ammo Full"
@@ -539,6 +547,7 @@ wait_time = 1.5
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 
 [connection signal="animation_finished" from="AmmoBar" to="." method="_on_AmmoBar_animation_finished"]
+[connection signal="animation_finished" from="AmmoBar2" to="." method="_on_AmmoBar_animation_finished"]
 [connection signal="timeout" from="fadeout_timer" to="." method="_on_fadeout_timer_timeout"]
 [connection signal="animation_finished" from="weaponBar" to="." method="_on_weaponBar_animation_finished"]
 [connection signal="animation_finished" from="gunBar" to="." method="_on_gunBar_animation_finished"]

@@ -27,15 +27,15 @@ height = 224.0
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "blankAnim",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 53 ), ExtResource( 56 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 50 ), ExtResource( 54 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 51 ), ExtResource( 49 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 46 ), ExtResource( 50 ), ExtResource( 54 ) ],
 "loop": false,
 "name": "P_SlashSpecial#2",
 "speed": 24.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "blankAnim",
+"speed": 5.0
 } ]
 
 [sub_resource type="DynamicFont" id=5]

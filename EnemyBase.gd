@@ -153,8 +153,6 @@ func is_getting_Damaged():
 	if isDamaged == true || isCurrentlyDamaged:
 		state = DAMAGED
 
-		
-
 func knockback():
 	pknockPower = get_parent().get_parent().get_node("PlayerBase").knockPower
 	plastx = get_parent().get_parent().get_node("PlayerBase").lastx
@@ -209,6 +207,8 @@ func falling_state():
 func hpBarGo():
 	if hp >= 0:
 		hpBar.set_scale(Vector2((0.0050 * ((hp / hp_max))*10),0.006))
+	if hp < 0:
+		hpBar.set_scale(Vector2(0,0))
 
 
 func _on_hp_bar_timer_timeout():
@@ -219,3 +219,4 @@ func _on_hp_bar_timer_timeout():
 func _on_atk_cooldown_timer_timeout():
 	if hp > 0:
 		state = MOVE
+

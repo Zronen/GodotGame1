@@ -26,6 +26,7 @@ func _physics_process(delta):
 			get_parent().get_parent().get_node("PlayerBase").knockPower = 3
 			$PlayerBullet.play("shotgun")
 			$PlayerBullet.set_rotation_degrees(rad2deg(direction.angle())+ranNum2)
+			$Hitbox.damage = 2
 		
 		if type == "pistol":
 			$PlayerBullet.play("base")
@@ -38,7 +39,7 @@ func _physics_process(delta):
 			velocity = direction * speed * 3
 			
 			$PlayerBullet.set_rotation_degrees(rad2deg(direction.angle())-90)
-			$Hitbox.damage = 2
+			$Hitbox.damage = 5
 		
 		
 		global_position += velocity

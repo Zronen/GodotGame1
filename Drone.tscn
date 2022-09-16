@@ -96,7 +96,7 @@ script = ExtResource( 13 )
 visible = false
 frames = SubResource( 1 )
 animation = "Laser"
-frame = 3
+frame = 2
 playing = true
 
 [node name="Gungone_timer" type="Timer" parent="."]
