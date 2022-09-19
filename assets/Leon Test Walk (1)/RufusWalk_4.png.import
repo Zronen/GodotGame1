@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusWalk_4.png-7787757480a91832878a840247dd9589.stex"
+path="res://.import/RufusWalk_4.png-4803d35ea7f61c092b13b1ea0a73d883.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Leon Test Walk (1)/RufusWalk_4.png"
-dest_files=[ "res://.import/RufusWalk_4.png-7787757480a91832878a840247dd9589.stex" ]
+source_file="res://Assets/Leon Test Walk (1)/RufusWalk_4.png"
+dest_files=[ "res://.import/RufusWalk_4.png-4803d35ea7f61c092b13b1ea0a73d883.stex" ]
 
 [params]
 

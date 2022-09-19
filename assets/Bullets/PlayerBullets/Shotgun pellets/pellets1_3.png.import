@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pellets1_3.png-1d150d7e9434b619e784ce95cd26886c.stex"
+path="res://.import/pellets1_3.png-94cca3c6ebfd24a7061234d3ec54da3e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Bullets/PlayerBullets/Shotgun pellets/pellets1_3.png"
-dest_files=[ "res://.import/pellets1_3.png-1d150d7e9434b619e784ce95cd26886c.stex" ]
+source_file="res://Assets/Bullets/PlayerBullets/Shotgun pellets/pellets1_3.png"
+dest_files=[ "res://.import/pellets1_3.png-94cca3c6ebfd24a7061234d3ec54da3e.stex" ]
 
 [params]
 

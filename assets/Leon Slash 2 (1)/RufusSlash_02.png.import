@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusSlash_02.png-2996a75fa627a7f230afc3eb4e04f11e.stex"
+path="res://.import/RufusSlash_02.png-7398f8a8adad7c9bf524e12bc3a549f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Leon Slash 2 (1)/RufusSlash_02.png"
-dest_files=[ "res://.import/RufusSlash_02.png-2996a75fa627a7f230afc3eb4e04f11e.stex" ]
+source_file="res://Assets/Leon Slash 2 (1)/RufusSlash_02.png"
+dest_files=[ "res://.import/RufusSlash_02.png-7398f8a8adad7c9bf524e12bc3a549f6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WeaponHud3_03.png-4eefe16344b79a5d854d7060a50bbaec.stex"
+path="res://.import/WeaponHud3_03.png-e499399a01d1faa307b6ccc5ca536565.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4/WeaponHud3_03.png"
-dest_files=[ "res://.import/WeaponHud3_03.png-4eefe16344b79a5d854d7060a50bbaec.stex" ]
+source_file="res://Assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4/WeaponHud3_03.png"
+dest_files=[ "res://.import/WeaponHud3_03.png-e499399a01d1faa307b6ccc5ca536565.stex" ]
 
 [params]
 

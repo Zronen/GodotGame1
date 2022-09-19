@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/AmmoHud_0.png-2631ebb03177ba89f204530ca2af212a.stex"
+path="res://.import/AmmoHud_0.png-69c60f48675253b247b583b35454f5cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/HUD items/Ammo HUD/HUD Ammo 2/AmmoHud_0.png"
-dest_files=[ "res://.import/AmmoHud_0.png-2631ebb03177ba89f204530ca2af212a.stex" ]
+source_file="res://Assets/HUD items/Ammo HUD/HUD Ammo 2/AmmoHud_0.png"
+dest_files=[ "res://.import/AmmoHud_0.png-69c60f48675253b247b583b35454f5cc.stex" ]
 
 [params]
 

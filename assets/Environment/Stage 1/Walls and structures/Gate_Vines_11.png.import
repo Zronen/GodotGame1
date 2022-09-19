@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gate_Vines_11.png-5083b7c41f7d402a4fd2f231481ca25f.stex"
+path="res://.import/Gate_Vines_11.png-ff49b6ebe8f76c9312e4ad248eff11bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Environment/Stage 1/Walls and structures/Gate_Vines_11.png"
-dest_files=[ "res://.import/Gate_Vines_11.png-5083b7c41f7d402a4fd2f231481ca25f.stex" ]
+source_file="res://Assets/Environment/Stage 1/Walls and structures/Gate_Vines_11.png"
+dest_files=[ "res://.import/Gate_Vines_11.png-ff49b6ebe8f76c9312e4ad248eff11bf.stex" ]
 
 [params]
 

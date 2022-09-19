@@ -1,4 +1,4 @@
-extends "res://EntityBase.gd"
+extends "res://Scripts/Environment/EntityBase.gd"
 
 
 onready var _esprite = $AnimatedSprite

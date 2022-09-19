@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://assets/Audio/Player Audio/Walk1.wav" type="AudioStream" id=1]
-[ext_resource path="res://Audio Scenes/Footsteps.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Audio/Player Audio/Walk1.wav" type="AudioStream" id=1]
+[ext_resource path="res://Audio/Footsteps.gd" type="Script" id=2]
+
 
 [node name="Footsteps" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )

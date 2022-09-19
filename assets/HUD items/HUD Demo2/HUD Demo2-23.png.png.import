@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HUD Demo2-23.png.png-3212c6256f3ee5529e4e389dad25ecfd.stex"
+path="res://.import/HUD Demo2-23.png.png-1aa6d185cb87f7a8a98de46dcf8b8089.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/HUD items/HUD Demo2/HUD Demo2-23.png.png"
-dest_files=[ "res://.import/HUD Demo2-23.png.png-3212c6256f3ee5529e4e389dad25ecfd.stex" ]
+source_file="res://Assets/HUD items/HUD Demo2/HUD Demo2-23.png.png"
+dest_files=[ "res://.import/HUD Demo2-23.png.png-1aa6d185cb87f7a8a98de46dcf8b8089.stex" ]
 
 [params]
 

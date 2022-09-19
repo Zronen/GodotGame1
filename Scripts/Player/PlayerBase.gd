@@ -1,4 +1,4 @@
-extends "res://EntityBase.gd"
+extends "res://Scripts/Environment/EntityBase.gd"
 
 
 #the sprite itself
@@ -1125,7 +1125,7 @@ func isFacing(target):
 	pass
 
 func gun_summon():
-	var this_gun = preload("res://Drone.tscn").instance()
+	var this_gun = preload("res://Prefabs/Player/Drone.tscn").instance()
 
 	this_gun.global_position = Vector2(lastx * 200, lasty * 200)	
 	this_gun.guntype = weaponGun
@@ -1142,7 +1142,7 @@ func gun_summon():
 func _on_ghost_timer_timeout():
 	#copy of ghost object			
 	if isDashing == true || isGhosting == true || isGhosting2 == true:
-		var this_ghost = preload("res://ghost.tscn").instance()
+		var this_ghost = preload("res://Prefabs/Player/ghost.tscn").instance()
 		var time_left = $dash_timer.get_time_left()
 		
 		#this_ghost.lastx = lastx

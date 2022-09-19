@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusThrustSide_6.png-97e474b4f472adb0509e434dcf92a1f1.stex"
+path="res://.import/RufusThrustSide_6.png-5576dd524f91e6bd17f55571e238ad9f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_6.png"
-dest_files=[ "res://.import/RufusThrustSide_6.png-97e474b4f472adb0509e434dcf92a1f1.stex" ]
+source_file="res://Assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_6.png"
+dest_files=[ "res://.import/RufusThrustSide_6.png-5576dd524f91e6bd17f55571e238ad9f.stex" ]
 
 [params]
 
