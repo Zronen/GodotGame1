@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WizardIdle1_06.png-7da41fbf76f0524d96689d6be41010d8.stex"
+path="res://.import/WizardIdle1_06.png-70b2b5e87ab4c7978008b8922f676027.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Enemy Sprites/Level 1 Enemies/Ranged Enemy1/Ranged Enemy #1 (1)/WizardIdle1_06.png"
-dest_files=[ "res://.import/WizardIdle1_06.png-7da41fbf76f0524d96689d6be41010d8.stex" ]
+source_file="res://Assets/Enemy Sprites/Level 1 Enemies/Ranged Enemy1/Ranged Enemy #1 (1)/WizardIdle1_06.png"
+dest_files=[ "res://.import/WizardIdle1_06.png-70b2b5e87ab4c7978008b8922f676027.stex" ]
 
 [params]
 

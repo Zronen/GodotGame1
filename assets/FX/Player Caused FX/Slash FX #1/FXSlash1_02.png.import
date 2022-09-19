@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FXSlash1_02.png-9a210f368ec6236f42a3f81ae20ed2f2.stex"
+path="res://.import/FXSlash1_02.png-47cfad93f17bda1b144b7650bad35272.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/FX/Player Caused FX/Slash FX #1/FXSlash1_02.png"
-dest_files=[ "res://.import/FXSlash1_02.png-9a210f368ec6236f42a3f81ae20ed2f2.stex" ]
+source_file="res://Assets/FX/Player Caused FX/Slash FX #1/FXSlash1_02.png"
+dest_files=[ "res://.import/FXSlash1_02.png-47cfad93f17bda1b144b7650bad35272.stex" ]
 
 [params]
 

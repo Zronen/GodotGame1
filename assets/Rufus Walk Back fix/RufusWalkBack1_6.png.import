@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusWalkBack1_6.png-f24d23a569054b05071d3d791b71a565.stex"
+path="res://.import/RufusWalkBack1_6.png-1ee1a7de0bf5178a2639011518c112f5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Rufus Walk Back fix/RufusWalkBack1_6.png"
-dest_files=[ "res://.import/RufusWalkBack1_6.png-f24d23a569054b05071d3d791b71a565.stex" ]
+source_file="res://Assets/Rufus Walk Back fix/RufusWalkBack1_6.png"
+dest_files=[ "res://.import/RufusWalkBack1_6.png-1ee1a7de0bf5178a2639011518c112f5.stex" ]
 
 [params]
 

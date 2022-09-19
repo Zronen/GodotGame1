@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/mixkit-light-rain-looping-1249.wav-e148f12a7c49607cba60f1dc289ee59f.sample"
+path="res://.import/mixkit-light-rain-looping-1249.wav-e474c2f1380d01fe0e9e2bfbeec66c2d.sample"
 
 [deps]
 
-source_file="res://assets/Audio/Env Audio/Stage 1 Env/mixkit-light-rain-looping-1249.wav"
-dest_files=[ "res://.import/mixkit-light-rain-looping-1249.wav-e148f12a7c49607cba60f1dc289ee59f.sample" ]
+source_file="res://Assets/Audio/Env Audio/Stage 1 Env/mixkit-light-rain-looping-1249.wav"
+dest_files=[ "res://.import/mixkit-light-rain-looping-1249.wav-e474c2f1380d01fe0e9e2bfbeec66c2d.sample" ]
 
 [params]
 
@@ -17,5 +17,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
 compress/mode=0

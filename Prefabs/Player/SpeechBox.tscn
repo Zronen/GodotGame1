@@ -1,0 +1,111 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Fonts/vcr_osd_mono/VCR_OSD_MONO_1.001.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Rufus Icon (1)/RufusIcons_0.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Player/SpeechBox.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Fonts/swansea-font/Swansea-q3pd.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assets/20210716_0016482.jpg" type="Texture" id=5]
+[ext_resource path="res://Assets/Fonts/DemoFont1.tres" type="DynamicFont" id=6]
+
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/Road Test-3.png.png-3fe807d25762b741f0944d51bb8134de.stex"
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 4 )
+
+[node name="DialoguePlayer" type="CanvasLayer"]
+script = ExtResource( 3 )
+dialogue_file = "res://dialogue/Jsons/SampleText.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+visible = false
+modulate = Color( 0.996078, 0.996078, 0.996078, 1 )
+margin_left = 97.0
+margin_top = 726.0
+margin_right = 1837.0
+margin_bottom = 985.0
+texture = SubResource( 6 )
+region_rect = Rect2( 107.818, 728.997, 1330.17, 191.436 )
+patch_margin_left = 221
+patch_margin_top = 43
+patch_margin_right = 476
+patch_margin_bottom = 23
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+anchor_right = 0.063
+anchor_bottom = 0.172
+margin_left = 222.0
+margin_top = 62.0
+margin_right = 666.38
+margin_bottom = 50.452
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Name
+"
+scroll_active = false
+
+[node name="Message" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 221.0
+margin_top = 102.0
+margin_right = 1851.0
+margin_bottom = 270.0
+grow_horizontal = 0
+rect_pivot_offset = Vector2( -828, -305 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "Message"
+fit_content_height = true
+
+[node name="NinePatchRect" type="NinePatchRect" parent="NinePatchRect"]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 30.0
+margin_top = 41.0
+margin_right = 199.0
+margin_bottom = 226.0
+texture = ExtResource( 5 )
+
+[node name="SpeechIcon" type="Sprite" parent="NinePatchRect"]
+position = Vector2( 116, 131 )
+scale = Vector2( 0.907715, 0.904658 )
+texture = ExtResource( 2 )
+
+[node name="liteTimer" type="Timer" parent="."]
+wait_time = 3.0
+
+[node name="speechTween" type="Tween" parent="."]
+
+[node name="speechTween2" type="Tween" parent="."]
+
+[node name="LitePlayer1" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 806.0
+margin_top = 379.0
+margin_right = -133.0
+margin_bottom = -534.0
+custom_colors/default_color = Color( 0.776471, 0.968627, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0.0823529, 0.74902, 1 )
+custom_fonts/normal_font = ExtResource( 6 )
+meta_underlined = false
+scroll_active = false
+
+[node name="LitePlayer2" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1007.0
+margin_top = 401.0
+margin_right = -195.0
+margin_bottom = -505.0
+custom_colors/default_color = Color( 0.984314, 0.901961, 0.976471, 1 )
+custom_colors/font_color_shadow = Color( 0.560784, 0.0588235, 0.815686, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+scroll_active = false
+
+[connection signal="timeout" from="liteTimer" to="." method="_on_Timer_timeout"]

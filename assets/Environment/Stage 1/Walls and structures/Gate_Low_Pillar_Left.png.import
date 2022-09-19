@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gate_Low_Pillar_Left.png-7be50d3e229802dcf88bf589849801f3.stex"
+path="res://.import/Gate_Low_Pillar_Left.png-88303538ef908e9e061c43c01ebf0704.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Environment/Stage 1/Walls and structures/Gate_Low_Pillar_Left.png"
-dest_files=[ "res://.import/Gate_Low_Pillar_Left.png-7be50d3e229802dcf88bf589849801f3.stex" ]
+source_file="res://Assets/Environment/Stage 1/Walls and structures/Gate_Low_Pillar_Left.png"
+dest_files=[ "res://.import/Gate_Low_Pillar_Left.png-88303538ef908e9e061c43c01ebf0704.stex" ]
 
 [params]
 

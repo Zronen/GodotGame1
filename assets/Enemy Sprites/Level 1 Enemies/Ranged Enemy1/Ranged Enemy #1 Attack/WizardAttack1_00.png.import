@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WizardAttack1_00.png-194d79c0cf1fb3201d2a8d55e490e894.stex"
+path="res://.import/WizardAttack1_00.png-af860b6f15c93bc6338faf8f650be894.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Enemy Sprites/Level 1 Enemies/Ranged Enemy1/Ranged Enemy #1 Attack/WizardAttack1_00.png"
-dest_files=[ "res://.import/WizardAttack1_00.png-194d79c0cf1fb3201d2a8d55e490e894.stex" ]
+source_file="res://Assets/Enemy Sprites/Level 1 Enemies/Ranged Enemy1/Ranged Enemy #1 Attack/WizardAttack1_00.png"
+dest_files=[ "res://.import/WizardAttack1_00.png-af860b6f15c93bc6338faf8f650be894.stex" ]
 
 [params]
 

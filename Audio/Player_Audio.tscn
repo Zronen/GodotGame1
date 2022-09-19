@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Audio/Player Audio/Walk1.wav" type="AudioStream" id=1]
+[ext_resource path="res://Audio/Player_Audio.gd" type="Script" id=2]
+
+
+[node name="Player_Audio" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="walk_audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+pitch_scale = 0.77
+max_distance = 300.0
+
+[node name="footTimer" type="Timer" parent="."]
+wait_time = 0.681
+
+[connection signal="timeout" from="footTimer" to="." method="_on_footTimer_timeout"]

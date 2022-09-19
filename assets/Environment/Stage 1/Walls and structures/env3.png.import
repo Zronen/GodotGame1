@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/env3.png-a40d88c0e6b2960afd9eb1910b760c37.stex"
+path="res://.import/env3.png-8e33dbe23d518abf817de50ce0874188.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Environment/Stage 1/Walls and structures/env3.png"
-dest_files=[ "res://.import/env3.png-a40d88c0e6b2960afd9eb1910b760c37.stex" ]
+source_file="res://Assets/Environment/Stage 1/Walls and structures/env3.png"
+dest_files=[ "res://.import/env3.png-8e33dbe23d518abf817de50ce0874188.stex" ]
 
 [params]
 

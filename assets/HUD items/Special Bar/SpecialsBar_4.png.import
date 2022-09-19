@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SpecialsBar_4.png-ed6db2f9f285837e0de836068b75ebef.stex"
+path="res://.import/SpecialsBar_4.png-103af73492aa60b5804b6bc539308239.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/HUD items/Special Bar/SpecialsBar_4.png"
-dest_files=[ "res://.import/SpecialsBar_4.png-ed6db2f9f285837e0de836068b75ebef.stex" ]
+source_file="res://Assets/HUD items/Special Bar/SpecialsBar_4.png"
+dest_files=[ "res://.import/SpecialsBar_4.png-103af73492aa60b5804b6bc539308239.stex" ]
 
 [params]
 

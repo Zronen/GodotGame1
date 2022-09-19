@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReapAttack_10.png-8df2cd89713c178e721872e7f9385e7a.stex"
+path="res://.import/ReapAttack_10.png-7950dd5cbbb6d5983a686483379b79c1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Reaper Sprites/Reaper Attack #1/ReapAttack_10.png"
-dest_files=[ "res://.import/ReapAttack_10.png-8df2cd89713c178e721872e7f9385e7a.stex" ]
+source_file="res://Assets/Reaper Sprites/Reaper Attack #1/ReapAttack_10.png"
+dest_files=[ "res://.import/ReapAttack_10.png-7950dd5cbbb6d5983a686483379b79c1.stex" ]
 
 [params]
 
