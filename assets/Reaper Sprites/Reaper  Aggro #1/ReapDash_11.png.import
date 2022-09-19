@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReapDash_11.png-e8589a8f718ca69a3b4b11235ed270e9.stex"
+path="res://.import/ReapDash_11.png-ebc6cf357f0d16e4510e45c28c9f33ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_11.png"
-dest_files=[ "res://.import/ReapDash_11.png-e8589a8f718ca69a3b4b11235ed270e9.stex" ]
+source_file="res://Assets/Reaper Sprites/Reaper  Aggro #1/ReapDash_11.png"
+dest_files=[ "res://.import/ReapDash_11.png-ebc6cf357f0d16e4510e45c28c9f33ed.stex" ]
 
 [params]
 

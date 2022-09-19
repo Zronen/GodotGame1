@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rufus Dash 1-5.png (1).png-92ec8fa19ab2afc79e3effa9c9795894.stex"
+path="res://.import/Rufus Dash 1-5.png (1).png-ad2bb7a3aa8464eefa9263851e25694f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player General Anims/Dash Animations/Rufus Dash Side/Rufus Dash 1-5.png (1).png"
-dest_files=[ "res://.import/Rufus Dash 1-5.png (1).png-92ec8fa19ab2afc79e3effa9c9795894.stex" ]
+source_file="res://Assets/Player General Anims/Dash Animations/Rufus Dash Side/Rufus Dash 1-5.png (1).png"
+dest_files=[ "res://.import/Rufus Dash 1-5.png (1).png-ad2bb7a3aa8464eefa9263851e25694f.stex" ]
 
 [params]
 

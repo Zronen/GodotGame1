@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusSlash3V3Combopt1_10.png-096833c1f659c26a5397dc5feeebdc83.stex"
+path="res://.import/RufusSlash3V3Combopt1_10.png-3112594bcaa37979426bc7a4eb3bb6b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_10.png"
-dest_files=[ "res://.import/RufusSlash3V3Combopt1_10.png-096833c1f659c26a5397dc5feeebdc83.stex" ]
+source_file="res://Assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_10.png"
+dest_files=[ "res://.import/RufusSlash3V3Combopt1_10.png-3112594bcaa37979426bc7a4eb3bb6b6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rufus Dash 1-1.png.png-cc41932a771909fd6313cb73e1d6ddb3.stex"
+path="res://.import/Rufus Dash 1-1.png.png-2956e27f55b0c879490a8abd4c51fe01.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Rufus Dash/Rufus Dash 1-1.png.png"
-dest_files=[ "res://.import/Rufus Dash 1-1.png.png-cc41932a771909fd6313cb73e1d6ddb3.stex" ]
+source_file="res://Assets/Rufus Dash/Rufus Dash 1-1.png.png"
+dest_files=[ "res://.import/Rufus Dash 1-1.png.png-2956e27f55b0c879490a8abd4c51fe01.stex" ]
 
 [params]
 

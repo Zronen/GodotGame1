@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusSlash3V3SwordSpinSide_00.png-970d976d9a084a0c0d464363b3555391.stex"
+path="res://.import/RufusSlash3V3SwordSpinSide_00.png-9e8e9d008e46bdeaffa3cea9c0dcfdde.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_00.png"
-dest_files=[ "res://.import/RufusSlash3V3SwordSpinSide_00.png-970d976d9a084a0c0d464363b3555391.stex" ]
+source_file="res://Assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_00.png"
+dest_files=[ "res://.import/RufusSlash3V3SwordSpinSide_00.png-9e8e9d008e46bdeaffa3cea9c0dcfdde.stex" ]
 
 [params]
 
