@@ -2,7 +2,7 @@ extends "res://Scripts/Environment/EntityBase.gd"
 
 
 #the sprite itself
-onready var drone = $Drone
+#onready var drone = $Drone
 
 onready var _animated_sprite = $AnimatedSprite2
 
