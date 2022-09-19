@@ -1,0 +1,555 @@
+[gd_scene load_steps=181 format=2]
+
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_14.png" type="Texture" id=1]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_03.png" type="Texture" id=2]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_09.png" type="Texture" id=3]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_10.png" type="Texture" id=4]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_07.png" type="Texture" id=5]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_13.png" type="Texture" id=6]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_16.png" type="Texture" id=7]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_15.png" type="Texture" id=8]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_18.png" type="Texture" id=9]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_19.png" type="Texture" id=10]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_20.png" type="Texture" id=11]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_02.png" type="Texture" id=12]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_06.png" type="Texture" id=13]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_08.png" type="Texture" id=14]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_12.png" type="Texture" id=15]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_05.png" type="Texture" id=16]
+[ext_resource path="res://HUD.gd" type="Script" id=17]
+[ext_resource path="res://assets/Hud Elements/ded_screen.png" type="Texture" id=18]
+[ext_resource path="res://assets/HUD items/Special Bar/SpecialsBar_0.png" type="Texture" id=19]
+[ext_resource path="res://assets/HUD items/Special Bar/SpecialsBar_1.png" type="Texture" id=20]
+[ext_resource path="res://assets/HUD items/Special Bar/SpecialsBar_5.png" type="Texture" id=21]
+[ext_resource path="res://assets/HUD items/Special Bar/SpecialsBar_2.png" type="Texture" id=22]
+[ext_resource path="res://assets/HUD items/Special Bar/SpecialsBar_3.png" type="Texture" id=23]
+[ext_resource path="res://assets/HUD items/Special Bar/SpecialsBar_4.png" type="Texture" id=24]
+[ext_resource path="res://assets/HUD items/HUD Demo 1-2.png (2).png" type="Texture" id=25]
+[ext_resource path="res://assets/HUD items/HUD Demo 1/HUD Demo 1-8.png.png" type="Texture" id=26]
+[ext_resource path="res://assets/HUD items/HUD Demo 1/HUD Demo 1-14.png.png" type="Texture" id=27]
+[ext_resource path="res://assets/HUD items/HUD Demo 1/HUD Demo 1-9.png.png" type="Texture" id=28]
+[ext_resource path="res://assets/HUD items/HUD Demo 1/HUD Demo 1-12.png.png" type="Texture" id=29]
+[ext_resource path="res://assets/HUD items/HUD Demo 1/HUD Demo 1-13.png.png" type="Texture" id=30]
+[ext_resource path="res://assets/HUD items/HUD Demo 1/HUD Demo 1-15.png.png" type="Texture" id=31]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_04.png" type="Texture" id=32]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_11.png" type="Texture" id=33]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_17.png" type="Texture" id=34]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_01.png" type="Texture" id=35]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HPBar2_00.png" type="Texture" id=36]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HUD Demo2-22.png.png" type="Texture" id=37]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HUD Demo2-23.png.png" type="Texture" id=38]
+[ext_resource path="res://assets/HUD items/HUD Demo2/HUD Demo2-24.png.png" type="Texture" id=39]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_14.png" type="Texture" id=40]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_15.png" type="Texture" id=41]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_07.png" type="Texture" id=42]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD/Weapon HUD Test3-6.png (1).png" type="Texture" id=43]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_02.png" type="Texture" id=44]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_06.png" type="Texture" id=45]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_08.png" type="Texture" id=46]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_10.png" type="Texture" id=47]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_08.png" type="Texture" id=48]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_09.png" type="Texture" id=49]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_11.png" type="Texture" id=50]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_12.png" type="Texture" id=51]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_13.png" type="Texture" id=52]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_01.png" type="Texture" id=53]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_06.png" type="Texture" id=54]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_02.png" type="Texture" id=55]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_00.png" type="Texture" id=56]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_03.png" type="Texture" id=57]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_04.png" type="Texture" id=58]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_05.png" type="Texture" id=59]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_16.png" type="Texture" id=60]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD 2/Weapon HUD Test4 (1)/WeaponHud4_17.png" type="Texture" id=61]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_03.png" type="Texture" id=62]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_09.png" type="Texture" id=63]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_00.png" type="Texture" id=64]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_10.png" type="Texture" id=65]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_04.png" type="Texture" id=66]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_07.png" type="Texture" id=67]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_05.png" type="Texture" id=68]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_01.png" type="Texture" id=69]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_17.png" type="Texture" id=70]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_11.png" type="Texture" id=71]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_12.png" type="Texture" id=72]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_13.png" type="Texture" id=73]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_14.png" type="Texture" id=74]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_15.png" type="Texture" id=75]
+[ext_resource path="res://assets/HUD items/Weapons HUD/Weapon HUD Test4 Guns/WeaponHudGuns1_16.png" type="Texture" id=76]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_07.png" type="Texture" id=77]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_19.png" type="Texture" id=78]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_11.png" type="Texture" id=79]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_06.png" type="Texture" id=80]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_18.png" type="Texture" id=81]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_12.png" type="Texture" id=82]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_22.png" type="Texture" id=83]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_16.png" type="Texture" id=84]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_23.png" type="Texture" id=85]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_04.png" type="Texture" id=86]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_05.png" type="Texture" id=87]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_08.png" type="Texture" id=88]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_10.png" type="Texture" id=89]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_21.png" type="Texture" id=90]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_01.png" type="Texture" id=91]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_02.png" type="Texture" id=92]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_13.png" type="Texture" id=93]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_15.png" type="Texture" id=94]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_20.png" type="Texture" id=95]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_03.png" type="Texture" id=96]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_00.png" type="Texture" id=97]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_09.png" type="Texture" id=98]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_14.png" type="Texture" id=99]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_17.png" type="Texture" id=100]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_27.png" type="Texture" id=101]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_25.png" type="Texture" id=102]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_24.png" type="Texture" id=103]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_26.png" type="Texture" id=104]
+[ext_resource path="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_28.png" type="Texture" id=105]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_01.png" type="Texture" id=106]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_06.png" type="Texture" id=107]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_25.png" type="Texture" id=108]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_07.png" type="Texture" id=109]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_03.png" type="Texture" id=110]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_05.png" type="Texture" id=111]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_12.png" type="Texture" id=112]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_08.png" type="Texture" id=113]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_11.png" type="Texture" id=114]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_10.png" type="Texture" id=115]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_13.png" type="Texture" id=116]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_09.png" type="Texture" id=117]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_04.png" type="Texture" id=118]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_02.png" type="Texture" id=119]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_22.png" type="Texture" id=120]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_21.png" type="Texture" id=121]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_20.png" type="Texture" id=122]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_16.png" type="Texture" id=123]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_17.png" type="Texture" id=124]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_19.png" type="Texture" id=125]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_14.png" type="Texture" id=126]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_15.png" type="Texture" id=127]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_18.png" type="Texture" id=128]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_03.png" type="Texture" id=129]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_06.png" type="Texture" id=130]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_02.png" type="Texture" id=131]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_09.png" type="Texture" id=132]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_29.png" type="Texture" id=133]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_23.png" type="Texture" id=134]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_24.png" type="Texture" id=135]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_27.png" type="Texture" id=136]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_00.png" type="Texture" id=137]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_04.png" type="Texture" id=138]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_01.png" type="Texture" id=139]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_12.png" type="Texture" id=140]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_10.png" type="Texture" id=141]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_05.png" type="Texture" id=142]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_26.png" type="Texture" id=143]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_11.png" type="Texture" id=144]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2 T1/AmmoHudT1_28.png" type="Texture" id=145]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_07.png" type="Texture" id=146]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_08.png" type="Texture" id=147]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_20.png" type="Texture" id=148]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_15.png" type="Texture" id=149]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_16.png" type="Texture" id=150]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_19.png" type="Texture" id=151]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_14.png" type="Texture" id=152]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_17.png" type="Texture" id=153]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_18.png" type="Texture" id=154]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.1 T2/AmmoHudT2_13.png" type="Texture" id=155]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_07.png" type="Texture" id=156]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_05.png" type="Texture" id=157]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_06.png" type="Texture" id=158]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_01.png" type="Texture" id=159]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_02.png" type="Texture" id=160]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_09.png" type="Texture" id=161]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_10.png" type="Texture" id=162]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_12.png" type="Texture" id=163]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_13.png" type="Texture" id=164]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_14.png" type="Texture" id=165]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_15.png" type="Texture" id=166]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_11.png" type="Texture" id=167]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_16.png" type="Texture" id=168]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_03.png" type="Texture" id=169]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_08.png" type="Texture" id=170]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_00.png" type="Texture" id=171]
+[ext_resource path="res://assets/HUD items/Ammo HUD/HUD Ammo 2.2 T3/AmmoHudT3_04.png" type="Texture" id=172]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 95 ), ExtResource( 90 ), ExtResource( 83 ), ExtResource( 85 ), ExtResource( 103 ), ExtResource( 102 ), ExtResource( 104 ), ExtResource( 101 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 105 ) ],
+"loop": true,
+"name": "max",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 97 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 96 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 80 ), ExtResource( 77 ), ExtResource( 88 ), ExtResource( 98 ), ExtResource( 89 ), ExtResource( 79 ), ExtResource( 82 ), ExtResource( 93 ), ExtResource( 99 ), ExtResource( 94 ), ExtResource( 84 ), ExtResource( 100 ), ExtResource( 81 ), ExtResource( 78 ), ExtResource( 95 ) ],
+"loop": false,
+"name": "base",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 147 ), ExtResource( 132 ), ExtResource( 141 ), ExtResource( 141 ), ExtResource( 144 ), ExtResource( 124 ) ],
+"loop": false,
+"name": "T2 4-2",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 111 ), ExtResource( 107 ), ExtResource( 109 ), ExtResource( 109 ), ExtResource( 113 ), ExtResource( 117 ) ],
+"loop": false,
+"name": "T1 5-4",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 138 ), ExtResource( 142 ), ExtResource( 130 ), ExtResource( 130 ), ExtResource( 146 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ), ExtResource( 116 ) ],
+"loop": false,
+"name": "T2 5-3",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 106 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 110 ), ExtResource( 118 ), ExtResource( 111 ) ],
+"loop": false,
+"name": "T1 6-5",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 168 ) ],
+"loop": false,
+"name": "T3 3-0",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 117 ), ExtResource( 115 ), ExtResource( 114 ), ExtResource( 114 ), ExtResource( 112 ), ExtResource( 116 ) ],
+"loop": false,
+"name": "T1 4-3",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 124 ), ExtResource( 128 ), ExtResource( 125 ), ExtResource( 125 ), ExtResource( 122 ), ExtResource( 121 ) ],
+"loop": false,
+"name": "T1 2-1",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 137 ), ExtResource( 139 ), ExtResource( 131 ), ExtResource( 131 ), ExtResource( 129 ), ExtResource( 117 ) ],
+"loop": false,
+"name": "T2 6-4",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 170 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 162 ), ExtResource( 167 ), ExtResource( 121 ) ],
+"loop": false,
+"name": "T3 4-1",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 106 ), ExtResource( 106 ) ],
+"loop": false,
+"name": "Ammo Full",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 108 ), ExtResource( 108 ) ],
+"loop": false,
+"name": "Ammo Empty",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 172 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 158 ), ExtResource( 156 ), ExtResource( 124 ) ],
+"loop": false,
+"name": "T3 5-2",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 150 ), ExtResource( 153 ), ExtResource( 154 ), ExtResource( 154 ), ExtResource( 151 ), ExtResource( 148 ) ],
+"loop": false,
+"name": "T2 2-0",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 116 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 127 ), ExtResource( 123 ), ExtResource( 124 ) ],
+"loop": false,
+"name": "T1 3-2",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 140 ), ExtResource( 155 ), ExtResource( 152 ), ExtResource( 152 ), ExtResource( 149 ), ExtResource( 121 ) ],
+"loop": false,
+"name": "T2 3-1",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 121 ), ExtResource( 120 ), ExtResource( 134 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 108 ) ],
+"loop": false,
+"name": "T1 1-0",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 171 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 160 ), ExtResource( 169 ), ExtResource( 116 ) ],
+"loop": false,
+"name": "T3 6-3",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 143 ), ExtResource( 136 ), ExtResource( 145 ), ExtResource( 133 ), ExtResource( 133 ), ExtResource( 145 ), ExtResource( 136 ), ExtResource( 143 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ), ExtResource( 108 ) ],
+"loop": false,
+"name": "Ammo Required",
+"speed": 12.0
+} ]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 15 ), ExtResource( 6 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "Hud2-1",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 35 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 32 ) ],
+"loop": false,
+"name": "Hud5-4",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "Hud0-5",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 34 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "Hud1-0",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Hud4-3",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "Hud_R",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ) ],
+"loop": true,
+"name": "Hud5",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 33 ), ExtResource( 15 ) ],
+"loop": false,
+"name": "Hud3-2",
+"speed": 12.0
+} ]
+
+[sub_resource type="Shader" id=3]
+code = "/*
+	Glitch Effect Shader by Yui Kinomoto @arlez80
+
+	MIT License
+*/
+
+shader_type canvas_item;
+
+// 振動の強さ
+uniform float shake_power = 0.03;
+// 振動率
+uniform float shake_rate : hint_range( 0.0, 1.0 ) = 0.2;
+// 振動速度
+uniform float shake_speed = 5.0;
+// 振動ブロックサイズ
+uniform float shake_block_size = 30.5;
+// 色の分離率
+uniform float shake_color_rate : hint_range( 0.0, 1.0 ) = 0.01;
+
+float random( float seed )
+{
+	return fract( 543.2543 * sin( dot( vec2( seed, seed ), vec2( 3525.46, -54.3415 ) ) ) );
+}
+
+void fragment( )
+{
+	float enable_shift = float(
+		random( trunc( TIME * shake_speed ) )
+	<	shake_rate
+	);
+
+	vec2 fixed_uv = SCREEN_UV;
+	fixed_uv.x += (
+		random(
+			( trunc( SCREEN_UV.y * shake_block_size ) / shake_block_size )
+		+	TIME
+		) - 0.5
+	) * shake_power * enable_shift;
+
+	vec4 pixel_color = textureLod( SCREEN_TEXTURE, fixed_uv, 0.0 );
+	pixel_color.r = mix(
+		pixel_color.r
+	,	textureLod( SCREEN_TEXTURE, fixed_uv + vec2( shake_color_rate, 0.0 ), 0.0 ).r
+	,	enable_shift
+	);
+	pixel_color.b = mix(
+		pixel_color.b
+	,	textureLod( SCREEN_TEXTURE, fixed_uv + vec2( -shake_color_rate, 0.0 ), 0.0 ).b
+	,	enable_shift
+	);
+	COLOR = pixel_color;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+shader_param/shake_power = 0.02
+shader_param/shake_rate = 0.2
+shader_param/shake_speed = 3.0
+shader_param/shake_block_size = 30.5
+shader_param/shake_color_rate = 0.03
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "SpecialHud",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "SpecialHud2",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 54 ), ExtResource( 42 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": false,
+"name": "ScytheHud",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "TestHud",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 52 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 56 ) ],
+"loop": false,
+"name": "SwordHud",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 56 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 54 ) ],
+"loop": false,
+"name": "GunbladeHud",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 70 ), ExtResource( 64 ), ExtResource( 69 ), ExtResource( 44 ), ExtResource( 62 ), ExtResource( 66 ), ExtResource( 68 ) ],
+"loop": false,
+"name": "ShotgunHud",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 68 ), ExtResource( 45 ), ExtResource( 67 ), ExtResource( 46 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 71 ) ],
+"loop": false,
+"name": "LaserHud",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 70 ) ],
+"loop": false,
+"name": "PistolHud",
+"speed": 20.0
+} ]
+
+[node name="HUD" type="CanvasLayer"]
+scale = Vector2( 0.625, 0.625 )
+transform = Transform2D( 0.625, 0, 0, 0.625, 0, 0 )
+script = ExtResource( 17 )
+
+[node name="concentrationBar" type="AnimatedSprite" parent="."]
+position = Vector2( 537.6, 126.4 )
+frames = SubResource( 7 )
+animation = "base"
+
+[node name="AmmoBar" type="AnimatedSprite" parent="."]
+position = Vector2( 756.8, 264 )
+z_index = 1
+frames = SubResource( 8 )
+animation = "Ammo Full"
+frame = 1
+
+[node name="AmmoBar2" type="AnimatedSprite" parent="."]
+modulate = Color( 0.541176, 0.537255, 0.541176, 1 )
+position = Vector2( 756.8, 264 )
+frames = SubResource( 8 )
+animation = "Ammo Full"
+frame = 1
+
+[node name="hpBar" type="AnimatedSprite" parent="."]
+position = Vector2( 283.2, 233.6 )
+frames = SubResource( 1 )
+animation = "Hud0-5"
+frame = 3
+
+[node name="fadeout_timer" type="Timer" parent="."]
+wait_time = 0.079
+
+[node name="die_popup" type="Sprite" parent="."]
+visible = false
+material = SubResource( 4 )
+position = Vector2( 1534.14, 868.6 )
+scale = Vector2( 5.18056, 8.91055 )
+z_index = 1
+z_as_relative = false
+texture = ExtResource( 18 )
+
+[node name="specialBar" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 294.4, 286.4 )
+frames = SubResource( 2 )
+animation = "SpecialHud2"
+
+[node name="concentrationParticles" type="CPUParticles2D" parent="."]
+visible = false
+position = Vector2( 520, 80 )
+scale = Vector2( -1.84121, 0.579543 )
+amount = 500
+lifetime = 0.7
+lifetime_randomness = 0.7
+emission_shape = 2
+emission_rect_extents = Vector2( 213, 1 )
+direction = Vector2( 0, 1 )
+gravity = Vector2( 0, 140 )
+initial_velocity = 91.74
+scale_amount = 3.0
+scale_amount_random = 0.69
+color = Color( 0.168627, 0.964706, 1, 1 )
+hue_variation = 0.08
+hue_variation_random = 0.58
+
+[node name="specialbarParticles" type="CPUParticles2D" parent="."]
+visible = false
+position = Vector2( 217.6, 107.2 )
+scale = Vector2( 1.83999, 0.48 )
+amount = 20
+emission_shape = 2
+emission_rect_extents = Vector2( 45, 13 )
+spread = 0.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 16.0
+scale_amount = 10.0
+color = Color( 0.0431373, 0.74902, 0.843137, 1 )
+hue_variation = 0.04
+hue_variation_random = 0.81
+
+[node name="weaponBar" type="AnimatedSprite" parent="."]
+position = Vector2( 2652.8, 1507.2 )
+frames = SubResource( 5 )
+animation = "SwordHud"
+
+[node name="gunBar" type="AnimatedSprite" parent="."]
+position = Vector2( 435.2, 1507.2 )
+frames = SubResource( 6 )
+animation = "LaserHud"
+
+[node name="gunBar_timer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="weaponBar_timer" type="Timer" parent="."]
+wait_time = 1.5
+
+[node name="visibleTween" type="Tween" parent="."]
+
+[node name="visibleTween2" type="Tween" parent="."]
+
+[node name="visibleTween3" type="Tween" parent="."]
+
+[node name="visibleTween4" type="Tween" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+[connection signal="animation_finished" from="AmmoBar" to="." method="_on_AmmoBar_animation_finished"]
+[connection signal="animation_finished" from="AmmoBar2" to="." method="_on_AmmoBar_animation_finished"]
+[connection signal="timeout" from="fadeout_timer" to="." method="_on_fadeout_timer_timeout"]
+[connection signal="animation_finished" from="weaponBar" to="." method="_on_weaponBar_animation_finished"]
+[connection signal="animation_finished" from="gunBar" to="." method="_on_gunBar_animation_finished"]
+[connection signal="timeout" from="gunBar_timer" to="." method="_on_gunBar_timer_timeout"]
+[connection signal="timeout" from="weaponBar_timer" to="." method="_on_weaponBar_timer_timeout"]

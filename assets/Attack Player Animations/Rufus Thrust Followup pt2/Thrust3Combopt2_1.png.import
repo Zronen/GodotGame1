@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Thrust3Combopt2_1.png-de25ea5dae24f80292f8451c45879983.stex"
+path="res://.import/Thrust3Combopt2_1.png-330470ff8b899e4b85a08fc0d129da42.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_1.png"
-dest_files=[ "res://.import/Thrust3Combopt2_1.png-de25ea5dae24f80292f8451c45879983.stex" ]
+source_file="res://assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_1.png"
+dest_files=[ "res://.import/Thrust3Combopt2_1.png-330470ff8b899e4b85a08fc0d129da42.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ded_screen.png-b18fc73180200a59e1ea72037a242fc6.stex"
+path="res://.import/ded_screen.png-72e21516bbc10d5ee3be870e7dc647b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Hud Elements/ded_screen.png"
-dest_files=[ "res://.import/ded_screen.png-b18fc73180200a59e1ea72037a242fc6.stex" ]
+source_file="res://assets/Hud Elements/ded_screen.png"
+dest_files=[ "res://.import/ded_screen.png-72e21516bbc10d5ee3be870e7dc647b3.stex" ]
 
 [params]
 

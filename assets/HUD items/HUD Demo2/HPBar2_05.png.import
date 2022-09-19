@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HPBar2_05.png-927328d5138cf2b9709b3a68ff05626c.stex"
+path="res://.import/HPBar2_05.png-316a6f69a9fdb2b2d3da494debba59cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HUD items/HUD Demo2/HPBar2_05.png"
-dest_files=[ "res://.import/HPBar2_05.png-927328d5138cf2b9709b3a68ff05626c.stex" ]
+source_file="res://assets/HUD items/HUD Demo2/HPBar2_05.png"
+dest_files=[ "res://.import/HPBar2_05.png-316a6f69a9fdb2b2d3da494debba59cb.stex" ]
 
 [params]
 

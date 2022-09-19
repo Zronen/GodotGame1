@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dollar Bill-1.png.png-9ee7f80e9a46b180caf9ac59d3d84492.stex"
+path="res://.import/Dollar Bill-1.png.png-b72afe969e17853db16a6af724f5fbd1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Dollar Bill-1.png.png"
-dest_files=[ "res://.import/Dollar Bill-1.png.png-9ee7f80e9a46b180caf9ac59d3d84492.stex" ]
+source_file="res://assets/Dollar Bill-1.png.png"
+dest_files=[ "res://.import/Dollar Bill-1.png.png-b72afe969e17853db16a6af724f5fbd1.stex" ]
 
 [params]
 
