@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Talkbox1-1.png.png-085e44d15a4560558c3dbb10a806cb67.stex"
+path="res://.import/Talkbox1-1.png.png-da7f79b0f26a47c4d3a5f63371f8370d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Talkbox1-1.png.png"
-dest_files=[ "res://.import/Talkbox1-1.png.png-085e44d15a4560558c3dbb10a806cb67.stex" ]
+source_file="res://assets/Talkbox1-1.png.png"
+dest_files=[ "res://.import/Talkbox1-1.png.png-da7f79b0f26a47c4d3a5f63371f8370d.stex" ]
 
 [params]
 

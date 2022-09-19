@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hudbar1_07.png-3dcddf8f35e2b529b5fa943adca1ac38.stex"
+path="res://.import/Hudbar1_07.png-188bb272e91a431bb42bddd33adfee49.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Hudbar/Hudbar1_07.png"
-dest_files=[ "res://.import/Hudbar1_07.png-3dcddf8f35e2b529b5fa943adca1ac38.stex" ]
+source_file="res://assets/Hudbar/Hudbar1_07.png"
+dest_files=[ "res://.import/Hudbar1_07.png-188bb272e91a431bb42bddd33adfee49.stex" ]
 
 [params]
 

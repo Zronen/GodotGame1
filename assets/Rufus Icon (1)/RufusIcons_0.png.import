@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusIcons_0.png-092a380cec4d0d750714122d66da735f.stex"
+path="res://.import/RufusIcons_0.png-8b16071f717dea39dcb7f5fef394651f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rufus Icon (1)/RufusIcons_0.png"
-dest_files=[ "res://.import/RufusIcons_0.png-092a380cec4d0d750714122d66da735f.stex" ]
+source_file="res://assets/Rufus Icon (1)/RufusIcons_0.png"
+dest_files=[ "res://.import/RufusIcons_0.png-8b16071f717dea39dcb7f5fef394651f.stex" ]
 
 [params]
 

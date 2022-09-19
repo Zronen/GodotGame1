@@ -1,4 +1,4 @@
-extends "res://Scripts/Enemies/EnemyBase.gd"
+extends "res://EnemyBase.gd"
 
 var player_direction = null
 

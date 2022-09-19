@@ -1,0 +1,1096 @@
+[gd_scene load_steps=463 format=2]
+
+[ext_resource path="res://EntityBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://PlayerBase.gd" type="Script" id=2]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3/RufusSlash3Back_5.png" type="Texture" id=3]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3/RufusSlash3Back_2.png" type="Texture" id=4]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3/RufusSlash3Back_6.png" type="Texture" id=5]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3/RufusSlash3Back_1.png" type="Texture" id=6]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3/RufusSlash3Back_3.png" type="Texture" id=7]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3/RufusSlash3Back_4.png" type="Texture" id=8]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_2.png" type="Texture" id=9]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_5.png" type="Texture" id=10]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_1.png" type="Texture" id=11]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_4.png" type="Texture" id=12]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_6.png" type="Texture" id=13]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_3.png" type="Texture" id=14]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  (1)/RufusThrustV2_1.png" type="Texture" id=15]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  (1)/RufusThrustV2_8.png" type="Texture" id=16]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_6.png" type="Texture" id=17]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  (1)/RufusThrustV2_5.png" type="Texture" id=18]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  (1)/RufusThrustV2_3.png" type="Texture" id=19]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_7.png" type="Texture" id=20]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  (1)/RufusThrustV2_6.png" type="Texture" id=21]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  (1)/RufusThrustV2_4.png" type="Texture" id=22]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  (1)/RufusThrustV2_7.png" type="Texture" id=23]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_3.png" type="Texture" id=24]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup/Thrust3Combopt1_4.png" type="Texture" id=25]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup/Thrust3Combopt1_2.png" type="Texture" id=26]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup/Thrust3Combopt1_6.png" type="Texture" id=27]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup/Thrust3Combopt1_7.png" type="Texture" id=28]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_13.png" type="Texture" id=29]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup/Thrust3Combopt1_1.png" type="Texture" id=30]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_2.png" type="Texture" id=31]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_2.png" type="Texture" id=32]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_3.png" type="Texture" id=33]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_4.png" type="Texture" id=34]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_4.png" type="Texture" id=35]
+[ext_resource path="res://assets/Rufus Test-3.png.png" type="Texture" id=36]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_0.png" type="Texture" id=37]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_1.png" type="Texture" id=38]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_5.png" type="Texture" id=39]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_2.png" type="Texture" id=40]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_0.png" type="Texture" id=41]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_7.png" type="Texture" id=42]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_1.png" type="Texture" id=43]
+[ext_resource path="res://assets/Rufus Test-2.png.png" type="Texture" id=44]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_6.png" type="Texture" id=45]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_3.png" type="Texture" id=46]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_7.png" type="Texture" id=47]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_5.png" type="Texture" id=48]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_2.png" type="Texture" id=49]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup/Thrust3Combopt1_3.png" type="Texture" id=50]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Test-1.png.png" type="Texture" id=51]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_5.png" type="Texture" id=52]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_5.png" type="Texture" id=53]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_1.png" type="Texture" id=54]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_0.png" type="Texture" id=55]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup/Thrust3Combopt1_5.png" type="Texture" id=56]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_6.png" type="Texture" id=57]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Followup pt2/Thrust3Combopt2_7.png" type="Texture" id=58]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_07.png" type="Texture" id=59]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_6.png" type="Texture" id=60]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_3.png" type="Texture" id=61]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_4.png" type="Texture" id=62]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_00.png" type="Texture" id=63]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_10.png" type="Texture" id=64]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_4.png" type="Texture" id=65]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_09.png" type="Texture" id=66]
+[ext_resource path="res://WorldEnvironment.gd" type="Script" id=67]
+[ext_resource path="res://assets/Rufus Dash/Rufus Dash 1-4.png.png" type="Texture" id=68]
+[ext_resource path="res://assets/Rufus Dash/Rufus Dash 1-1.png.png" type="Texture" id=69]
+[ext_resource path="res://assets/Rufus Dash/Rufus Dash 1-1.png (1).png" type="Texture" id=70]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3/RufusSlashV3_4.png" type="Texture" id=71]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_01.png" type="Texture" id=72]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3/RufusSlashV3_1.png" type="Texture" id=73]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3/RufusSlashV3_2.png" type="Texture" id=74]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3/RufusSlashV3_5.png" type="Texture" id=75]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3/RufusSlashV3_6.png" type="Texture" id=76]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3/RufusSlashV3_3.png" type="Texture" id=77]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_03.png" type="Texture" id=78]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_08.png" type="Texture" id=79]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_16.png" type="Texture" id=80]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_04.png" type="Texture" id=81]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_09.png" type="Texture" id=82]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_14.png" type="Texture" id=83]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_12.png" type="Texture" id=84]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_02.png" type="Texture" id=85]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_05.png" type="Texture" id=86]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_15.png" type="Texture" id=87]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_17.png" type="Texture" id=88]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_06.png" type="Texture" id=89]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo #2/RufusMultiJab_11.png" type="Texture" id=90]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Back/RufusThrustBack_6.png" type="Texture" id=91]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Back/RufusThrustBack_8.png" type="Texture" id=92]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Back/RufusThrustBack_1.png" type="Texture" id=93]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Back/RufusThrustBack_4.png" type="Texture" id=94]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Back/RufusThrustBack_5.png" type="Texture" id=95]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Back/RufusThrustBack_3.png" type="Texture" id=96]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Back/RufusThrustBack_7.png" type="Texture" id=97]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_5.png" type="Texture" id=98]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_7.png" type="Texture" id=99]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_8.png" type="Texture" id=100]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_3.png" type="Texture" id=101]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_2.png" type="Texture" id=102]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_1.png" type="Texture" id=103]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_4.png" type="Texture" id=104]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust  Side/RufusThrustSide_6.png" type="Texture" id=105]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_14.png" type="Texture" id=106]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_12.png" type="Texture" id=107]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_04.png" type="Texture" id=108]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_03.png" type="Texture" id=109]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_01.png" type="Texture" id=110]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_05.png" type="Texture" id=111]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_06.png" type="Texture" id=112]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_13.png" type="Texture" id=113]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_00.png" type="Texture" id=114]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_10.png" type="Texture" id=115]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_02.png" type="Texture" id=116]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_17.png" type="Texture" id=117]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_07.png" type="Texture" id=118]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_16.png" type="Texture" id=119]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_08.png" type="Texture" id=120]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_15.png" type="Texture" id=121]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_11.png" type="Texture" id=122]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_09.png" type="Texture" id=123]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_06.png" type="Texture" id=124]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_12.png" type="Texture" id=125]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_10.png" type="Texture" id=126]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_01.png" type="Texture" id=127]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_17.png" type="Texture" id=128]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_14.png" type="Texture" id=129]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_13.png" type="Texture" id=130]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_09.png" type="Texture" id=131]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_16.png" type="Texture" id=132]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_15.png" type="Texture" id=133]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_04.png" type="Texture" id=134]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_03.png" type="Texture" id=135]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_08.png" type="Texture" id=136]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_02.png" type="Texture" id=137]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_07.png" type="Texture" id=138]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_11.png" type="Texture" id=139]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_00.png" type="Texture" id=140]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Thrust Combo Side #2/RufusMultiJabSide_05.png" type="Texture" id=141]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_18.png" type="Texture" id=142]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_12.png" type="Texture" id=143]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_05.png" type="Texture" id=144]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_14.png" type="Texture" id=145]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_17.png" type="Texture" id=146]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_20.png" type="Texture" id=147]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_19.png" type="Texture" id=148]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_01.png" type="Texture" id=149]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_00.png" type="Texture" id=150]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_02.png" type="Texture" id=151]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_16.png" type="Texture" id=152]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Combo pt1/RufusSlash3V3Combopt1_15.png" type="Texture" id=153]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_03.png" type="Texture" id=154]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_04.png" type="Texture" id=155]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/Rufus Sword Special Charge-7.png.png" type="Texture" id=156]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/Rufus Sword Special Charge-8.png.png" type="Texture" id=157]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_08.png" type="Texture" id=158]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_09.png" type="Texture" id=159]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_10.png" type="Texture" id=160]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_11.png" type="Texture" id=161]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_12.png" type="Texture" id=162]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/Rufus Sword Special Finisher-17.png (1).png" type="Texture" id=163]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_13.png" type="Texture" id=164]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_14.png" type="Texture" id=165]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_09.png" type="Texture" id=166]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_10.png" type="Texture" id=167]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_11.png" type="Texture" id=168]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_06.png" type="Texture" id=169]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_00.png" type="Texture" id=170]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_01.png" type="Texture" id=171]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_03.png" type="Texture" id=172]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_02.png" type="Texture" id=173]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_04.png" type="Texture" id=174]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_05.png" type="Texture" id=175]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_07.png" type="Texture" id=176]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_08.png" type="Texture" id=177]
+[ext_resource path="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/Rufus Sword Special Finisher-16.png.png" type="Texture" id=178]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3 Combo pt1/RufusSlash3BackV3Combopt1_06.png" type="Texture" id=179]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3 Combo pt1/RufusSlash3BackV3Combopt1_07.png" type="Texture" id=180]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3 Combo pt1/RufusSlash3BackV3Combopt1_08.png" type="Texture" id=181]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3 Combo pt1/RufusSlash3BackV3Combopt1_09.png" type="Texture" id=182]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3 Combo pt1/RufusSlash3BackV3Combopt1_10.png" type="Texture" id=183]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3 Combo pt1/RufusSlash3BackV3Combopt1_11.png" type="Texture" id=184]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3  Back V3 Combo pt1/RufusSlash3BackV3Combopt1_12.png" type="Texture" id=185]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3 Combo pt 1/RufusSlash3SideV3Combopt1_12.png" type="Texture" id=186]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3 Combo pt 1/RufusSlash3SideV3Combopt1_11.png" type="Texture" id=187]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3 Combo pt 1/RufusSlash3SideV3Combopt1_07.png" type="Texture" id=188]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3 Combo pt 1/RufusSlash3SideV3Combopt1_08.png" type="Texture" id=189]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3 Combo pt 1/RufusSlash3SideV3Combopt1_13.png" type="Texture" id=190]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3 Combo pt 1/RufusSlash3SideV3Combopt1_09.png" type="Texture" id=191]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 Side V3 Combo pt 1/RufusSlash3SideV3Combopt1_10.png" type="Texture" id=192]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_26.png" type="Texture" id=193]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_27.png" type="Texture" id=194]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_23.png" type="Texture" id=195]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_00.png" type="Texture" id=196]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_09.png" type="Texture" id=197]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_19.png" type="Texture" id=198]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_21.png" type="Texture" id=199]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_05.png" type="Texture" id=200]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_01.png" type="Texture" id=201]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_11.png" type="Texture" id=202]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_12.png" type="Texture" id=203]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_03.png" type="Texture" id=204]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_13.png" type="Texture" id=205]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_10.png" type="Texture" id=206]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_22.png" type="Texture" id=207]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_20.png" type="Texture" id=208]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_17.png" type="Texture" id=209]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_07.png" type="Texture" id=210]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_24.png" type="Texture" id=211]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_18.png" type="Texture" id=212]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_16.png" type="Texture" id=213]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_08.png" type="Texture" id=214]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_14.png" type="Texture" id=215]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_02.png" type="Texture" id=216]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_15.png" type="Texture" id=217]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_25.png" type="Texture" id=218]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_04.png" type="Texture" id=219]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_06.png" type="Texture" id=220]
+[ext_resource path="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_28.png" type="Texture" id=221]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_02.png" type="Texture" id=222]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_01.png" type="Texture" id=223]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_05.png" type="Texture" id=224]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_00.png" type="Texture" id=225]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_03.png" type="Texture" id=226]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/Rufus Slash 3 V3 Sword Spin-9.png.png" type="Texture" id=227]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_11.png" type="Texture" id=228]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_04.png" type="Texture" id=229]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_06.png" type="Texture" id=230]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/Rufus Slash 3 V3 Sword Spin-8.png.png" type="Texture" id=231]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_09.png" type="Texture" id=232]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin (1)/RufusSlash3V3Combo4_10.png" type="Texture" id=233]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_01.png" type="Texture" id=234]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_04.png" type="Texture" id=235]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_09.png" type="Texture" id=236]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_08.png" type="Texture" id=237]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_10.png" type="Texture" id=238]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_00.png" type="Texture" id=239]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_11.png" type="Texture" id=240]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_06.png" type="Texture" id=241]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_02.png" type="Texture" id=242]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_03.png" type="Texture" id=243]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_05.png" type="Texture" id=244]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Back/SlashV3SwordSpinBack_07.png" type="Texture" id=245]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_09.png" type="Texture" id=246]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_01.png" type="Texture" id=247]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_02.png" type="Texture" id=248]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_10.png" type="Texture" id=249]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_11.png" type="Texture" id=250]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_04.png" type="Texture" id=251]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_03.png" type="Texture" id=252]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_06.png" type="Texture" id=253]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_08.png" type="Texture" id=254]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_05.png" type="Texture" id=255]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_07.png" type="Texture" id=256]
+[ext_resource path="res://assets/Attack Player Animations/Rufus Slash 3 V3 Sword Spin Side/RufusSlash3V3SwordSpinSide_00.png" type="Texture" id=257]
+[ext_resource path="res://PlayerBullet.tscn" type="PackedScene" id=258]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_02.png" type="Texture" id=259]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_03.png" type="Texture" id=260]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_05.png" type="Texture" id=261]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_04.png" type="Texture" id=262]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_09.png" type="Texture" id=263]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_07.png" type="Texture" id=264]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_08.png" type="Texture" id=265]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_06.png" type="Texture" id=266]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_01.png" type="Texture" id=267]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_00.png" type="Texture" id=268]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_01.png" type="Texture" id=269]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_03.png" type="Texture" id=270]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_00.png" type="Texture" id=271]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 Combo1/RufusGBSlash3_Combo1_10.png" type="Texture" id=272]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_05.png" type="Texture" id=273]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_06.png" type="Texture" id=274]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_04.png" type="Texture" id=275]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_07.png" type="Texture" id=276]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_08.png" type="Texture" id=277]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_10.png" type="Texture" id=278]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_11.png" type="Texture" id=279]
+[ext_resource path="res://assets/Bullets/bullets2.png" type="Texture" id=280]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_03.png" type="Texture" id=281]
+[ext_resource path="res://assets/Player General Anims/Dash Animations/Rufus Dash Side/Rufus Dash 1-7.png.png" type="Texture" id=282]
+[ext_resource path="res://assets/Player General Anims/Dash Animations/Rufus Dash Side/Rufus Dash 1-8.png -1.png" type="Texture" id=283]
+[ext_resource path="res://assets/Player General Anims/Dash Animations/Rufus Dash Side/Rufus Dash 1-5.png.png" type="Texture" id=284]
+[ext_resource path="res://assets/Player General Anims/Dash Animations/Rufus Dash Side/Rufus Dash 1-6.png.png" type="Texture" id=285]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_12.png" type="Texture" id=286]
+[ext_resource path="res://assets/Player General Anims/Dash Animations/Rufus Dash Side/Rufus Dash 1-5.png (1).png" type="Texture" id=287]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1/GBSlash3pt2_02.png" type="Texture" id=288]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_0.png" type="Texture" id=289]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_03.png" type="Texture" id=290]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_5.png" type="Texture" id=291]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_3.png" type="Texture" id=292]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_7.png" type="Texture" id=293]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_2.png" type="Texture" id=294]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_8.png" type="Texture" id=295]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_1.png" type="Texture" id=296]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_4.png" type="Texture" id=297]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.1 pt2/GBSlash3pt2.5_6.png" type="Texture" id=298]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_10.png" type="Texture" id=299]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_05.png" type="Texture" id=300]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_00.png" type="Texture" id=301]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_09.png" type="Texture" id=302]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_13.png" type="Texture" id=303]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_07.png" type="Texture" id=304]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_01.png" type="Texture" id=305]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_02.png" type="Texture" id=306]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_06.png" type="Texture" id=307]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_08.png" type="Texture" id=308]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_12.png" type="Texture" id=309]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3.1.2/RufusGBSlash3.1.2_11.png" type="Texture" id=310]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_02.png" type="Texture" id=311]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_06.png" type="Texture" id=312]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_07.png" type="Texture" id=313]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_03.png" type="Texture" id=314]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_00.png" type="Texture" id=315]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_01.png" type="Texture" id=316]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_05.png" type="Texture" id=317]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_04.png" type="Texture" id=318]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_08.png" type="Texture" id=319]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_09.png" type="Texture" id=320]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_07.png" type="Texture" id=321]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_02.png" type="Texture" id=322]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_01.png" type="Texture" id=323]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_04.png" type="Texture" id=324]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_03.png" type="Texture" id=325]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_05.png" type="Texture" id=326]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_08.png" type="Texture" id=327]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_06.png" type="Texture" id=328]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_09.png" type="Texture" id=329]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3 Back/RufusGBSlash3Back_00.png" type="Texture" id=330]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_12.png" type="Texture" id=331]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_06.png" type="Texture" id=332]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_10.png" type="Texture" id=333]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_04.png" type="Texture" id=334]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_00.png" type="Texture" id=335]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_09.png" type="Texture" id=336]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_01.png" type="Texture" id=337]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_05.png" type="Texture" id=338]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_7.png" type="Texture" id=339]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_07.png" type="Texture" id=340]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_11.png" type="Texture" id=341]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_02.png" type="Texture" id=342]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.2 Back/RufusGBSlash3.1.2Back_08.png" type="Texture" id=343]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_4.png" type="Texture" id=344]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_6.png" type="Texture" id=345]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_3.png" type="Texture" id=346]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_8.png" type="Texture" id=347]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_5.png" type="Texture" id=348]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_1.png" type="Texture" id=349]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Back Anims/Rufus GB Slash 3.1.1 pt2Back/GBSlash3pt2.5Back_2.png" type="Texture" id=350]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_05.png" type="Texture" id=351]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_01.png" type="Texture" id=352]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_02.png" type="Texture" id=353]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_03.png" type="Texture" id=354]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_04.png" type="Texture" id=355]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3 Side/RufusGBSlash3Side_10.png" type="Texture" id=356]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_07.png" type="Texture" id=357]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_08.png" type="Texture" id=358]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_12.png" type="Texture" id=359]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_09.png" type="Texture" id=360]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_06.png" type="Texture" id=361]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_11.png" type="Texture" id=362]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.2 Side/GBSlash3V2.5Side_10.png" type="Texture" id=363]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_3.png" type="Texture" id=364]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_1.png" type="Texture" id=365]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_5.png" type="Texture" id=366]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_2.png" type="Texture" id=367]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_4.png" type="Texture" id=368]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_7.png" type="Texture" id=369]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_8.png" type="Texture" id=370]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/GB Side Anims/Rufus GB Slash 3.1.1 pt2Side/GBSlash3.1.1pt2Side_6.png" type="Texture" id=371]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_06.png" type="Texture" id=372]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_07.png" type="Texture" id=373]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_01.png" type="Texture" id=374]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_02.png" type="Texture" id=375]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_00.png" type="Texture" id=376]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_04.png" type="Texture" id=377]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_05.png" type="Texture" id=378]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_03.png" type="Texture" id=379]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_08.png" type="Texture" id=380]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_13.png" type="Texture" id=381]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_14.png" type="Texture" id=382]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_15.png" type="Texture" id=383]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_17.png" type="Texture" id=384]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_18.png" type="Texture" id=385]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_16.png" type="Texture" id=386]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_19.png" type="Texture" id=387]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_24.png" type="Texture" id=388]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_26.png" type="Texture" id=389]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_27.png" type="Texture" id=390]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_23.png" type="Texture" id=391]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_22.png" type="Texture" id=392]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_25.png" type="Texture" id=393]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_28.png" type="Texture" id=394]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_29.png" type="Texture" id=395]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_11.png" type="Texture" id=396]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_09.png" type="Texture" id=397]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_12.png" type="Texture" id=398]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_10.png" type="Texture" id=399]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_21.png" type="Texture" id=400]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1/GBAlt_20.png" type="Texture" id=401]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_02.png" type="Texture" id=402]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_03.png" type="Texture" id=403]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_04.png" type="Texture" id=404]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_00.png" type="Texture" id=405]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_01.png" type="Texture" id=406]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_05.png" type="Texture" id=407]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_06.png" type="Texture" id=408]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_07.png" type="Texture" id=409]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_08.png" type="Texture" id=410]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_14.png" type="Texture" id=411]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_11.png" type="Texture" id=412]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_13.png" type="Texture" id=413]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_15.png" type="Texture" id=414]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_09.png" type="Texture" id=415]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_10.png" type="Texture" id=416]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_12.png" type="Texture" id=417]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_17.png" type="Texture" id=418]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_16.png" type="Texture" id=419]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_19.png" type="Texture" id=420]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_20.png" type="Texture" id=421]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_24.png" type="Texture" id=422]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_18.png" type="Texture" id=423]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_23.png" type="Texture" id=424]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_22.png" type="Texture" id=425]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Back/GBAltBack_21.png" type="Texture" id=426]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_00.png" type="Texture" id=427]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_06.png" type="Texture" id=428]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_01.png" type="Texture" id=429]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_02.png" type="Texture" id=430]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_05.png" type="Texture" id=431]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_03.png" type="Texture" id=432]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_04.png" type="Texture" id=433]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_07.png" type="Texture" id=434]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_08.png" type="Texture" id=435]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_12.png" type="Texture" id=436]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_11.png" type="Texture" id=437]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_15.png" type="Texture" id=438]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_14.png" type="Texture" id=439]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_10.png" type="Texture" id=440]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_09.png" type="Texture" id=441]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_13.png" type="Texture" id=442]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_16.png" type="Texture" id=443]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_17.png" type="Texture" id=444]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_23.png" type="Texture" id=445]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_22.png" type="Texture" id=446]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_18.png" type="Texture" id=447]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_24.png" type="Texture" id=448]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_20.png" type="Texture" id=449]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_21.png" type="Texture" id=450]
+[ext_resource path="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_19.png" type="Texture" id=451]
+[ext_resource path="res://assets/Fonts/swansea-font/Swansea-q3pd.ttf" type="DynamicFontData" id=452]
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 44.25, 90 )
+
+[sub_resource type="Shader" id=11]
+code = "shader_type canvas_item;
+
+uniform int pixel_size : hint_range(1, 100) = 1;
+
+void fragment(){
+	vec2 pos = UV / TEXTURE_PIXEL_SIZE;
+	vec2 square = vec2(float(pixel_size), float(pixel_size));
+	vec2 top_left = floor(pos / square) * square;
+	vec4 total = vec4(0., 0., 0., 0.);
+	for (int x = int(top_left.x); x < int(top_left.x) + pixel_size; x++){
+		for (int y = int(top_left.y); y < int(top_left.y) + pixel_size; y++){
+			total += texture(TEXTURE, vec2(float(x), float(y)) * TEXTURE_PIXEL_SIZE);
+		}
+	}
+	COLOR = total / float(pixel_size * pixel_size);
+}"
+
+[sub_resource type="ShaderMaterial" id=9]
+shader = SubResource( 11 )
+shader_param/pixel_size = 1
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 329 ), ExtResource( 335 ), ExtResource( 335 ), ExtResource( 349 ), ExtResource( 349 ), ExtResource( 350 ), ExtResource( 350 ), ExtResource( 346 ), ExtResource( 346 ), ExtResource( 346 ), ExtResource( 344 ), ExtResource( 344 ), ExtResource( 344 ), ExtResource( 344 ), ExtResource( 348 ), ExtResource( 348 ), ExtResource( 348 ), ExtResource( 345 ), ExtResource( 345 ), ExtResource( 345 ), ExtResource( 345 ), ExtResource( 339 ), ExtResource( 339 ), ExtResource( 339 ), ExtResource( 339 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ), ExtResource( 347 ) ],
+"loop": false,
+"name": "A1_Slash3Back_combo1.1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 74 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 77 ), ExtResource( 71 ), ExtResource( 71 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 75 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "Slash3",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 381 ), ExtResource( 381 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ) ],
+"loop": false,
+"name": "A1_AltCombo1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 26 ), ExtResource( 50 ), ExtResource( 50 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 25 ), ExtResource( 56 ), ExtResource( 56 ), ExtResource( 27 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "Thrust3_combo1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 376 ), ExtResource( 376 ), ExtResource( 374 ), ExtResource( 375 ), ExtResource( 379 ), ExtResource( 377 ), ExtResource( 378 ), ExtResource( 372 ), ExtResource( 373 ), ExtResource( 380 ), ExtResource( 397 ), ExtResource( 399 ), ExtResource( 396 ), ExtResource( 398 ) ],
+"loop": false,
+"name": "A1_AltCombo1_Charge",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 257 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 252 ), ExtResource( 251 ), ExtResource( 255 ), ExtResource( 257 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 252 ), ExtResource( 251 ), ExtResource( 255 ), ExtResource( 257 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 252 ), ExtResource( 251 ), ExtResource( 255 ), ExtResource( 257 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 252 ), ExtResource( 251 ), ExtResource( 255 ), ExtResource( 257 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 252 ), ExtResource( 251 ), ExtResource( 255 ), ExtResource( 253 ), ExtResource( 256 ), ExtResource( 256 ), ExtResource( 256 ), ExtResource( 256 ), ExtResource( 256 ), ExtResource( 254 ), ExtResource( 254 ), ExtResource( 254 ), ExtResource( 254 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 246 ), ExtResource( 249 ), ExtResource( 249 ), ExtResource( 249 ), ExtResource( 249 ), ExtResource( 249 ), ExtResource( 249 ), ExtResource( 249 ), ExtResource( 250 ), ExtResource( 250 ), ExtResource( 250 ), ExtResource( 250 ), ExtResource( 250 ), ExtResource( 250 ), ExtResource( 250 ) ],
+"loop": false,
+"name": "Slash3_combo2Side",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 356 ), ExtResource( 356 ), ExtResource( 356 ), ExtResource( 356 ), ExtResource( 356 ), ExtResource( 356 ), ExtResource( 352 ), ExtResource( 352 ), ExtResource( 353 ), ExtResource( 353 ), ExtResource( 354 ), ExtResource( 354 ), ExtResource( 354 ), ExtResource( 355 ), ExtResource( 355 ), ExtResource( 351 ), ExtResource( 351 ), ExtResource( 361 ), ExtResource( 361 ), ExtResource( 361 ), ExtResource( 357 ), ExtResource( 357 ), ExtResource( 357 ), ExtResource( 357 ), ExtResource( 357 ), ExtResource( 358 ), ExtResource( 358 ), ExtResource( 358 ), ExtResource( 358 ), ExtResource( 358 ), ExtResource( 360 ), ExtResource( 360 ), ExtResource( 360 ), ExtResource( 360 ), ExtResource( 360 ), ExtResource( 363 ), ExtResource( 363 ), ExtResource( 363 ), ExtResource( 363 ), ExtResource( 362 ), ExtResource( 362 ), ExtResource( 362 ), ExtResource( 362 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ), ExtResource( 359 ) ],
+"loop": false,
+"name": "A1_Slash3Side_combo1.2",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 51 ) ],
+"loop": true,
+"name": "Idle2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 301 ), ExtResource( 301 ), ExtResource( 301 ), ExtResource( 301 ), ExtResource( 301 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 305 ), ExtResource( 305 ), ExtResource( 306 ), ExtResource( 306 ), ExtResource( 290 ), ExtResource( 290 ), ExtResource( 290 ), ExtResource( 300 ), ExtResource( 300 ), ExtResource( 307 ), ExtResource( 307 ), ExtResource( 304 ), ExtResource( 304 ), ExtResource( 304 ), ExtResource( 308 ), ExtResource( 308 ), ExtResource( 308 ), ExtResource( 308 ), ExtResource( 308 ), ExtResource( 302 ), ExtResource( 302 ), ExtResource( 302 ), ExtResource( 302 ), ExtResource( 302 ), ExtResource( 299 ), ExtResource( 299 ), ExtResource( 299 ), ExtResource( 299 ), ExtResource( 299 ), ExtResource( 310 ), ExtResource( 310 ), ExtResource( 310 ), ExtResource( 310 ), ExtResource( 309 ), ExtResource( 309 ), ExtResource( 309 ), ExtResource( 309 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ), ExtResource( 303 ) ],
+"loop": false,
+"name": "A1_Slash3_combo1.2",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 268 ), ExtResource( 268 ), ExtResource( 268 ), ExtResource( 267 ), ExtResource( 267 ), ExtResource( 267 ), ExtResource( 267 ), ExtResource( 259 ), ExtResource( 259 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 260 ), ExtResource( 260 ), ExtResource( 262 ), ExtResource( 262 ), ExtResource( 262 ), ExtResource( 261 ), ExtResource( 261 ), ExtResource( 261 ), ExtResource( 261 ), ExtResource( 266 ), ExtResource( 266 ), ExtResource( 266 ), ExtResource( 266 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 265 ), ExtResource( 265 ), ExtResource( 265 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ), ExtResource( 263 ) ],
+"loop": false,
+"name": "A1_Slash3",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 44 ) ],
+"loop": true,
+"name": "SideIdle2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 179 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 181 ), ExtResource( 182 ), ExtResource( 182 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 183 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 184 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ) ],
+"loop": false,
+"name": "Slash3Back_combo1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 335 ), ExtResource( 335 ), ExtResource( 335 ), ExtResource( 335 ), ExtResource( 335 ), ExtResource( 335 ), ExtResource( 337 ), ExtResource( 337 ), ExtResource( 342 ), ExtResource( 342 ), ExtResource( 281 ), ExtResource( 281 ), ExtResource( 281 ), ExtResource( 334 ), ExtResource( 334 ), ExtResource( 338 ), ExtResource( 338 ), ExtResource( 332 ), ExtResource( 332 ), ExtResource( 332 ), ExtResource( 340 ), ExtResource( 340 ), ExtResource( 340 ), ExtResource( 340 ), ExtResource( 340 ), ExtResource( 343 ), ExtResource( 343 ), ExtResource( 343 ), ExtResource( 343 ), ExtResource( 343 ), ExtResource( 336 ), ExtResource( 336 ), ExtResource( 336 ), ExtResource( 336 ), ExtResource( 336 ), ExtResource( 333 ), ExtResource( 333 ), ExtResource( 333 ), ExtResource( 333 ), ExtResource( 341 ), ExtResource( 341 ), ExtResource( 341 ), ExtResource( 341 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ), ExtResource( 331 ) ],
+"loop": false,
+"name": "A1_Slash3Back_combo1.2",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 320 ), ExtResource( 320 ), ExtResource( 356 ), ExtResource( 356 ), ExtResource( 365 ), ExtResource( 365 ), ExtResource( 367 ), ExtResource( 367 ), ExtResource( 364 ), ExtResource( 364 ), ExtResource( 364 ), ExtResource( 368 ), ExtResource( 368 ), ExtResource( 368 ), ExtResource( 368 ), ExtResource( 366 ), ExtResource( 366 ), ExtResource( 366 ), ExtResource( 371 ), ExtResource( 371 ), ExtResource( 371 ), ExtResource( 371 ), ExtResource( 369 ), ExtResource( 369 ), ExtResource( 369 ), ExtResource( 369 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ), ExtResource( 370 ) ],
+"loop": false,
+"name": "A1_Slash3Side_combo1.1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 114 ), ExtResource( 110 ), ExtResource( 116 ), ExtResource( 109 ), ExtResource( 108 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 118 ), ExtResource( 120 ), ExtResource( 123 ), ExtResource( 115 ), ExtResource( 122 ), ExtResource( 107 ), ExtResource( 113 ), ExtResource( 106 ), ExtResource( 121 ), ExtResource( 119 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ), ExtResource( 117 ) ],
+"loop": false,
+"name": "Thrust3_combo3Back",
+"speed": 45.0
+}, {
+"frames": [ ExtResource( 405 ), ExtResource( 405 ), ExtResource( 406 ), ExtResource( 402 ), ExtResource( 403 ), ExtResource( 404 ), ExtResource( 407 ), ExtResource( 408 ), ExtResource( 409 ), ExtResource( 410 ), ExtResource( 410 ) ],
+"loop": false,
+"name": "A1_AltCombo1_ChargeBack",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 225 ), ExtResource( 223 ), ExtResource( 222 ), ExtResource( 226 ), ExtResource( 229 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 223 ), ExtResource( 222 ), ExtResource( 226 ), ExtResource( 229 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 223 ), ExtResource( 222 ), ExtResource( 226 ), ExtResource( 229 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 223 ), ExtResource( 222 ), ExtResource( 226 ), ExtResource( 229 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 223 ), ExtResource( 222 ), ExtResource( 226 ), ExtResource( 229 ), ExtResource( 224 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 231 ), ExtResource( 231 ), ExtResource( 231 ), ExtResource( 231 ), ExtResource( 227 ), ExtResource( 227 ), ExtResource( 227 ), ExtResource( 227 ), ExtResource( 232 ), ExtResource( 232 ), ExtResource( 232 ), ExtResource( 232 ), ExtResource( 232 ), ExtResource( 232 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 233 ), ExtResource( 228 ), ExtResource( 228 ), ExtResource( 228 ), ExtResource( 228 ), ExtResource( 228 ), ExtResource( 228 ), ExtResource( 228 ) ],
+"loop": false,
+"name": "Slash3_combo2",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 43 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 52 ), ExtResource( 60 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "SideRun2",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 315 ), ExtResource( 315 ), ExtResource( 315 ), ExtResource( 316 ), ExtResource( 316 ), ExtResource( 316 ), ExtResource( 316 ), ExtResource( 311 ), ExtResource( 311 ), ExtResource( 311 ), ExtResource( 314 ), ExtResource( 314 ), ExtResource( 314 ), ExtResource( 318 ), ExtResource( 318 ), ExtResource( 318 ), ExtResource( 317 ), ExtResource( 317 ), ExtResource( 317 ), ExtResource( 317 ), ExtResource( 312 ), ExtResource( 312 ), ExtResource( 312 ), ExtResource( 312 ), ExtResource( 313 ), ExtResource( 313 ), ExtResource( 313 ), ExtResource( 313 ), ExtResource( 319 ), ExtResource( 319 ), ExtResource( 319 ), ExtResource( 319 ), ExtResource( 319 ), ExtResource( 319 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ), ExtResource( 320 ) ],
+"loop": false,
+"name": "A1_Slash3Side",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 415 ), ExtResource( 415 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 419 ), ExtResource( 419 ), ExtResource( 419 ), ExtResource( 418 ), ExtResource( 418 ), ExtResource( 418 ), ExtResource( 415 ), ExtResource( 415 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ) ],
+"loop": false,
+"name": "A1_AltCombo1.1Back",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 287 ), ExtResource( 284 ), ExtResource( 285 ), ExtResource( 285 ), ExtResource( 282 ), ExtResource( 282 ), ExtResource( 283 ), ExtResource( 283 ) ],
+"loop": false,
+"name": "DashSide",
+"speed": 23.0
+}, {
+"frames": [ ExtResource( 441 ), ExtResource( 441 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ) ],
+"loop": false,
+"name": "A1_AltCombo1Side",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 72 ), ExtResource( 85 ), ExtResource( 78 ), ExtResource( 81 ), ExtResource( 86 ), ExtResource( 89 ), ExtResource( 59 ), ExtResource( 79 ), ExtResource( 82 ), ExtResource( 64 ), ExtResource( 90 ), ExtResource( 84 ), ExtResource( 29 ), ExtResource( 83 ), ExtResource( 87 ), ExtResource( 80 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ), ExtResource( 88 ) ],
+"loop": false,
+"name": "Thrust3_combo3",
+"speed": 45.0
+}, {
+"frames": [ ExtResource( 271 ), ExtResource( 271 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 269 ), ExtResource( 269 ), ExtResource( 288 ), ExtResource( 288 ), ExtResource( 270 ), ExtResource( 270 ), ExtResource( 270 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 275 ), ExtResource( 273 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 274 ), ExtResource( 276 ), ExtResource( 276 ), ExtResource( 276 ), ExtResource( 277 ), ExtResource( 277 ), ExtResource( 277 ), ExtResource( 277 ), ExtResource( 66 ), ExtResource( 66 ), ExtResource( 66 ), ExtResource( 66 ), ExtResource( 278 ), ExtResource( 278 ), ExtResource( 278 ), ExtResource( 278 ), ExtResource( 278 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 279 ), ExtResource( 279 ), ExtResource( 279 ), ExtResource( 279 ), ExtResource( 279 ), ExtResource( 286 ), ExtResource( 286 ), ExtResource( 286 ), ExtResource( 286 ), ExtResource( 286 ), ExtResource( 286 ), ExtResource( 286 ), ExtResource( 286 ), ExtResource( 286 ) ],
+"loop": false,
+"name": "A1_Slash3_combo1",
+"speed": 50.0
+}, {
+"frames": [ ExtResource( 140 ), ExtResource( 127 ), ExtResource( 137 ), ExtResource( 135 ), ExtResource( 134 ), ExtResource( 141 ), ExtResource( 124 ), ExtResource( 138 ), ExtResource( 136 ), ExtResource( 131 ), ExtResource( 126 ), ExtResource( 139 ), ExtResource( 125 ), ExtResource( 130 ), ExtResource( 129 ), ExtResource( 133 ), ExtResource( 132 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ), ExtResource( 128 ) ],
+"loop": false,
+"name": "Thrust3_combo3Side",
+"speed": 45.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 54 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 65 ), ExtResource( 39 ), ExtResource( 17 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "Run2",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 32 ), ExtResource( 32 ), ExtResource( 24 ), ExtResource( 24 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 35 ), ExtResource( 53 ), ExtResource( 53 ), ExtResource( 57 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ), ExtResource( 58 ) ],
+"loop": false,
+"name": "Thrust3_combo2",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 150 ), ExtResource( 149 ), ExtResource( 151 ), ExtResource( 154 ), ExtResource( 155 ), ExtResource( 144 ), ExtResource( 156 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 143 ), ExtResource( 161 ), ExtResource( 160 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 143 ), ExtResource( 161 ), ExtResource( 160 ), ExtResource( 159 ), ExtResource( 158 ), ExtResource( 160 ) ],
+"loop": true,
+"name": "S_Special1Charge",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Slash3Back",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 415 ), ExtResource( 415 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ) ],
+"loop": false,
+"name": "A1_AltCombo1Back",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 330 ), ExtResource( 330 ), ExtResource( 330 ), ExtResource( 323 ), ExtResource( 323 ), ExtResource( 323 ), ExtResource( 323 ), ExtResource( 322 ), ExtResource( 322 ), ExtResource( 322 ), ExtResource( 325 ), ExtResource( 325 ), ExtResource( 325 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 324 ), ExtResource( 326 ), ExtResource( 326 ), ExtResource( 326 ), ExtResource( 326 ), ExtResource( 328 ), ExtResource( 328 ), ExtResource( 328 ), ExtResource( 328 ), ExtResource( 321 ), ExtResource( 321 ), ExtResource( 321 ), ExtResource( 321 ), ExtResource( 327 ), ExtResource( 327 ), ExtResource( 327 ), ExtResource( 327 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ), ExtResource( 329 ) ],
+"loop": false,
+"name": "A1_Slash3Back",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 185 ), ExtResource( 239 ), ExtResource( 234 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 235 ), ExtResource( 244 ), ExtResource( 239 ), ExtResource( 234 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 235 ), ExtResource( 244 ), ExtResource( 239 ), ExtResource( 234 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 235 ), ExtResource( 244 ), ExtResource( 239 ), ExtResource( 234 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 235 ), ExtResource( 244 ), ExtResource( 239 ), ExtResource( 234 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 235 ), ExtResource( 244 ), ExtResource( 241 ), ExtResource( 245 ), ExtResource( 245 ), ExtResource( 245 ), ExtResource( 245 ), ExtResource( 245 ), ExtResource( 237 ), ExtResource( 237 ), ExtResource( 237 ), ExtResource( 237 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 236 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 238 ), ExtResource( 240 ), ExtResource( 240 ), ExtResource( 240 ), ExtResource( 240 ), ExtResource( 240 ), ExtResource( 240 ), ExtResource( 240 ) ],
+"loop": false,
+"name": "Slash3_combo2Back",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 69 ), ExtResource( 68 ), ExtResource( 70 ) ],
+"loop": true,
+"name": "Dash",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 441 ), ExtResource( 441 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 443 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 444 ), ExtResource( 444 ), ExtResource( 447 ), ExtResource( 447 ), ExtResource( 447 ), ExtResource( 451 ), ExtResource( 451 ), ExtResource( 451 ), ExtResource( 449 ), ExtResource( 449 ), ExtResource( 449 ), ExtResource( 449 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 447 ), ExtResource( 447 ), ExtResource( 447 ), ExtResource( 451 ), ExtResource( 451 ), ExtResource( 451 ), ExtResource( 449 ), ExtResource( 449 ), ExtResource( 449 ), ExtResource( 449 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 450 ), ExtResource( 446 ), ExtResource( 446 ), ExtResource( 446 ), ExtResource( 446 ), ExtResource( 446 ), ExtResource( 446 ), ExtResource( 445 ), ExtResource( 445 ), ExtResource( 445 ), ExtResource( 445 ), ExtResource( 445 ), ExtResource( 448 ), ExtResource( 448 ), ExtResource( 448 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ) ],
+"loop": false,
+"name": "A1_AltCombo1.2Side",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 15 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 18 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 23 ), ExtResource( 23 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ), ExtResource( 16 ) ],
+"loop": false,
+"name": "Thrust3",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 188 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 189 ), ExtResource( 191 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 192 ), ExtResource( 192 ), ExtResource( 187 ), ExtResource( 187 ), ExtResource( 187 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 186 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ), ExtResource( 190 ) ],
+"loop": false,
+"name": "Slash3Side_combo1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 41 ), ExtResource( 38 ), ExtResource( 40 ), ExtResource( 46 ), ExtResource( 34 ), ExtResource( 48 ), ExtResource( 45 ), ExtResource( 42 ) ],
+"loop": true,
+"name": "BackRun2",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 381 ), ExtResource( 381 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 401 ), ExtResource( 401 ), ExtResource( 400 ), ExtResource( 400 ), ExtResource( 400 ), ExtResource( 392 ), ExtResource( 392 ), ExtResource( 392 ), ExtResource( 391 ), ExtResource( 391 ), ExtResource( 391 ), ExtResource( 388 ), ExtResource( 388 ), ExtResource( 388 ), ExtResource( 388 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 392 ), ExtResource( 392 ), ExtResource( 392 ), ExtResource( 391 ), ExtResource( 391 ), ExtResource( 391 ), ExtResource( 388 ), ExtResource( 388 ), ExtResource( 388 ), ExtResource( 388 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 393 ), ExtResource( 389 ), ExtResource( 389 ), ExtResource( 389 ), ExtResource( 389 ), ExtResource( 389 ), ExtResource( 389 ), ExtResource( 390 ), ExtResource( 390 ), ExtResource( 390 ), ExtResource( 390 ), ExtResource( 390 ), ExtResource( 394 ), ExtResource( 394 ), ExtResource( 394 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ), ExtResource( 395 ) ],
+"loop": false,
+"name": "A1_AltCombo1.2",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 170 ), ExtResource( 170 ), ExtResource( 170 ), ExtResource( 170 ), ExtResource( 171 ), ExtResource( 173 ), ExtResource( 172 ), ExtResource( 174 ), ExtResource( 171 ), ExtResource( 173 ), ExtResource( 172 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 169 ), ExtResource( 169 ), ExtResource( 176 ), ExtResource( 176 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 177 ), ExtResource( 177 ), ExtResource( 166 ), ExtResource( 166 ), ExtResource( 177 ), ExtResource( 167 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 168 ), ExtResource( 162 ), ExtResource( 162 ), ExtResource( 164 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 165 ), ExtResource( 178 ), ExtResource( 178 ), ExtResource( 163 ), ExtResource( 163 ) ],
+"loop": false,
+"name": "S_Special1Finish",
+"speed": 32.0
+}, {
+"frames": [ ExtResource( 36 ) ],
+"loop": true,
+"name": "BackIdle2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 289 ), ExtResource( 289 ), ExtResource( 272 ), ExtResource( 272 ), ExtResource( 296 ), ExtResource( 296 ), ExtResource( 294 ), ExtResource( 294 ), ExtResource( 292 ), ExtResource( 292 ), ExtResource( 292 ), ExtResource( 297 ), ExtResource( 297 ), ExtResource( 297 ), ExtResource( 297 ), ExtResource( 291 ), ExtResource( 291 ), ExtResource( 291 ), ExtResource( 298 ), ExtResource( 298 ), ExtResource( 298 ), ExtResource( 298 ), ExtResource( 298 ), ExtResource( 298 ), ExtResource( 293 ), ExtResource( 293 ), ExtResource( 293 ), ExtResource( 293 ), ExtResource( 293 ), ExtResource( 293 ), ExtResource( 295 ), ExtResource( 295 ), ExtResource( 295 ), ExtResource( 295 ), ExtResource( 295 ), ExtResource( 295 ) ],
+"loop": false,
+"name": "A1_Slash3_combo1.1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 101 ), ExtResource( 104 ), ExtResource( 104 ), ExtResource( 98 ), ExtResource( 98 ), ExtResource( 105 ), ExtResource( 105 ), ExtResource( 99 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ), ExtResource( 100 ) ],
+"loop": false,
+"name": "Thrust3Side",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 441 ), ExtResource( 441 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 443 ), ExtResource( 443 ), ExtResource( 443 ), ExtResource( 444 ), ExtResource( 444 ), ExtResource( 444 ), ExtResource( 441 ), ExtResource( 441 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 440 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 437 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 436 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 442 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 439 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ), ExtResource( 438 ) ],
+"loop": false,
+"name": "A1_AltCombo1.1Side",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 9 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "Slash3Side",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 93 ), ExtResource( 96 ), ExtResource( 96 ), ExtResource( 96 ), ExtResource( 94 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 95 ), ExtResource( 91 ), ExtResource( 91 ), ExtResource( 97 ), ExtResource( 97 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ), ExtResource( 92 ) ],
+"loop": false,
+"name": "Thrust3Back",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 415 ), ExtResource( 415 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 416 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 412 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 417 ), ExtResource( 413 ), ExtResource( 413 ), ExtResource( 411 ), ExtResource( 411 ), ExtResource( 419 ), ExtResource( 419 ), ExtResource( 418 ), ExtResource( 418 ), ExtResource( 418 ), ExtResource( 423 ), ExtResource( 423 ), ExtResource( 423 ), ExtResource( 420 ), ExtResource( 420 ), ExtResource( 420 ), ExtResource( 421 ), ExtResource( 421 ), ExtResource( 421 ), ExtResource( 421 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 423 ), ExtResource( 423 ), ExtResource( 423 ), ExtResource( 420 ), ExtResource( 420 ), ExtResource( 420 ), ExtResource( 421 ), ExtResource( 421 ), ExtResource( 421 ), ExtResource( 421 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 426 ), ExtResource( 425 ), ExtResource( 425 ), ExtResource( 425 ), ExtResource( 425 ), ExtResource( 425 ), ExtResource( 425 ), ExtResource( 424 ), ExtResource( 424 ), ExtResource( 424 ), ExtResource( 424 ), ExtResource( 424 ), ExtResource( 422 ), ExtResource( 422 ), ExtResource( 422 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ), ExtResource( 414 ) ],
+"loop": false,
+"name": "A1_AltCombo1.2Back",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 145 ), ExtResource( 145 ), ExtResource( 153 ), ExtResource( 153 ), ExtResource( 152 ), ExtResource( 152 ), ExtResource( 146 ), ExtResource( 146 ), ExtResource( 146 ), ExtResource( 142 ), ExtResource( 142 ), ExtResource( 142 ), ExtResource( 148 ), ExtResource( 148 ), ExtResource( 148 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ), ExtResource( 147 ) ],
+"loop": false,
+"name": "Slash3_combo1",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 427 ), ExtResource( 427 ), ExtResource( 429 ), ExtResource( 430 ), ExtResource( 432 ), ExtResource( 433 ), ExtResource( 431 ), ExtResource( 428 ), ExtResource( 434 ), ExtResource( 435 ), ExtResource( 435 ) ],
+"loop": false,
+"name": "A1_AltCombo1_ChargeSide",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 381 ), ExtResource( 381 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 401 ), ExtResource( 401 ), ExtResource( 401 ), ExtResource( 400 ), ExtResource( 400 ), ExtResource( 400 ), ExtResource( 381 ), ExtResource( 381 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 382 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 383 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 386 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 384 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 385 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ), ExtResource( 387 ) ],
+"loop": false,
+"name": "A1_AltCombo1.1",
+"speed": 60.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=13]
+radius = 205.0
+height = 76.0
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 41.0
+height = 172.0
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 199 ), ExtResource( 199 ), ExtResource( 207 ), ExtResource( 207 ), ExtResource( 195 ), ExtResource( 195 ), ExtResource( 211 ), ExtResource( 211 ), ExtResource( 211 ), ExtResource( 218 ), ExtResource( 218 ), ExtResource( 193 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 194 ), ExtResource( 194 ), ExtResource( 221 ) ],
+"loop": false,
+"name": "S_Special2FX2",
+"speed": 40.0
+}, {
+"frames": [ ExtResource( 196 ), ExtResource( 201 ), ExtResource( 201 ), ExtResource( 201 ), ExtResource( 216 ), ExtResource( 216 ), ExtResource( 216 ), ExtResource( 204 ), ExtResource( 204 ), ExtResource( 204 ), ExtResource( 219 ), ExtResource( 219 ), ExtResource( 219 ), ExtResource( 200 ), ExtResource( 200 ), ExtResource( 200 ), ExtResource( 220 ), ExtResource( 220 ), ExtResource( 220 ), ExtResource( 210 ), ExtResource( 210 ), ExtResource( 210 ), ExtResource( 214 ), ExtResource( 214 ), ExtResource( 197 ), ExtResource( 197 ), ExtResource( 206 ), ExtResource( 206 ), ExtResource( 202 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 203 ), ExtResource( 205 ), ExtResource( 205 ), ExtResource( 215 ), ExtResource( 215 ), ExtResource( 217 ), ExtResource( 217 ), ExtResource( 213 ), ExtResource( 213 ), ExtResource( 209 ), ExtResource( 209 ), ExtResource( 209 ), ExtResource( 212 ), ExtResource( 212 ), ExtResource( 212 ), ExtResource( 198 ), ExtResource( 198 ), ExtResource( 198 ), ExtResource( 208 ), ExtResource( 208 ), ExtResource( 208 ), ExtResource( 208 ), ExtResource( 208 ), ExtResource( 208 ) ],
+"loop": false,
+"name": "S_Special2FX",
+"speed": 40.0
+}, {
+"frames": [ null ],
+"loop": true,
+"name": "Blank",
+"speed": 5.0
+} ]
+
+[sub_resource type="Gradient" id=6]
+colors = PoolColorArray( 0.338483, 0.338483, 0.338483, 1, 0.972467, 0.972467, 0.972467, 1 )
+
+[sub_resource type="Environment" id=5]
+background_mode = 4
+background_energy = 16.0
+background_canvas_max_layer = 1
+ambient_light_color = Color( 0.0588235, 0.956863, 0.811765, 1 )
+ambient_light_energy = 11.57
+ambient_light_sky_contribution = 0.36
+fog_sun_amount = 0.44
+dof_blur_far_distance = 0.43
+dof_blur_near_distance = 1.23
+glow_enabled = true
+glow_levels/3 = false
+glow_levels/6 = true
+glow_intensity = 2.0
+glow_blend_mode = 1
+glow_hdr_threshold = 0.11
+glow_hdr_luminance_cap = 28.03
+glow_hdr_scale = 1.73
+glow_high_quality = true
+adjustment_enabled = true
+
+[sub_resource type="DynamicFont" id=12]
+size = 32
+font_data = ExtResource( 452 )
+
+[node name="PlayerBase" instance=ExtResource( 1 )]
+position = Vector2( 865, 171 )
+script = ExtResource( 2 )
+Bullet = ExtResource( 258 )
+
+[node name="CollisionShape2D" parent="." index="0"]
+self_modulate = Color( 0.32549, 0.109804, 1, 1 )
+position = Vector2( 0, -4 )
+shape = SubResource( 10 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="." index="2"]
+material = SubResource( 9 )
+z_index = 2
+frames = SubResource( 1 )
+animation = "Thrust3Side"
+frame = 8
+
+[node name="Hitbox" parent="." index="3"]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" parent="Hitbox" index="0"]
+position = Vector2( 145, 0 )
+rotation = 1.5708
+shape = SubResource( 13 )
+disabled = true
+
+[node name="Hurtbox" parent="." index="4"]
+modulate = Color( 0, 1, 0.670588, 1 )
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( 6, 1 )
+shape = SubResource( 4 )
+
+[node name="FXSprite" type="AnimatedSprite" parent="." index="5"]
+position = Vector2( 1, -2 )
+frames = SubResource( 7 )
+animation = "Blank"
+
+[node name="Reticle" type="Sprite" parent="." index="6"]
+visible = false
+modulate = Color( 0, 0.835294, 1, 1 )
+position = Vector2( -378, -85 )
+texture = ExtResource( 280 )
+
+[node name="concentrationParticles" type="CPUParticles2D" parent="." index="7"]
+position = Vector2( 2, -1 )
+scale = Vector2( 0.762383, 1.16 )
+emitting = false
+amount = 20
+lifetime = 0.7
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 107.85
+direction = Vector2( 0, -1 )
+gravity = Vector2( 0, -1000 )
+initial_velocity = 330.27
+linear_accel = 100.0
+linear_accel_random = 0.08
+scale_amount = 17.0
+scale_amount_random = 0.73
+color = Color( 0.72549, 0.321569, 1, 1 )
+hue_variation = 0.1
+hue_variation_random = 0.46
+
+[node name="Particles2D" type="CPUParticles2D" parent="." index="8"]
+visible = false
+position = Vector2( -2, 115 )
+z_index = 1
+emitting = false
+amount = 40
+lifetime = 0.45
+explosiveness = 0.06
+randomness = 0.44
+lifetime_randomness = 0.61
+emission_shape = 1
+emission_sphere_radius = 44.95
+spread = 8.67
+gravity = Vector2( 0, 0 )
+initial_velocity = 201.84
+initial_velocity_random = 0.1
+angular_velocity = 26.42
+angular_velocity_random = 0.08
+linear_accel_random = 0.09
+radial_accel = 31.2
+tangential_accel = -18.34
+tangential_accel_random = 0.06
+scale_amount = 12.0
+scale_amount_random = 0.84
+color = Color( 0.117647, 0.568627, 1, 1 )
+hue_variation = 0.06
+hue_variation_random = 0.68
+anim_speed_random = 0.04
+
+[node name="Particles2D2" type="CPUParticles2D" parent="." index="9"]
+position = Vector2( 3, 1 )
+scale = Vector2( 2.21673, 2.19345 )
+z_index = 5
+emitting = false
+amount = 100
+lifetime = 0.3
+speed_scale = 0.5
+explosiveness = 0.65
+randomness = 0.44
+lifetime_randomness = 0.69
+emission_shape = 1
+emission_sphere_radius = 41.42
+spread = 13.51
+gravity = Vector2( 0, 0 )
+initial_velocity = 229.36
+initial_velocity_random = 0.1
+angular_velocity_random = 0.08
+linear_accel_random = 0.09
+tangential_accel_random = 0.06
+damping = 34.86
+scale_amount = 13.17
+scale_amount_random = 0.84
+color = Color( 0.0823529, 0.701961, 0.835294, 1 )
+color_ramp = SubResource( 6 )
+hue_variation = 0.04
+hue_variation_random = 0.9
+anim_speed_random = 0.04
+
+[node name="Particles2D3" type="CPUParticles2D" parent="." index="10"]
+scale = Vector2( 14.8775, -1.16071 )
+z_index = 1
+emitting = false
+amount = 400
+lifetime = 0.55
+preprocess = 5.5
+explosiveness = 0.06
+randomness = 0.44
+lifetime_randomness = 0.61
+emission_shape = 2
+emission_rect_extents = Vector2( 80, 460 )
+spread = 8.67
+gravity = Vector2( 0, 0 )
+initial_velocity = 501.83
+initial_velocity_random = 0.1
+angular_velocity = 26.42
+angular_velocity_random = 0.08
+linear_accel = 1.83
+linear_accel_random = 0.09
+radial_accel = 31.2
+tangential_accel = -18.34
+tangential_accel_random = 0.06
+scale_amount = 12.0
+scale_amount_random = 0.84
+color = Color( 0.807843, 0.117647, 1, 1 )
+hue_variation = 0.06
+hue_variation_random = 0.68
+anim_speed_random = 0.04
+
+[node name="SwordSpecialParticles" type="CPUParticles2D" parent="." index="11"]
+position = Vector2( 0, 130 )
+scale = Vector2( 0.581894, 13.2898 )
+z_index = 1
+emitting = false
+amount = 15
+lifetime = 0.67
+preprocess = 5.5
+explosiveness = 0.06
+randomness = 0.44
+lifetime_randomness = 0.61
+emission_shape = 2
+emission_rect_extents = Vector2( 300, 1 )
+direction = Vector2( 0, -1 )
+spread = 8.67
+gravity = Vector2( 0, 0 )
+initial_velocity = 98.16
+initial_velocity_random = 0.1
+angular_velocity = 26.42
+angular_velocity_random = 0.08
+linear_accel = -100.0
+linear_accel_random = 0.09
+radial_accel = 31.2
+tangential_accel = -18.34
+tangential_accel_random = 0.06
+scale_amount = 12.0
+scale_amount_random = 0.84
+color = Color( 0.807843, 0.117647, 1, 1 )
+hue_variation = 0.06
+hue_variation_random = 0.68
+anim_speed_random = 0.04
+
+[node name="enemyHitSlowdown_timer" type="Timer" parent="." index="12"]
+wait_time = 0.1
+
+[node name="TriggerCharge_timer" type="Timer" parent="." index="13"]
+wait_time = 1.25
+
+[node name="gunCooldown_timer" type="Timer" parent="." index="14"]
+wait_time = 1.5
+
+[node name="pause_timer" type="Timer" parent="." index="15"]
+wait_time = 0.245
+
+[node name="attackCooldown_timer" type="Timer" parent="." index="16"]
+wait_time = 2.0
+
+[node name="ghost_timer" type="Timer" parent="." index="17"]
+wait_time = 0.034
+autostart = true
+
+[node name="dash_timer" type="Timer" parent="." index="18"]
+wait_time = 0.13
+
+[node name="dash_cooldown_timer" type="Timer" parent="." index="19"]
+wait_time = 0.22
+
+[node name="dmgReaction_timer" type="Timer" parent="." index="20"]
+wait_time = 0.316
+
+[node name="swordSpecial_cooldown_timer" type="Timer" parent="." index="21"]
+wait_time = 1.3
+
+[node name="swordSpecial_startup_timer" type="Timer" parent="." index="22"]
+wait_time = 1.8
+
+[node name="swordSpecial_timer" type="Timer" parent="." index="23"]
+wait_time = 0.1
+
+[node name="hurtParticles" type="CPUParticles2D" parent="." index="24"]
+z_index = 1
+emitting = false
+amount = 40
+lifetime = 0.5
+explosiveness = 0.06
+randomness = 0.44
+lifetime_randomness = 0.61
+emission_shape = 1
+emission_sphere_radius = 57.87
+spread = 180.0
+initial_velocity = 275.24
+initial_velocity_random = 0.1
+angular_velocity = 13.21
+angular_velocity_random = 0.08
+linear_accel = 1.83
+linear_accel_random = 0.09
+radial_accel = 25.7
+tangential_accel = -18.34
+tangential_accel_random = 0.06
+scale_amount = 15.0
+scale_amount_random = 0.84
+color = Color( 0.854902, 0.054902, 0.054902, 1 )
+hue_variation = 0.1
+hue_variation_random = 0.65
+anim_speed_random = 0.04
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="25"]
+environment = SubResource( 5 )
+script = ExtResource( 67 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." index="26"]
+position = Vector2( -865, -171 )
+
+[node name="BlinkTween" type="Tween" parent="." index="27"]
+
+[node name="ComboTween" type="Tween" parent="." index="28"]
+
+[node name="linkLine" type="Line2D" parent="." index="29"]
+self_modulate = Color( 0.415686, 0.929412, 1, 1 )
+position = Vector2( 2, 3 )
+z_index = 2
+z_as_relative = false
+points = PoolVector2Array( 0, 0, 0, 0 )
+width = 5.0
+default_color = Color( 1, 1, 1, 1 )
+joint_mode = 1
+round_precision = 19
+antialiased = true
+
+[node name="SpecialsTween" type="Tween" parent="." index="30"]
+
+[node name="SpecialsTween2" type="Tween" parent="." index="31"]
+
+[node name="SpecialsTween3" type="Tween" parent="." index="32"]
+
+[node name="testIndicator" type="RichTextLabel" parent="." index="33"]
+visible = false
+anchor_right = 0.063
+anchor_bottom = 0.172
+margin_left = -35.0
+margin_top = -229.0
+margin_right = 409.38
+margin_bottom = -175.0
+rect_scale = Vector2( 2, 2 )
+custom_fonts/normal_font = SubResource( 12 )
+meta_underlined = false
+text = "ammo
+
+"
+fit_content_height = true
+scroll_active = false
+
+[connection signal="animation_finished" from="AnimatedSprite2" to="." method="_on_AnimatedSprite2_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite2" to="." method="_on_AnimatedSprite2_frame_changed"]
+[connection signal="timeout" from="enemyHitSlowdown_timer" to="." method="_on_enemyHitSlowdown_timer_timeout"]
+[connection signal="timeout" from="TriggerCharge_timer" to="." method="_on_TriggerCharge_timer_timeout"]
+[connection signal="timeout" from="gunCooldown_timer" to="." method="_on_gunCooldown_timer_timeout"]
+[connection signal="timeout" from="pause_timer" to="." method="_on_pause_timer_timeout"]
+[connection signal="timeout" from="attackCooldown_timer" to="." method="_on_attackCooldown_timer_timeout"]
+[connection signal="timeout" from="ghost_timer" to="." method="_on_ghost_timer_timeout"]
+[connection signal="timeout" from="dash_timer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="dash_cooldown_timer" to="." method="_on_dash_cooldown_timer_timeout"]
+[connection signal="timeout" from="dmgReaction_timer" to="." method="_on_dmgReaction_timer_timeout"]
+[connection signal="timeout" from="swordSpecial_cooldown_timer" to="." method="_on_swordSpecial_cooldown_timer_timeout"]
+[connection signal="timeout" from="swordSpecial_startup_timer" to="." method="_on_swordSpecial_startup_timer_timeout"]
+[connection signal="timeout" from="swordSpecial_timer" to="." method="_on_swordSpecial_timer_timeout"]
+
+[editable path="Hitbox"]
+[editable path="Hurtbox"]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Rufus_08.png-28f251a0417005ccd3d430b7cebcf40b.stex"
+path="res://.import/Rufus_08.png-339b704738d2323da8cde70c0ccfdd77.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rufus Sprites/Rufus Slash/Rufus_08.png"
-dest_files=[ "res://.import/Rufus_08.png-28f251a0417005ccd3d430b7cebcf40b.stex" ]
+source_file="res://assets/Rufus Sprites/Rufus Slash/Rufus_08.png"
+dest_files=[ "res://.import/Rufus_08.png-339b704738d2323da8cde70c0ccfdd77.stex" ]
 
 [params]
 

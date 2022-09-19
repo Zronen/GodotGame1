@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusSwordSpecialCharge_08.png-70c8b7a8f59f03090c23d2b497905b08.stex"
+path="res://.import/RufusSwordSpecialCharge_08.png-4ef61447beccbe26b55234cefd61690d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_08.png"
-dest_files=[ "res://.import/RufusSwordSpecialCharge_08.png-70c8b7a8f59f03090c23d2b497905b08.stex" ]
+source_file="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Charge/RufusSwordSpecialCharge_08.png"
+dest_files=[ "res://.import/RufusSwordSpecialCharge_08.png-4ef61447beccbe26b55234cefd61690d.stex" ]
 
 [params]
 

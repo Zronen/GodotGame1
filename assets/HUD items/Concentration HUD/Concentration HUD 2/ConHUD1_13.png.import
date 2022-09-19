@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ConHUD1_13.png-c2f9a195c7576c5107dd6fc0385765fc.stex"
+path="res://.import/ConHUD1_13.png-e57646e235fd331104770420c07bf5cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_13.png"
-dest_files=[ "res://.import/ConHUD1_13.png-c2f9a195c7576c5107dd6fc0385765fc.stex" ]
+source_file="res://assets/HUD items/Concentration HUD/Concentration HUD 2/ConHUD1_13.png"
+dest_files=[ "res://.import/ConHUD1_13.png-e57646e235fd331104770420c07bf5cb.stex" ]
 
 [params]
 

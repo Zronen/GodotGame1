@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusMultiJabBack_08.png-9f41b2fface011a85ea804420b714629.stex"
+path="res://.import/RufusMultiJabBack_08.png-c144c91079a79f25846ea974292f282e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_08.png"
-dest_files=[ "res://.import/RufusMultiJabBack_08.png-9f41b2fface011a85ea804420b714629.stex" ]
+source_file="res://assets/Attack Player Animations/Rufus Thrust Combo Back #2/RufusMultiJabBack_08.png"
+dest_files=[ "res://.import/RufusMultiJabBack_08.png-c144c91079a79f25846ea974292f282e.stex" ]
 
 [params]
 

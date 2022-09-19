@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GBAltSide_19.png-8028f7dea80d1cdc271e1758b4a79de3.stex"
+path="res://.import/GBAltSide_19.png-7632231475d6225c92575ff50ba10f09.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_19.png"
-dest_files=[ "res://.import/GBAltSide_19.png-8028f7dea80d1cdc271e1758b4a79de3.stex" ]
+source_file="res://assets/Attack Player Animations/Gunblade Attacks/Trigger_combo/Rufus GB Alt Combo 1 Side/GBAltSide_19.png"
+dest_files=[ "res://.import/GBAltSide_19.png-7632231475d6225c92575ff50ba10f09.stex" ]
 
 [params]
 

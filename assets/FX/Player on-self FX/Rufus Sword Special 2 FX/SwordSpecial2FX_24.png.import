@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SwordSpecial2FX_24.png-971818de41e9b08a9742d1e5e17ed1f5.stex"
+path="res://.import/SwordSpecial2FX_24.png-5e0ab77386340551a69023ff1f051951.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_24.png"
-dest_files=[ "res://.import/SwordSpecial2FX_24.png-971818de41e9b08a9742d1e5e17ed1f5.stex" ]
+source_file="res://assets/FX/Player on-self FX/Rufus Sword Special 2 FX/SwordSpecial2FX_24.png"
+dest_files=[ "res://.import/SwordSpecial2FX_24.png-5e0ab77386340551a69023ff1f051951.stex" ]
 
 [params]
 

@@ -1,0 +1,201 @@
+[gd_scene load_steps=69 format=2]
+
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_5.png" type="Texture" id=1]
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_3.png" type="Texture" id=2]
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_6.png" type="Texture" id=3]
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_7.png" type="Texture" id=4]
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_1.png" type="Texture" id=5]
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_4.png" type="Texture" id=6]
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_0.png" type="Texture" id=7]
+[ext_resource path="res://assets/Leon Test Walk (1)/RufusWalk_2.png" type="Texture" id=8]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_08.png" type="Texture" id=9]
+[ext_resource path="res://assets/Leon Test-1.png.png" type="Texture" id=10]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_10.png" type="Texture" id=11]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_01.png" type="Texture" id=12]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_03.png" type="Texture" id=13]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_06.png" type="Texture" id=14]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_00.png" type="Texture" id=15]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_09.png" type="Texture" id=16]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_04.png" type="Texture" id=17]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_07.png" type="Texture" id=18]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_00.png" type="Texture" id=19]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_05.png" type="Texture" id=20]
+[ext_resource path="res://assets/Leon Slash 2 (1)/RufusSlash_02.png" type="Texture" id=21]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=22]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_05.png" type="Texture" id=23]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_09.png" type="Texture" id=24]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_02.png" type="Texture" id=25]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_6.png" type="Texture" id=26]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_7.png" type="Texture" id=27]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_08.png" type="Texture" id=28]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_1.png" type="Texture" id=29]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_0.png" type="Texture" id=30]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_04.png" type="Texture" id=31]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_03.png" type="Texture" id=32]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_01.png" type="Texture" id=33]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Slash/Rufus_06.png" type="Texture" id=34]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_4.png" type="Texture" id=35]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_3.png" type="Texture" id=36]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_5.png" type="Texture" id=37]
+[ext_resource path="res://assets/Rufus Walk fix (1)/RufusWalk2_2.png" type="Texture" id=38]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_1.png" type="Texture" id=39]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_3.png" type="Texture" id=40]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_4.png" type="Texture" id=41]
+[ext_resource path="res://assets/Rufus Sprites/Rufus Test-1.png.png" type="Texture" id=42]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_5.png" type="Texture" id=43]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_6.png" type="Texture" id=44]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_2.png" type="Texture" id=45]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_0.png" type="Texture" id=46]
+[ext_resource path="res://assets/Rufus Walk Back fix/RufusWalkBack1_7.png" type="Texture" id=47]
+[ext_resource path="res://assets/Rufus Test-3.png.png" type="Texture" id=48]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_0.png" type="Texture" id=49]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_1.png" type="Texture" id=50]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_6.png" type="Texture" id=51]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_3.png" type="Texture" id=52]
+[ext_resource path="res://assets/Rufus Test-2.png.png" type="Texture" id=53]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_4.png" type="Texture" id=54]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_7.png" type="Texture" id=55]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_2.png" type="Texture" id=56]
+[ext_resource path="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_5.png" type="Texture" id=57]
+[ext_resource path="res://assets/Rufus Slash pt 2/RufusSlashpt2_09.png" type="Texture" id=58]
+[ext_resource path="res://assets/Rufus Slash pt 2/RufusSlashpt2_10.png" type="Texture" id=59]
+[ext_resource path="res://assets/Rufus Slash pt 2/RufusSlashpt2_11.png" type="Texture" id=60]
+[ext_resource path="res://assets/Rufus Slash pt 2/RufusSlashpt2_15.png" type="Texture" id=61]
+[ext_resource path="res://assets/Rufus Slash pt 2/RufusSlashpt2_14.png" type="Texture" id=62]
+[ext_resource path="res://assets/Rufus Slash pt 2/RufusSlashpt2_13.png" type="Texture" id=63]
+[ext_resource path="res://assets/Rufus Slash pt 2/RufusSlashpt2_12.png" type="Texture" id=64]
+[ext_resource path="res://Hurtbox.tscn" type="PackedScene" id=65]
+[ext_resource path="res://Hitbox.tscn" type="PackedScene" id=66]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 56 ), ExtResource( 52 ), ExtResource( 54 ), ExtResource( 57 ), ExtResource( 51 ), ExtResource( 55 ) ],
+"loop": true,
+"name": "SideRun2",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 53 ) ],
+"loop": true,
+"name": "SideIdle2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 48 ) ],
+"loop": true,
+"name": "BackIdle2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Run",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 33 ), ExtResource( 25 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 23 ), ExtResource( 34 ), ExtResource( 28 ), ExtResource( 24 ), ExtResource( 24 ) ],
+"loop": false,
+"name": "Slash2",
+"speed": 32.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 64 ), ExtResource( 63 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 61 ), ExtResource( 61 ) ],
+"loop": false,
+"name": "Slash2pt2",
+"speed": 32.0
+}, {
+"frames": [ ExtResource( 42 ) ],
+"loop": true,
+"name": "Idle2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 46 ), ExtResource( 39 ), ExtResource( 45 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "BackRun2",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 12 ), ExtResource( 21 ), ExtResource( 13 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "Slash",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 29 ), ExtResource( 38 ), ExtResource( 36 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "Run2",
+"speed": 12.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 54.0
+height = 97.0
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 22 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1, -2 )
+scale = Vector2( 0.8, 0.8 )
+z_index = 2
+frames = SubResource( 1 )
+animation = "Slash2pt2"
+frame = 9
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Particles2D" type="CPUParticles2D" parent="."]
+position = Vector2( -2, 115 )
+z_index = 1
+amount = 20
+lifetime = 0.5
+explosiveness = 0.06
+randomness = 0.44
+lifetime_randomness = 0.61
+emission_shape = 1
+emission_sphere_radius = 44.95
+spread = 8.67
+gravity = Vector2( 0, 0 )
+initial_velocity = 201.84
+initial_velocity_random = 0.1
+angular_velocity = 26.42
+angular_velocity_random = 0.08
+linear_accel_random = 0.09
+radial_accel = 31.2
+tangential_accel = -18.34
+tangential_accel_random = 0.06
+scale_amount = 15.0
+scale_amount_random = 0.84
+color = Color( 0.25098, 0.811765, 0.886275, 1 )
+hue_variation = 0.07
+hue_variation_random = 0.57
+anim_speed_random = 0.04
+
+[node name="ghost_timer" type="Timer" parent="."]
+wait_time = 0.045
+autostart = true
+
+[node name="dash_timer" type="Timer" parent="."]
+wait_time = 0.163
+
+[node name="dash_cooldown_timer" type="Timer" parent="."]
+wait_time = 0.24
+
+[node name="Hitbox" parent="." instance=ExtResource( 66 )]
+
+[node name="Hurtbox" parent="." instance=ExtResource( 65 )]
+collision_layer = 2
+collision_mask = 16
+monitorable = false
+
+[node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( 7, 7.5 )
+shape = SubResource( 2 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite" to="." method="_on_AnimatedSprite_frame_changed"]
+[connection signal="timeout" from="ghost_timer" to="." method="_on_ghost_timer_timeout"]
+[connection signal="timeout" from="dash_timer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="dash_cooldown_timer" to="." method="_on_dash_cooldown_timer_timeout"]
+
+[editable path="Hitbox"]
+[editable path="Hurtbox"]

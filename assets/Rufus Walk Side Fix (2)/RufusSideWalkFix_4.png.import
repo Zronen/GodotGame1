@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusSideWalkFix_4.png-255096ac8dd9721db3cd15967fdd920f.stex"
+path="res://.import/RufusSideWalkFix_4.png-8a13ee4d272cfe9a5dd8688dcc9f598a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_4.png"
-dest_files=[ "res://.import/RufusSideWalkFix_4.png-255096ac8dd9721db3cd15967fdd920f.stex" ]
+source_file="res://assets/Rufus Walk Side Fix (2)/RufusSideWalkFix_4.png"
+dest_files=[ "res://.import/RufusSideWalkFix_4.png-8a13ee4d272cfe9a5dd8688dcc9f598a.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Leon Test-1.png.png-ea25527bea366fbab6a8278c0a03944c.stex"
+path="res://.import/Leon Test-1.png.png-b8709eb0049be443cc800f32c9b9cc25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Leon Test-1.png.png"
-dest_files=[ "res://.import/Leon Test-1.png.png-ea25527bea366fbab6a8278c0a03944c.stex" ]
+source_file="res://assets/Leon Test-1.png.png"
+dest_files=[ "res://.import/Leon Test-1.png.png-b8709eb0049be443cc800f32c9b9cc25.stex" ]
 
 [params]
 

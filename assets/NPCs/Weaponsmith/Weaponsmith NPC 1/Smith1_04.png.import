@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Smith1_04.png-cb3c603990a1cf5805f2c0a6a0832404.stex"
+path="res://.import/Smith1_04.png-3448161da66a208af10d43198664a236.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/NPCs/Weaponsmith/Weaponsmith NPC 1/Smith1_04.png"
-dest_files=[ "res://.import/Smith1_04.png-cb3c603990a1cf5805f2c0a6a0832404.stex" ]
+source_file="res://assets/NPCs/Weaponsmith/Weaponsmith NPC 1/Smith1_04.png"
+dest_files=[ "res://.import/Smith1_04.png-3448161da66a208af10d43198664a236.stex" ]
 
 [params]
 

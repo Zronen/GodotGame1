@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReapIdle_03.png-449e56f319a0627771e66a7a3edf4847.stex"
+path="res://.import/ReapIdle_03.png-806f15cd405db07552fa60b3d95e3112.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Reaper Sprites/Reaper #1/ReapIdle_03.png"
-dest_files=[ "res://.import/ReapIdle_03.png-449e56f319a0627771e66a7a3edf4847.stex" ]
+source_file="res://assets/Reaper Sprites/Reaper #1/ReapIdle_03.png"
+dest_files=[ "res://.import/ReapIdle_03.png-806f15cd405db07552fa60b3d95e3112.stex" ]
 
 [params]
 
