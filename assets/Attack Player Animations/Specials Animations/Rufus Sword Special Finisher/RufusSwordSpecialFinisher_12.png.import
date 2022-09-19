@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusSwordSpecialFinisher_12.png-561307cbf6caf3ee87d8e2cf77c9c8d7.stex"
+path="res://.import/RufusSwordSpecialFinisher_12.png-03dc1f5a323a931db90ef713b185fffe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_12.png"
-dest_files=[ "res://.import/RufusSwordSpecialFinisher_12.png-561307cbf6caf3ee87d8e2cf77c9c8d7.stex" ]
+source_file="res://assets/Attack Player Animations/Specials Animations/Rufus Sword Special Finisher/RufusSwordSpecialFinisher_12.png"
+dest_files=[ "res://.import/RufusSwordSpecialFinisher_12.png-03dc1f5a323a931db90ef713b185fffe.stex" ]
 
 [params]
 

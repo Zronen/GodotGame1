@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusSlash3Side_3.png-d3f15dd8238cf63d3a33c99483aa1cde.stex"
+path="res://.import/RufusSlash3Side_3.png-28dbdb335beda0742dd4921174917092.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_3.png"
-dest_files=[ "res://.import/RufusSlash3Side_3.png-d3f15dd8238cf63d3a33c99483aa1cde.stex" ]
+source_file="res://assets/Attack Player Animations/Rufus Slash 3 Side V3/RufusSlash3Side_3.png"
+dest_files=[ "res://.import/RufusSlash3Side_3.png-28dbdb335beda0742dd4921174917092.stex" ]
 
 [params]
 

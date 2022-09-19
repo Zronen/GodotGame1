@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gate.png-ead89a9c5673f643cf8bd290dac71f78.stex"
+path="res://.import/Gate.png-3b5fa914b5bb1e787371251e5fbb105e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Environment/Stage 1/Walls and structures/Gate.png"
-dest_files=[ "res://.import/Gate.png-ead89a9c5673f643cf8bd290dac71f78.stex" ]
+source_file="res://assets/Environment/Stage 1/Walls and structures/Gate.png"
+dest_files=[ "res://.import/Gate.png-3b5fa914b5bb1e787371251e5fbb105e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shotgunShot_2.png-dc122ac2c54d784e9c24e2be69b193ce.stex"
+path="res://.import/shotgunShot_2.png-fcf73c328239aa327888a7bbff3dda13.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Drone/GUNS/Guns1_shotgun/shotgunShot_2.png"
-dest_files=[ "res://.import/shotgunShot_2.png-dc122ac2c54d784e9c24e2be69b193ce.stex" ]
+source_file="res://assets/Drone/GUNS/Guns1_shotgun/shotgunShot_2.png"
+dest_files=[ "res://.import/shotgunShot_2.png-fcf73c328239aa327888a7bbff3dda13.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusGBSlash3_07.png-2ba0b7d5f8b0668d0828fc3598a2defd.stex"
+path="res://.import/RufusGBSlash3_07.png-48c62226b4fd9af7a3ef0cc480b34d56.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_07.png"
-dest_files=[ "res://.import/RufusGBSlash3_07.png-2ba0b7d5f8b0668d0828fc3598a2defd.stex" ]
+source_file="res://assets/Attack Player Animations/Gunblade Attacks/Base_combo/Rufus GB Slash 3 (1)/RufusGBSlash3_07.png"
+dest_files=[ "res://.import/RufusGBSlash3_07.png-48c62226b4fd9af7a3ef0cc480b34d56.stex" ]
 
 [params]
 

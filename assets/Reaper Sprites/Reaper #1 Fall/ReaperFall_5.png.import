@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ReaperFall_5.png-72f5ddb31108029b22dca2cc91914ca9.stex"
+path="res://.import/ReaperFall_5.png-9dc62b790a910c35703189433b4bc792.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Reaper Sprites/Reaper #1 Fall/ReaperFall_5.png"
-dest_files=[ "res://.import/ReaperFall_5.png-72f5ddb31108029b22dca2cc91914ca9.stex" ]
+source_file="res://assets/Reaper Sprites/Reaper #1 Fall/ReaperFall_5.png"
+dest_files=[ "res://.import/ReaperFall_5.png-9dc62b790a910c35703189433b4bc792.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RufusWalkDown_5.png-baffe6c37cd11efd1373e28e63581637.stex"
+path="res://.import/RufusWalkDown_5.png-a9c7a7e1836e93f1fa6081765936e48a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Rufus Sprites/Rufus Walk/RufusWalkDown_5.png"
-dest_files=[ "res://.import/RufusWalkDown_5.png-baffe6c37cd11efd1373e28e63581637.stex" ]
+source_file="res://assets/Rufus Sprites/Rufus Walk/RufusWalkDown_5.png"
+dest_files=[ "res://.import/RufusWalkDown_5.png-a9c7a7e1836e93f1fa6081765936e48a.stex" ]
 
 [params]
 
