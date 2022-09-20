@@ -1,12 +1,11 @@
 [gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Prefabs/Environment/RainArea.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Road Test-2.png.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Environment/Stage 1/Tiles and Foliage/grass.png" type="Texture" id=2]
 [ext_resource path="res://Prefabs/Enemies/Enemy1_Reaper.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scripts/Environment/Camera2D.gd" type="Script" id=4]
 [ext_resource path="res://Prefabs/Player/SpeechBox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Prefabs/Player/HUD.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/Road Test-3.png.png" type="Texture" id=7]
 [ext_resource path="res://Prefabs/Player/PlayerBase.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Prefabs/Enemies/Enemy2_Wizard.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Prefabs/Environment/Weaponsmith.tscn" type="PackedScene" id=10]
@@ -27,6 +26,31 @@
 [ext_resource path="res://Assets/Environment/Stage 1/Walls and structures/Gate_Tall_Right.png" type="Texture" id=25]
 [ext_resource path="res://Assets/Environment/Stage 1/Walls and structures/Gate_Medium_Pillar_Left.png" type="Texture" id=26]
 
+[sub_resource type="TileSet" id=3]
+0/name = "grass.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 1760, 800 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 438, Vector2( 0, 2 ), 54, Vector2( 0, 3 ), 48, Vector2( 1, 0 ), 504, Vector2( 1, 1 ), 511, Vector2( 1, 2 ), 63, Vector2( 1, 3 ), 56, Vector2( 2, 0 ), 216, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 27, Vector2( 2, 3 ), 24, Vector2( 3, 0 ), 144, Vector2( 3, 1 ), 146, Vector2( 3, 2 ), 18, Vector2( 3, 3 ), 16, Vector2( 4, 0 ), 176, Vector2( 4, 1 ), 182, Vector2( 4, 2 ), 434, Vector2( 4, 3 ), 50, Vector2( 4, 4 ), 178, Vector2( 5, 0 ), 248, Vector2( 5, 1 ), 255, Vector2( 5, 2 ), 507, Vector2( 5, 3 ), 59, Vector2( 5, 4 ), 251, Vector2( 6, 0 ), 440, Vector2( 6, 1 ), 447, Vector2( 6, 2 ), 510, Vector2( 6, 3 ), 62, Vector2( 6, 4 ), 446, Vector2( 7, 0 ), 152, Vector2( 7, 1 ), 155, Vector2( 7, 2 ), 218, Vector2( 7, 3 ), 26, Vector2( 7, 4 ), 154, Vector2( 8, 0 ), 184, Vector2( 8, 1 ), 191, Vector2( 8, 2 ), 506, Vector2( 8, 3 ), 58, Vector2( 8, 4 ), 186, Vector2( 9, 0 ), 443, Vector2( 9, 1 ), 254, Vector2( 9, 2 ), 442, Vector2( 9, 3 ), 190, Vector2( 10, 2 ), 250, Vector2( 10, 3 ), 187 ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 160, 160 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 81.1762, 35.386 )
 
@@ -36,6 +60,12 @@ extents = Vector2( 10, 252.362 )
 [node name="World" type="Node2D"]
 position = Vector2( 2, -4 )
 script = ExtResource( 12 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 3 )
+cell_size = Vector2( 160, 160 )
+format = 1
+tile_data = PoolIntArray( 196615, 0, 0, 196616, 0, 1, 196617, 0, 1, 196618, 0, 2, 262151, 0, 65536, 262152, 0, 65537, 262153, 0, 65537, 262154, 0, 131077, 262155, 0, 1, 262156, 0, 1, 262157, 0, 2, 327686, 0, 0, 327687, 0, 131078, 327688, 0, 65537, 327689, 0, 65537, 327690, 0, 65537, 327691, 0, 65537, 327692, 0, 65537, 327693, 0, 131077, 327694, 0, 2, 393222, 0, 65536, 393223, 0, 65537, 393224, 0, 65537, 393225, 0, 65537, 393226, 0, 65537, 393227, 0, 65537, 393228, 0, 65537, 393229, 0, 65537, 393230, 0, 131077, 393231, 0, 2, 458758, 0, 65536, 458759, 0, 65537, 458760, 0, 65537, 458761, 0, 65537, 458762, 0, 65537, 458763, 0, 65537, 458764, 0, 65537, 458765, 0, 65537, 458766, 0, 65537, 458767, 0, 65538, 524293, 0, 0, 524294, 0, 131078, 524295, 0, 65537, 524296, 0, 65537, 524297, 0, 65537, 524298, 0, 65537, 524299, 0, 65537, 524300, 0, 65537, 524301, 0, 65537, 524302, 0, 65537, 524303, 0, 65538, 589828, 0, 0, 589829, 0, 131078, 589830, 0, 65537, 589831, 0, 65537, 589832, 0, 65537, 589833, 0, 65537, 589834, 0, 65537, 589835, 0, 65537, 589836, 0, 65541, 589837, 0, 131073, 589838, 0, 131073, 589839, 0, 131074, 655364, 0, 131072, 655365, 0, 131073, 655366, 0, 65542, 655367, 0, 65537, 655368, 0, 65537, 655369, 0, 65537, 655370, 0, 65537, 655371, 0, 65537, 655372, 0, 65538, 720902, 0, 131072, 720903, 0, 65542, 720904, 0, 65537, 720905, 0, 65537, 720906, 0, 65537, 720907, 0, 65537, 720908, 0, 262149, 720909, 0, 196610, 786439, 0, 131072, 786440, 0, 131073, 786441, 0, 131073, 786442, 0, 131073, 786443, 0, 131073, 786444, 0, 131074 )
 
 [node name="PlayerBase" parent="." instance=ExtResource( 8 )]
 z_index = 2
@@ -210,201 +240,6 @@ texture = ExtResource( 23 )
 [node name="Gate2" type="Sprite" parent="Area2D"]
 position = Vector2( 1473.75, 3586.25 )
 texture = ExtResource( 18 )
-
-[node name="RoadTest" type="Sprite" parent="."]
-position = Vector2( 1167.5, 498.75 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 2 )
-offset = Vector2( 124.981, 84.003 )
-
-[node name="RoadTest2" type="Sprite" parent="."]
-position = Vector2( 1643.19, 981.714 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest3" type="Sprite" parent="."]
-position = Vector2( 2173.19, 981.943 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest4" type="Sprite" parent="."]
-position = Vector2( 1170.19, 496.714 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( 444.981, 84.1465 )
-
-[node name="RoadTest5" type="Sprite" parent="."]
-position = Vector2( 1113.19, 981.943 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest6" type="Sprite" parent="."]
-position = Vector2( 1170.19, 496.714 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( -195.019, 84.1465 )
-
-[node name="RoadTest7" type="Sprite" parent="."]
-position = Vector2( 1642.19, 471.943 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest8" type="Sprite" parent="."]
-position = Vector2( 2172.19, 472.172 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest9" type="Sprite" parent="."]
-position = Vector2( 1112.19, 472.172 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest10" type="Sprite" parent="."]
-position = Vector2( 1169.17, 2027.38 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 2 )
-offset = Vector2( 124.981, 84.003 )
-
-[node name="RoadTest11" type="Sprite" parent="."]
-position = Vector2( 1641.92, 2512.93 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest12" type="Sprite" parent="."]
-position = Vector2( 2170.74, 2513.29 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest13" type="Sprite" parent="."]
-position = Vector2( 1169.17, 2027.38 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( 444.981, 84.1465 )
-
-[node name="RoadTest14" type="Sprite" parent="."]
-position = Vector2( 1111.11, 2513.29 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest15" type="Sprite" parent="."]
-position = Vector2( 1169.17, 2027.38 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( -195.019, 84.1465 )
-
-[node name="RoadTest16" type="Sprite" parent="."]
-position = Vector2( 1642.19, 2002.71 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest17" type="Sprite" parent="."]
-position = Vector2( 2171.19, 2002.71 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest18" type="Sprite" parent="."]
-position = Vector2( 1113.19, 2002.71 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest19" type="Sprite" parent="."]
-position = Vector2( 2701.56, 981.714 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest20" type="Sprite" parent="."]
-position = Vector2( 1698.56, 496.485 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( 444.981, 84.1465 )
-
-[node name="RoadTest21" type="Sprite" parent="."]
-position = Vector2( 2700.56, 471.943 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest22" type="Sprite" parent="."]
-position = Vector2( 2699.11, 2513.07 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest23" type="Sprite" parent="."]
-position = Vector2( 1697.55, 2027.16 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( 444.981, 84.1465 )
-
-[node name="RoadTest24" type="Sprite" parent="."]
-position = Vector2( 2699.56, 2002.48 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 7 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest25" type="Sprite" parent="."]
-position = Vector2( 109.189, 496.714 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 2 )
-offset = Vector2( 124.981, 84.003 )
-
-[node name="RoadTest26" type="Sprite" parent="."]
-position = Vector2( 582.189, 981.714 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest27" type="Sprite" parent="."]
-position = Vector2( 581.189, 471.943 )
-scale = Vector2( 1.65625, 1.59518 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, -220.038 )
-
-[node name="RoadTest28" type="Sprite" parent="."]
-position = Vector2( 108.172, 2027.38 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 2 )
-offset = Vector2( 124.981, 84.003 )
-
-[node name="RoadTest29" type="Sprite" parent="."]
-position = Vector2( 580.922, 2512.93 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, 99.6752 )
-
-[node name="RoadTest30" type="Sprite" parent="."]
-position = Vector2( 581.189, 2002.71 )
-rotation = 6.28319
-scale = Vector2( 1.656, 1.595 )
-texture = ExtResource( 2 )
-offset = Vector2( -160.604, -220.038 )
 
 [node name="Rain2" type="CPUParticles2D" parent="."]
 visible = false
