@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Prefabs/Environment/RainArea.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Environment/Stage 1/Tiles and Foliage/grass.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scripts/Environment/Camera2D.gd" type="Script" id=4]
 [ext_resource path="res://Prefabs/Player/SpeechBox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Prefabs/Player/HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Prefabs/Player/PlayerBullet.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Prefabs/Player/PlayerBase.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Prefabs/Enemies/Enemy2_Wizard.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Prefabs/Environment/Weaponsmith.tscn" type="PackedScene" id=10]
@@ -69,6 +70,7 @@ tile_data = PoolIntArray( 196615, 0, 0, 196616, 0, 1, 196617, 0, 1, 196618, 0, 2
 
 [node name="PlayerBase" parent="." instance=ExtResource( 8 )]
 z_index = 2
+Bullet = ExtResource( 7 )
 
 [node name="RainArea" parent="PlayerBase" instance=ExtResource( 1 )]
 position = Vector2( -992.5, -92.25 )
