@@ -153,7 +153,7 @@ func attack_state():
 				#_animated_sprite.play("Slash3Back")
 				_animated_sprite.set_flip_h(false)
 				if weapon == "Gunblade":
-					baseCombo(0, -25, "A1_Slash3Back", "A1_Slash3Back_combo1.1", "A1_Slash3Back" , "A1_Slash3Back_combo1.2",17,17)
+					baseCombo(0, -25, "A1_Slash3Back", "A1_Slash3Back_combo1.1", "A1_Slash3Back" , "A1_Slash3Back_combo1.2",15,15)
 				else:
 					baseCombo(0, -25, "Slash3Back", "Slash3Back_combo1", "Slash3Back" , "Slash3Back_combo1",9,9)
 #------------------- right			
@@ -167,7 +167,7 @@ func attack_state():
 				#_animated_sprite.play("Slash3Side")
 				_animated_sprite.set_flip_h(false)
 				if weapon == "Gunblade":
-					baseCombo(30, 0, "A1_Slash3Side", "A1_Slash3Side_combo1.1", "A1_Slash3Side", "A1_Slash3Side_combo1.2",17,17)
+					baseCombo(30, 0, "A1_Slash3Side", "A1_Slash3Side_combo1.1", "A1_Slash3Side", "A1_Slash3Side_combo1.2",15,15)
 				else:
 					baseCombo(30, 0, "Slash3Side", "Slash3Side_combo1", "Slash3Side" , "Slash3Side_combo1",9,9)
 #------------------- left			
@@ -181,7 +181,7 @@ func attack_state():
 				#_animated_sprite.play("Slash3Side")
 				_animated_sprite.set_flip_h(true)
 				if weapon == "Gunblade":
-					baseCombo(-30, 0, "A1_Slash3Side", "A1_Slash3Side_combo1.1", "A1_Slash3Side", "A1_Slash3Side_combo1.2",17,17)
+					baseCombo(-30, 0, "A1_Slash3Side", "A1_Slash3Side_combo1.1", "A1_Slash3Side", "A1_Slash3Side_combo1.2",15,15)
 				else:
 					baseCombo(-30, 0, "Slash3Side", "Slash3Side_combo1", "Slash3Side" , "Slash3Side_combo1",9,9)
 #------------------- down (else)			
@@ -195,7 +195,7 @@ func attack_state():
 				#_animated_sprite.play("Slash3")
 				_animated_sprite.set_flip_h(false)
 				if weapon == "Gunblade":
-					baseCombo(0, 25, "A1_Slash3", "A1_Slash3_combo1.1", "A1_Slash3", "A1_Slash3_combo1.2",17,17)
+					baseCombo(0, 25, "A1_Slash3", "A1_Slash3_combo1.1", "A1_Slash3", "A1_Slash3_combo1.2",15,15)
 				else:
 					baseCombo(0, 25, "Slash3", "Slash3_combo1", "Slash3" , "Slash3_combo1",9,9)
 
@@ -203,26 +203,26 @@ func attack_state():
 		if Input.is_action_pressed("press_f") and weapon == "Gunblade" and Input.is_action_pressed("spacebar") and lastDirection == "down" :
 				gunbladeCharge("A1_AltCombo1_Charge")
 		if (Input.is_action_just_released("spacebar") || Input.is_action_just_released("press_f")) and gunbladeCharge > 0 and weapon == "Gunblade" and lastDirection == "down":		
-			gunbladeRelease(0,80,"A1_AltCombo1","A1_AltCombo1.1", "A1_AltCombo1.2")
+			gunbladeRelease(0,90,"A1_AltCombo1","A1_AltCombo1.1", "A1_AltCombo1.2")
 			
 		if Input.is_action_pressed("press_f") and weapon == "Gunblade" and Input.is_action_pressed("spacebar") and lastDirection == "up" :
 				gunbladeCharge("A1_AltCombo1_ChargeBack")
 		if (Input.is_action_just_released("spacebar") || Input.is_action_just_released("press_f")) and gunbladeCharge > 0 and weapon == "Gunblade" and lastDirection == "up":		
-			gunbladeRelease(0,-90,"A1_AltCombo1Back","A1_AltCombo1.1Back", "A1_AltCombo1.2Back")
+			gunbladeRelease(0,-100,"A1_AltCombo1Back","A1_AltCombo1.1Back", "A1_AltCombo1.2Back")
 
 		if Input.is_action_pressed("press_f") and weapon == "Gunblade" and Input.is_action_pressed("spacebar") and lastDirection == "right" :
 				_animated_sprite.set_flip_h(false)
 				gunbladeCharge("A1_AltCombo1_ChargeSide")
 		if (Input.is_action_just_released("spacebar") || Input.is_action_just_released("press_f")) and gunbladeCharge > 0 and weapon == "Gunblade" and lastDirection == "right":		
 			_animated_sprite.set_flip_h(false)
-			gunbladeRelease(85,0,"A1_AltCombo1Side","A1_AltCombo1.1Side", "A1_AltCombo1.2Side")
+			gunbladeRelease(95,0,"A1_AltCombo1Side","A1_AltCombo1.1Side", "A1_AltCombo1.2Side")
 						
 		if Input.is_action_pressed("press_f") and weapon == "Gunblade" and Input.is_action_pressed("spacebar") and lastDirection == "left" :
 				_animated_sprite.set_flip_h(true)
 				gunbladeCharge("A1_AltCombo1_ChargeSide")		
 		if (Input.is_action_just_released("spacebar") || Input.is_action_just_released("press_f")) and gunbladeCharge > 0 and weapon == "Gunblade" and lastDirection == "left":		
 			_animated_sprite.set_flip_h(true)
-			gunbladeRelease(-85,0,"A1_AltCombo1Side","A1_AltCombo1.1Side", "A1_AltCombo1.2Side")
+			gunbladeRelease(-95,0,"A1_AltCombo1Side","A1_AltCombo1.1Side", "A1_AltCombo1.2Side")
 			
 
 
@@ -256,6 +256,7 @@ func attack_state():
 
 func gunbladeCharge(startMove):
 	#if Input.is_action_pressed("spacebar"):
+		hitBox.disabled = true
 		if gunbladeCharge == 0:
 			$TriggerCharge_timer.start()
 			_animated_sprite.play(startMove)
@@ -274,15 +275,19 @@ func gunbladeCharge(startMove):
 				
 
 func gunbladeRelease(x,y,startMove,followup1, followup2):
+		hitBox.disabled = false
 		if gunbladeCharge == 1:
 			_animated_sprite.play(startMove)
 			blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.08,Tween.TRANS_LINEAR, Tween.EASE_OUT_IN, 0.1)
 			blinkTween.start()
+			$Hitbox.damage = 3
+			
 		if gunbladeCharge == 2:
 			blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.06,Tween.TRANS_LINEAR, Tween.EASE_OUT_IN, 0.1)
 			blinkTween.start()
 			comboTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.06,Tween.TRANS_LINEAR, Tween.EASE_OUT_IN, 0.4)
 			comboTween.start()
+			$Hitbox.damage = 7
 			
 			_animated_sprite.play(followup1)
 		if gunbladeCharge >= 3:
@@ -292,6 +297,7 @@ func gunbladeRelease(x,y,startMove,followup1, followup2):
 			comboTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + (x*2), self.global_position.y + (y*2)), 0.06,Tween.TRANS_LINEAR, Tween.EASE_OUT_IN, 0.4)
 			comboTween.start()
 			_animated_sprite.play(followup2)
+			$Hitbox.damage = 13
 		
 		gunbladeCharge = -1
 		comboCounter = 4
@@ -326,7 +332,7 @@ func altCombo(x,y, startMove, followup1):
 #takes in how far the attack will carry you, and the names of the follow up aniamtions in the combo
 func baseCombo(x, y, startMove, followup1, followup2, followup3, followFrame1, followFrame2):
 	comboCount[1] = 0
-	$Hitbox.damage = 1
+	#$Hitbox.damage = 1
 	isGhosting = false
 	isGhosting2 = false
 	
@@ -370,7 +376,7 @@ func baseCombo(x, y, startMove, followup1, followup2, followup3, followFrame1, f
 			comboCounter += 1
 			hitBox.disabled = true
 			knockPower = 3
-			$Hitbox.damage = 2
+			#$Hitbox.damage = 2
 			blinkTween.start()
 	
 
@@ -381,7 +387,7 @@ func baseThrust(x,y, startMove, followup1, followup2):
 	$Hitbox.damage = 1
 	if comboCount[1] < 1: #_animated_sprite.frame == 0:
 		_animated_sprite.play(startMove)
-		blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.15,Tween.TRANS_LINEAR, Tween.EASE_OUT, 0.12)
+		blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + x, self.global_position.y + y), 0.1,Tween.TRANS_LINEAR, Tween.EASE_OUT, 0.1)
 		#blinkTween.interpolate_property(self, "global_position",self.global_position, Vector2(c_enemy_vector), 0.2,Tween.TRANS_LINEAR, Tween.EASE_IN)
 		blinkTween.start()
 		comboCount[1] = 1
@@ -429,6 +435,18 @@ func baseComboHitbox():
 ["Thrust3_combo3Back",0,-145,175,76,0,1,3],
 ["Thrust3_combo3Side",145,0,175,76,90,1,3]
 ]
+
+	var gunBladeBaseBox = [
+["A1_Slash3",0,150,212,262,90,1.75,1],
+["A1_Slash3_combo1.1",0,150,212,262,90,1.75,1],
+["A1_Slash3_combo1.2",0,150,212,262,90,3,1],
+["A1_Slash3Back",0,-185,212,262,90,1.75,1],
+["A1_Slash3Back_combo1.1",0,-185,212,262,90,1.75,1],
+["A1_Slash3Back_combo1.2",0,-185,212,262,90,3,1],
+["A1_Slash3Side", 150,0,212,262,0,1.75,1],
+["A1_Slash3Side_combo1.1", 150,0,212,262,0,1.75,1],
+["A1_Slash3Side_combo1.2", 150,0,212,262,0,3,1]
+]
 	
 	if weapon == "Sword":
 		for i in swordBaseBox.size():
@@ -440,12 +458,27 @@ func baseComboHitbox():
 				hitBox.shape.radius = swordBaseBox[i][3]
 				hitBox.shape.height = swordBaseBox[i][4]
 				hitBox.rotation_degrees = swordBaseBox[i][5]
+				if i <= 6:
+					$Hitbox.damage = swordBaseBox[i][6]
+					if comboCounter == 3:
+						$Hitbox.damage == swordBaseBox[i][6] * 2
 				break
-
 
 		
 	elif weapon == "Gunblade":
-		pass
+		for i in gunBladeBaseBox.size():
+			if _animated_sprite.animation == gunBladeBaseBox[i][0]:
+				if _animated_sprite.flip_h == true:
+					gunBladeBaseBox[i][1] = -gunBladeBaseBox[i][1]
+				hitBox.position.x = gunBladeBaseBox[i][1]
+				hitBox.position.y = gunBladeBaseBox[i][2]
+				hitBox.shape.radius = gunBladeBaseBox[i][3]
+				hitBox.shape.height = gunBladeBaseBox[i][4]
+				hitBox.rotation_degrees = gunBladeBaseBox[i][5]
+				if i <= 6:
+					$Hitbox.damage = gunBladeBaseBox[i][6]
+				break
+		
 	elif weapon == "Scythe":
 		pass
 
@@ -744,7 +777,7 @@ func checkIfHit(node):
 					if concentration >= 15:
 						$Hitbox.damage = $Hitbox.damage * 1.5
 				
-				#print("enemy hit ", concentration, " damage: ", $Hitbox.damage)
+				print("enemy hit ", concentration, " damage: ", $Hitbox.damage)
 				
 
 		if concentration > 20:
@@ -835,7 +868,7 @@ func _on_pause_timer_timeout():
 		
 #------------------------------------------------------------------------------- WEAPON SWITCHING
 func weapon_switch():
-	if primaryNum < 2:
+	if primaryNum < 1:
 		primaryNum += 1
 	else:
 		primaryNum = 0
@@ -957,6 +990,8 @@ func canMovement(delta):
 	
 	
 	move_and_collide(velocity * delta)
+	
+	#self.position = self.position.linear_interpolate(velocity * delta,delta)
 	
 
 func move_state(delta):
@@ -1303,7 +1338,7 @@ func swordSpecial2():
 	_animated_sprite.play("S_Special1Charge")
 	FXSprite.play("S_Special2FX")
 	specialCharge -= 3
-	cameraZoom(1.45,0.8)
+	cameraZoom(1.75,1)
 
 	#isAttacking = true
 	stopMoving()
@@ -1319,7 +1354,7 @@ func swordSpecialStartup():
 	specialAttacks[0][1] = true
 	isSpecial = true
 	specialCharge -= 3
-	cameraZoom(1,1)
+	cameraZoom(1.2,1.5)
 	screenModulate(Color(0.97,0.8,1,1),0.7)
 	#worldModulate(Color(0.6,0.6,0.6,1),0.8)
 	_animated_sprite.play("S_Special1Charge")

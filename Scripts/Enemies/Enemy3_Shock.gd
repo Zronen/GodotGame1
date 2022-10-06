@@ -3,7 +3,7 @@ extends "res://Scripts/Enemies/EnemyBase.gd"
 var player_direction = null
 
 func _ready():
-	hp = 15
+	hp = 20
 	hp_max = hp
 	$Hitbox.position.x = 83
 	$Hitbox/CollisionShape2D.shape.radius = 36
@@ -51,7 +51,7 @@ func attack_state():
 	#hitBox.disabled = true
 	velocity = Vector2.ZERO
 		
-	if (_esprite.frame > 22 and _esprite.frame < 26):
+	if (_esprite.frame > 12 and _esprite.frame < 24):
 		#hitBox.set_deferred("disabled","false")
 		hitBox.disabled = false
 		_hurtBox.disabled = true
@@ -105,19 +105,19 @@ func check_movement():
 	if player:
 		player_direction = (player.global_position - self.global_position).normalized()
 		
-		if self.global_position.distance_to(player.global_position) < 250:
+		if self.global_position.distance_to(player.global_position) > 400 and self.global_position.distance_to(player.global_position) < 500:
 			if !isDamaged:
 				state = ATTACK
 		
 		if self.global_position.distance_to(player.global_position) <= 350:
 			move_and_slide(1 * player_direction)
-			velocity = 140 * player_direction 
+			velocity = 140 * player_direction  
 			
 		elif self.global_position.distance_to(player.global_position) > 350 and self.global_position.distance_to(player.global_position) <= 1300:
 			move_and_slide(1 * player_direction)
 			velocity = 160  * player_direction 
 		elif self.global_position.distance_to(player.global_position) > 1300:
-			move_and_slide(1 * player_direction)
+			move_and_slide(-1 * player_direction)
 			velocity = 80 * player_direction 
 			
 		elif self.global_position.distance_to(player.global_position) > 1700:

@@ -14,7 +14,7 @@ var shopHUD
 
 func _ready():
 	state = IDLE
-	sprite.play("Idle")
+	#sprite.play("Idle")
 	player = get_parent().get_parent().get_node("PlayerBase")
 	shopHUD = get_parent().get_parent().get_node("ShopHUD")
 
@@ -23,11 +23,14 @@ func _process(_delta):
 	
 	match state:
 		IDLE:
-			idle_state()
+			#idle_state()
+			pass
 		ACTIVE:
-			active_state()
+			#active_state()
+			pass
 		SHOPPING:
-			shopping_state()
+			#shopping_state()
+			pass
 	
 	check_player()
 			

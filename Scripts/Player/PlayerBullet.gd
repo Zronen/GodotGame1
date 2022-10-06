@@ -9,8 +9,8 @@ var rng = RandomNumberGenerator.new()
 var ranNum
 var ranNum2
 
-var bullet1 = preload("res://.import/bullets2.png-49e1be022b2a648cef9fed7402786f36.stex")
-var bullet2 = preload("res://.import/FXSlash1_02.png-9a210f368ec6236f42a3f81ae20ed2f2.stex")
+#var bullet1 = preload("res://.import/bullets2.png-49e1be022b2a648cef9fed7402786f36.stex")
+#var bullet2 = preload("res://.import/FXSlash1_02.png-9a210f368ec6236f42a3f81ae20ed2f2.stex")
 
 func _ready():
 	rng.randomize()
@@ -26,20 +26,20 @@ func _physics_process(delta):
 			get_parent().get_parent().get_node("PlayerBase").knockPower = 3
 			$PlayerBullet.play("shotgun")
 			$PlayerBullet.set_rotation_degrees(rad2deg(direction.angle())+ranNum2)
-			$Hitbox.damage = 2
+			$Hitbox.damage = 3
 		
 		if type == "pistol":
 			$PlayerBullet.play("base")
 			velocity = direction * speed * 1.5
 			get_parent().get_parent().get_node("PlayerBase").knockPower = 1
-			$Hitbox.damage = 2
+			$Hitbox.damage = 4
 		
 		if type == "burst":
 			$PlayerBullet.play("laser")
 			velocity = direction * speed * 3
 			
 			$PlayerBullet.set_rotation_degrees(rad2deg(direction.angle())-90)
-			$Hitbox.damage = 5
+			$Hitbox.damage = 3
 		
 		
 		global_position += velocity

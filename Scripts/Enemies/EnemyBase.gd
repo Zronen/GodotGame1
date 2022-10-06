@@ -98,14 +98,20 @@ func move_state(_delta):
 
 #----------------------------------------------- GETTING DAMAGED
 func damage_state():
+	if !isDamaged:
+		_esprite.set_modulate(Color(1, 1, 1, 1))
+	
 	if isDamaged:
 		
+
+		
 		isDamaged = false
+		_esprite.set_modulate(Color(1, -1, -1, 1))
 		
 		hitBox.disabled = true
 		acceleration = 0
 		speed = 0
-		_esprite.set_modulate(Color(1, -1, -1, 1))
+
 		isCurrentlyDamaged = true
 		fxTrigger()
 		
@@ -157,7 +163,7 @@ func knockback():
 	pknockPower = get_parent().get_parent().get_node("PlayerBase").knockPower
 	plastx = get_parent().get_parent().get_node("PlayerBase").lastx
 	plasty = get_parent().get_parent().get_node("PlayerBase").lasty
-	moveTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + plastx * knockBackArr[pknockPower], self.global_position.y + plasty * knockBackArr[pknockPower]), 0.06,Tween.TRANS_LINEAR, Tween.EASE_OUT)
+	moveTween.interpolate_property(self, "global_position",self.global_position, Vector2(self.global_position.x + plastx * knockBackArr[pknockPower], self.global_position.y + plasty * knockBackArr[pknockPower]), 0.06,Tween.TRANS_LINEAR, Tween.EASE_OUT,0.05)
 	moveTween.start()
 
 		
@@ -168,7 +174,7 @@ func fxTrigger():
 		$dmg_reaction_timer.wait_time = 0.8
 	
 	else:
-		$dmg_reaction_timer.wait_time = 0.35
+		$dmg_reaction_timer.wait_time = 0.30
 
 
 func _on_dmg_reaction_timer_timeout():

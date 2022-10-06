@@ -10,8 +10,6 @@
 [ext_resource path="res://Assets/Bullets/PlayerBullets/Shotgun pellets/pellets1_0.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Bullets/PlayerBullets/Shotgun pellets/bullets3_1.png" type="Texture" id=9]
 
-
-
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
@@ -19,20 +17,20 @@ animations = [ {
 "name": "base",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 7 ) ],
 "loop": true,
-"name": "laser",
-"speed": 5.0
+"name": "shotgun_hit",
+"speed": 30.0
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "shotgun",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "shotgun_hit",
-"speed": 30.0
+"name": "laser",
+"speed": 5.0
 } ]
 
 [sub_resource type="CircleShape2D" id=1]
